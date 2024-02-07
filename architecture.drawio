@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="joVLEVdDxoENf4NTGwil" name="Page-1">
+        <mxGraphModel dx="476" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Google Drive&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;&quot;&gt;Gabarits&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Grilles&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Notes de cours&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="225" width="150" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0.581;entryY=-0.039;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Site GitHub.io&lt;br&gt;&lt;ul&gt;&lt;li&gt;liens&lt;/li&gt;&lt;li&gt;références pour la soumission du travail&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="80" width="210" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Google Classroom&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;&quot;&gt;Devoirs pour recevoir les soumissions&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="240" width="180" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
