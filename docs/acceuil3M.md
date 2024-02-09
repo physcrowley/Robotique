@@ -4,7 +4,7 @@
 
 * Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
 * [Activité 2 : inventaire et tests pour la trousse LEGO EV3](./p1-3m_act2.md)
-* Notes : définitions de base en robotique
+* [Notes : définitions de base en robotique](https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view)
 * [Activité 3 : installation logicielle et tests de connexion avec la brique EV3](./p1-3m_act3.md)
 
 ## Projet 2 : Circuits électroniques et programmation
