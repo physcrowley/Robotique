@@ -35,8 +35,17 @@ VS Code essaiera de signaler les erreurs dans vos programmes avec l'extension Py
 ### Premier programme
 
 1. Utilisez l'extension _LEGO MINDSTORMS EV3_ pour créer un nouveau projet Python dans VS Code nommé `test-ev3`. Enregistez le projet dans votre dossier Documents. Le fichier _main.py_ est créé automatiquement et contient le code à tester.
+1. Activez la vérification des erreurs pour votre projet.
+    * Ouvrez le dossier _.vscode_ dans votre projet.
+    * Ouvrez le fichier _settings.json_.
+    * Changez les dernières lignes pour qu'elles ressemblent à ceci:
+        ```json
+        "python.linting.enabled": true, // au lieu de false
+        "python.languageServer": "Default" // au lieu de "None"
+        ```
+    * Dans le fichier _main.py_, en bougeant le curseur sur les différents éléments, vous devrez voir des bulles d'information apparaître. Cela indique que l'analyseur de code fonctionne.
 1. Connectez la brique EV3 à votre ordinateur avec un câble USB et utilisez _EV3 Device Browser_ pour établir une connexion.
 1. Exécutez le programme en cliquant sur l'onglet _Run and Debug_ dans VS Code (icone qui combine un triangle et un insecte). En haut du panneau, vous verrez un bouton vert _Run_ à côté du texte "Download and Run". Cliquez sur ce bouton pour envoyer le code vers la brique EV3 et pour dire à la brique de l'exécuter immédiatement.
     > Des informations sur l'état du programme apparaîtront dans le terminal de VS Code et l'écran de la brique EV3 affichera un icône de bouton _Run_.
-1. Si le programme fait un son et s'arrête tout seul, c'est une réussite. Le code inclut juste l'instruction `ev3.speaker.beep()` qui utilise le haut-parleur de la brique pour faire un son. 
+1. Si le programme fait un son et s'arrête tout seul, c'est une réussite. Le code inclut seulement l'instruction `ev3.speaker.beep()` qui utilise le haut-parleur de la brique pour faire un son. 
 1. Vous pouvez maintenant éteindre la brique EV3 et la déconnecter de votre ordinateur.
