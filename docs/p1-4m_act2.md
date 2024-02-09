@@ -6,4 +6,4 @@
 1. Compléter et signer les listes de vérification pour l'inventaire et les tests.
 1. Soumettre le document complété dans la tâche appropriée sur Google Classroom.
 
-[Inventaire et tests Arduino ShieldBot](https://docs.google.com/document/d/1RXLzXo7DcGPgY_i9PaLlQTom71b5FBxagLqJcV12IxY/view)
+[Inventaire, installation et tests Arduino ShieldBot](https://docs.google.com/document/d/1RXLzXo7DcGPgY_i9PaLlQTom71b5FBxagLqJcV12IxY/view)
