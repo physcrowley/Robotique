@@ -1,11 +1,11 @@
 # 3M - Cours d'introduction à la robotique
 
-## Projet 1 : Inventaire et tests du matériel et des logiciels
+## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
 * Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
-* Activité 2 : inventaire et tests pour la trousse LEGO EV3
+* [Activité 2 : inventaire et tests pour la trousse LEGO EV3](./p1-3m_act2.md)
 * Notes : définitions de base en robotique
-* Activité 3 : installation logicielle et tests de connexion avec la brique EV3
+* [Activité 3 : installation logicielle et tests de connexion avec la brique EV3](./p1-3m_act3.md)
 
 ## Projet 2 : Circuits électroniques et programmation
 
