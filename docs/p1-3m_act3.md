@@ -24,9 +24,9 @@ VS Code essaiera de signaler les erreurs dans vos programmes. Pour bien faire ce
 
 ### Premier programme
 
-1. Utilisez l'extension _LEGO MINDSTORMS EV3_ pour créer un nouveau projet Python dans VS Code nommé _test-ev3_. Enregistez le projet dans votre dossier Documents. Le fichier _main.py_ est créé automatiquement dans le projet et contient le code à tester.
+1. Utilisez l'extension _LEGO MINDSTORMS EV3_ pour créer un nouveau projet Python dans VS Code nommé `test-ev3`. Enregistez le projet dans votre dossier Documents. Le fichier _main.py_ est créé automatiquement dans le projet et contient le code à tester.
 1. Créez votre espace de travail pour le cours. Un espace de travail est une référence vers tous les dossiers de projets. Vous pouvez le créer dans le menu _File_ > _Save Workspace As..._. Le mettre dans le dossier Documents et le nommer `robotique3m`. Si vous placez tous vos projets pour le cours dans cet espace de travail, vous aurez facilement accès à tous vos projets dans VS Code.
 1. Connectez la brique EV3 à votre ordinateur avec un câble USB et utilisez _EV3 Device Browser_ pour établir une connexion.
-1. Exécutez le programme en cliquant sur l'onglet _Run and Debug_ dans VS Code. En haut du panneau gauche, vous verrez un bouton vert _Run_ à côté du texte "Download and Run". Cliquez sur ce bouton pour envoyer le code vers la brique EV3 et pour dire à la brique de l'exécuter immédiatement.
+1. Exécutez le programme en cliquant sur l'onglet _Run and Debug_ dans VS Code. En haut du panneau, vous verrez un bouton vert _Run_ à côté du texte "Download and Run". Cliquez sur ce bouton pour envoyer le code vers la brique EV3 et pour dire à la brique de l'exécuter immédiatement.
     > Des informations sur l'état du programme apparaîtront dans le terminal de VS Code et l'écran de la brique EV3 affichera un icône de bouton _Run_. Si vous cliquez le bon bouton sur la brique, elle émettra un son.
 1. Arrêtez le programme en cliquant sur le bouton rouge _Stop_ dans VS Code ou sur le bouton _Back_ de la brique EV3.
