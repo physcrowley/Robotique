@@ -1,9 +1,11 @@
+[Accueil](./index.md)
+
 # 4M - Cours de robotique
 
 ## Projet 1 : Inventaire et tests du matériel et des logiciels
 
 * Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
-* Activité 2 : inventaire et tests pour la trousse Arduino ShieldBot de Parallax
+* [Activité 2 : inventaire et tests pour la trousse Arduino ShieldBot de Parallax](./p14m_act2.md)
 * Notes : définitions de base en robotique
 * Activité 3 : installation logicielle et tests de connexion avec la carte Arduino et la caméra Pixy2
 
