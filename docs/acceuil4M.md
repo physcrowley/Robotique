@@ -2,6 +2,11 @@
 
 # 4M - Cours de robotique
 
+## Ressources universelles pour les projets et les tutoriels
+
+* [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
+* [Gabarit de journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
+
 ## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
 * Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
@@ -10,13 +15,43 @@
 
 ## Projet 2 : Circuits électroniques et programmation
 
-## Projet 3 : Robot mobile le plus haut et le plus large
+* Activité 1 : tutoriel de démarrage avec PlatformIO pour Arduino
+* Notes : revue de la programmation de base
+* Notes : revue des composants de base en électronique
+* Activité 2 : boutons-poussoirs et temps de réponse
+* Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas
+* Notes : circuits classiques pour des moteurs
+* Activité 4 : indicateur de distance
 
-## Projet 4 : Recherche sur les domaines d'avenir en robotique
+> Plus d'informations et de tutoriels sur [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
 
-## Projet 5 : Avantage mécanique
+## Projet 3 : Structures mécaniques
+
+* Activité 1 : boxeur mécanique
+* Notes : cames et mécanismes à barres 
+* Activité 2 : robot trépied ou quadrupède sauteur
+
+## Projet 4 : Recherche sur l'apprentissage machine
+
+* Notes : histoire de l'apprentissage machine
+* Activité 1 : recherche sur les domaines d'avenir en apprentissage machine
+
+## Projet 5 : Systèmes mécaniques
+
+* Activité 1 : tourelle universelle
+* Notes : degres de liberté
+* Activité 2 : bras robotique avec pince
 
 ## Projet 6 : Mouvement avec mission
+
+* Activité 1 : contrôler les moteurs de robots à commande différentielle
+* Notes : créer des modules réutilisables en C++/Arduino
+* Activité 2 : utiliser la caméra Pixy2 pour se stationner
+* Notes : contrôleur classique - la machine à états finis
+
+> Plus de projets et de tutoriels sur le [site de Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino) : navigation infrarouge, navigation par ultrasons, etc.
+
+> Plus de projets avec la caméra Pixy2 : utiliser les exemples disponibles quand la bibliothèque `pixy2` est installée pour votre projet; voir la documentation pour le [mode de suivi de ligne](https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:line_tracking) ou pour [l'opération d'une tourelle universelle](http://docs.pixycam.com/wiki/doku.php?id=wiki:v2:pan_tilt_demo).
 
 ## Projet 7 : Conception 3D
 
