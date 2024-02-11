@@ -2,10 +2,10 @@
 
 # 4M - Cours de robotique
 
-## Ressources universelles pour les projets et les tutoriels
+#### Ressources universelles pour les projets et les tutoriels
 
 * [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
-* [Gabarit de journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
+* [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
 
 ## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
