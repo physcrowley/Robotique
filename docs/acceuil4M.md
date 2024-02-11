@@ -20,6 +20,7 @@
 * Notes : revue des composants de base en électronique
 * Activité 2 : boutons-poussoirs et temps de réponse
 * Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas
+    * Introduction à XOD IDE pour la programmation visuelle de circuits électroniques
 * Notes : circuits classiques pour des moteurs
 * Activité 4 : indicateur de distance
 
