@@ -21,7 +21,7 @@
 * Notes : programmation Arduino de base
 * Activité 4 : indicateur de distance
 
-> Plus d'informations et de tutoriels sur [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
+> Plus d'informations et de tutoriels sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
 
 ## Projet 3 : Structures mécaniques
 
