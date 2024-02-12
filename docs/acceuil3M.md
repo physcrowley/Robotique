@@ -4,6 +4,9 @@
 
 * [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
 * [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
+* Documentation :
+    * [Pybricks EV3 Micropython](https://pybricks.com/ev3-micropython/)
+    * [Arduino](https://docs.arduino.cc/built-in-examples/)
 
 ## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
@@ -21,7 +24,7 @@
 * Notes : programmation Arduino de base
 * Activité 4 : indicateur de distance
 
-> Plus d'informations et de tutoriels sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
+> Plus d'informations et de tutoriels sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/) (tutoriels en ligne), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (manuel en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
 
 ## Projet 3 : Structures mécaniques
 
