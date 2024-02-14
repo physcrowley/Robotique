@@ -68,15 +68,27 @@ La longue patte de la DEL est la patte positive. Elle doit être connectée au c
 
 #### Résistance
 
+Les résistances consomment de l'énergie électrique et sont généralement utilisées pour diminuer le courant ou la tension pour protéger les composants.
+
+Notamment, les DEL ne peuvent pas survivre à des tensions trop élevées et la carte Arduino ne peut pas survivre à des courants trop élevés. Chaque composant a des intervalles de tension et de courant à respecter et on peut trouver ces informations dans les spécifications techniques du composant.
+
+Par exemple, voici [les spécifications pour un affichage DEL 7 segments](https://docs.rs-online.com/b51e/0900766b801bf827.pdf).
 
 #### Bouton-poussoir
+
+Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il est souvent utilisé pour démarrer ou arrêter un circuit.
+
+![bouton](./images/push-button-internals.drawio.png)
 
 ## Activité - Créer un circuit de base
 
 ### Schéma du circuit
 
+...à venir
+
 ### Image du circuit
 
+...à venir
 
 ### Description du circuit
 Brancher la carte Arduino à l'ordinateur avec le câble USB. L'ordinateur devient la source d'énergie et la carte Arduino offre des prises de 5V, de 3.3V et de masse (GND). 
