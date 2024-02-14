@@ -17,7 +17,7 @@
 
 ## Projet 2 : Circuits électroniques et programmation
 
-* Activité 1 : circuits de base - source d'énergie, interrupteur, DEL, résistance
+* [Activité 1 : circuits de base - source d'énergie, interrupteur, DEL, résistance](./p2-3m_act1.md)
 * Notes : composants de base en électronique
 * Activité 2 : microcontrôleur Arduino - pourquoi? comment?
 * Activité 3 : tutoriel de démarrage avec PlatformIO pour Arduino
