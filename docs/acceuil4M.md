@@ -21,8 +21,8 @@
 
 ## Projet 2 : Circuits électroniques et programmation
 
-* Activité 1 : tutoriel de démarrage avec PlatformIO pour Arduino
-* Notes : revue de la programmation de base
+* 🚧 _Activité 1 : tutoriel de démarrage avec PlatformIO pour Arduino_ (problèmes d'installation sur les ordinateurs du laboratoire d'informatique)
+* [Notes : revue de la programmation de base](./p2-4m_act1_prog.md)
 * Notes : revue des composants de base en électronique
 * Activité 2 : boutons-poussoirs et temps de réponse
 * Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas
