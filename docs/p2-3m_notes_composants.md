@@ -18,6 +18,8 @@ Ces notes couvrent les sujets suivants en guise d'introduction à l'électroniqu
 
 ## Circuits électriques de base
 
+Circuits  |  [Composants](#composants-électroniques-de-base)  |  [Arduino Uno](#arduino-uno)
+
 ![circuit](./images/p2/circuit.drawio.png)
 
 Un circuit électrique est un chemin fermé par lequel circule un courant électrique. Il est composé de plusieurs éléments :
@@ -46,10 +48,13 @@ Pour connaître le courant qui sera sollicité par la source d'énergie, vous po
 
 ## Composants électroniques de base
 
+[Circuits](#circuits-électriques-de-base)  |  Composants  |  [Arduino Uno](#arduino-uno)
+
 * [Plaque d'essai](#plaque-d'essai)
 * [DEL](#del)
 * [Résistance](#résistance)
 * [Bouton-poussoir](#bouton-poussoir)
+* [Potentiomètre linéaire](#potentiomètre-linéaire)
 
 #### Plaque d'essai
 Une plaque d'essai est un support pour les composants électroniques. Elle permet de créer des circuits temporaires sans souder les composants. Les trous sont connectés horizontalement et verticalement selon un schéma standard.
@@ -97,7 +102,17 @@ Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il 
 ![bouton](./images/p2/push-button-internals.drawio.png)
 
 
+#### Potentiomètre linéaire
+
+Un potentiomètre est un composant qui permet de régler une tension. Il est souvent utilisé pour régler la luminosité d'une DEL, le volume d'un haut-parleur, la position d'un servo-moteur, la vitessse d'un moteur, etc.
+
+![potentiomètre](./images/p2/potentiometer.drawio.png)
+
+>_source : [arduino.developpez.com](https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/?page=projet-10-le-potentiometre)_
+
 ## Arduino Uno
+
+[Circuits](#circuits-électriques-de-base)  |  [Composants](#composants-électroniques-de-base)  |  Arduino Uno
 
 L'Arduino Uno est un microcontrôleur populaire pour les projets d'électronique. Il est basé sur un microcontrôleur ATmega328P de la compagnie Microchip. Il est programmable en C++ et est compatible avec plusieurs capteurs et actionneurs. Il y a aussi plusieurs environnement de développement intégrés (IDE) pour programmer l'Arduino, dont l'IDE Arduino - le plus populaire pour les novices - et Visual Studio Code avec l'extension PlatformIO qui fonctionne également avec d'autres microcontrôleurs dont l'ESP32.
 
