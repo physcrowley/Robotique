@@ -30,7 +30,7 @@
 * 📚 Notes : circuits classiques pour des moteurs
 * Activité 4 : indicateur de distance
 
-> Plus d'informations et de tutoriels sur [le site Zeste du Savoir](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/) (tutoriels en ligne), sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/) (tutoriels en ligne en anglais), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (manuel en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
+> Plus d'informations et de tutoriels sur [le site Zeste du Savoir](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/) (tutoriels en ligne avec une liste de lecture sur Youtube), sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/) (tutoriels en ligne en anglais), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (manuel en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
 
 ## Projet 3 : Structures mécaniques
 
