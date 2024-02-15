@@ -11,12 +11,12 @@
 
 Nom | Diagramme | Image 
 --- | --- | ---
-1 Carte Arduino Uno | ![uno](./images/diag-uno.png) | ![Arduino](./images/arduino-uno.jpg)
-1 Câble USB |  | ![USB](./images/usb-a-b.jpg)
-1 Bouton-poussoir | ![button](./images/diag-button.png) | ![bouton](./images/push-button.jpg)
-1 DEL | ![del](./images/diag-led.png) | ![DEL](./images/led.jpg)
-1 Résistance de 220 ohms (code couleur : rouge, rouge, marron/brun, or) | ![résistance](./images/diag-resistor.png) | ![résistance](./images/220ohm.drawio.png)
-1 Plaque d'essai |  | ![plaque](./images/breadboard.jpg)
+1 Carte Arduino Uno | ![uno](./images/p2/diag-uno.png) | ![Arduino](./images/p2/arduino-uno.jpg)
+1 Câble USB |  | ![USB](./images/p2/usb-a-b.jpg)
+1 Bouton-poussoir | ![button](./images/p2/diag-button.png) | ![bouton](./images/p2/push-button.jpg)
+1 DEL | ![del](./images/p2/diag-led.png) | ![DEL](./images/p2/led.jpg)
+1 Résistance de 220 ohms (code couleur : rouge, rouge, marron/brun, or) | ![résistance](./images/p2/diag-resistor.png) | ![résistance](./images/p2/220ohm.drawio.png)
+1 Plaque d'essai |  | ![plaque](./images/p2/breadboard.jpg)
 
 ## Révision
 
@@ -33,7 +33,7 @@ Cette section passe en revue les concepts suivants :
 
 #### Circuit électrique
 
-![circuit](./images/circuit.drawio.png)
+![circuit](./images/p2/circuit.drawio.png)
 
 Un circuit électrique est un chemin fermé par lequel circule un courant électrique. Il est composé de plusieurs éléments :
 1. Une source d'énergie, qui fournit le courant électrique. Par exemple une pile ou une batterie.
@@ -46,7 +46,7 @@ Un circuit électrique est un chemin fermé par lequel circule un courant élect
 
 Un circuit qui divise la tension place plusieurs récepteurs **en série**. Chaque récepteur reçoit une partie de la tension totale. L'effet est que la résistance totale du circuit augmente et le courant diminue. 
 
-![diviseur de tension](./images/voltage-divider.drawio.png)
+![diviseur de tension](./images/p2/voltage-divider.drawio.png)
 
 C'est parfois nécessaire d'ajouter des résistances pour limiter le courant dans un circuit afin de protéger les composants. C'est une application classique des diviseurs de tension.
 
@@ -54,14 +54,14 @@ C'est parfois nécessaire d'ajouter des résistances pour limiter le courant dan
 
 Un circuit qui divise le courant place plusieurs récepteurs **en parallèle**. Chaque récepteur reçoit une partie du courant total mais avec la tension totale de la source. L'effet est que la source d'énergie doit fournir plus de courant pour alimenter tous les récepteurs.
 
-![diviseur de courant](./images/current-divider.drawio.png)
+![diviseur de courant](./images/p2/current-divider.drawio.png)
 
 ### Comprendre les composants
 
 #### Plaque d'essai
 Une plaque d'essai est un support pour les composants électroniques. Elle permet de créer des circuits temporaires sans souder les composants. Les trous sont connectés horizontalement et verticalement selon un schéma standard.
 
-![plaque](./images/breadboard_connections.drawio.png)
+![plaque](./images/p2/breadboard_connections.drawio.png)
 
 On crée des circuits en insérant des fils monobrin ou les broches des composants dans les trous, en s'assurant de connecter les composants selon le circuit désiré.
 
@@ -73,7 +73,7 @@ Voici une vidéo qui explique comment utiliser une plaque d'essai :
 
 Un DEL est une diode électroluminescente. C'est un composant qui émet de la lumière lorsqu'il est traversé par un courant électrique. Il est polarisé, c'est-à-dire qu'il a un sens de branchement. Il faut donc le brancher dans le bon sens pour qu'il fonctionne.
 
-![DEL](./images/led-annotation.drawio.png)
+![DEL](./images/p2/led-annotation.drawio.png)
 
 La longue patte de la DEL est la patte positive. Elle doit être connectée au courant positif pour que la DEL s'allume. La patte négative est la patte la plus courte.
 
@@ -87,30 +87,30 @@ Par exemple, voici [les spécifications pour un affichage DEL 7 segments](https:
 
 La valeur d'une résistance est indiquée par un code de bandes de couleurs. Le tableau suivant, en couleurs plus naturelles, peut vous aider à identifier la couleur de chaque bande sur une résistances :
 
-![résistance](./images/resistance-table.png)
+![résistance](./images/p2/resistance-table.png)
 _source : [FabLabUTC](https://fablabutc.fr/wp-content/uploads/2021/01/Tutoriel_Electronique-Generale-3.pdf)_
 
 Le [calculateur de résistances sur le site de DigiKey](https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band), un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes. 
 
 P. ex. pour une résistance de 220 ohms à 4 bandes les couleurs sont rouge, rouge, brun/marron _et or (±5%)_; mais avec 5 bandes les couleurs sont rouge, rouge, noir, noir _et rouge (±2%)_.
 
-![résistance](./images/220ohm.drawio.png)
+![résistance](./images/p2/220ohm.drawio.png)
 
 #### Bouton-poussoir
 
 Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il est souvent utilisé pour démarrer ou arrêter un circuit.
 
-![bouton](./images/push-button-internals.drawio.png)
+![bouton](./images/p2/push-button-internals.drawio.png)
 
 ## Activité - Créer un circuit de base
 
 ### Schéma du circuit
 
-![schéma](./images/schematic.png)
+![schéma](./images/p2/schematic.png)
 
 ### Image du circuit
 
-![image](./images/picture.drawio.png)
+![image](./images/p2/picture.drawio.png)
 
 ### Description du circuit
 Brancher la carte Arduino à l'ordinateur avec le câble USB. L'ordinateur devient la source d'énergie et la carte Arduino offre des prises de 5V, de 3.3V et de masse (GND). 
