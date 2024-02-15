@@ -15,7 +15,7 @@ Nom | Diagramme | Image
 1 Câble USB |  | ![USB](./images/usb-a-b.jpg)
 1 Bouton-poussoir | ![button](./images/diag-button.png) | ![bouton](./images/push-button.jpg)
 1 DEL | ![del](./images/diag-led.png) | ![DEL](./images/led.jpg)
-1 Résistance de 220 ohms (code couleur : rouge, rouge, violet, or) | ![résistance](./images/diag-resistor.png) | ![résistance](./images/220ohm.drawio.png)
+1 Résistance de 220 ohms (code couleur : rouge, rouge, marron/brun, or) | ![résistance](./images/diag-resistor.png) | ![résistance](./images/220ohm.drawio.png)
 1 Plaque d'essai |  | ![plaque](./images/breadboard.jpg)
 
 ## Révision
