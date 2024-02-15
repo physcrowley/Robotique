@@ -24,7 +24,16 @@
 * 📚 Notes : programmation Arduino de base
 * Activité 4 : indicateur de distance
 
-> Plus d'informations et de tutoriels sur [le site Zeste du Savoir](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/) (tutoriels en ligne  avec une liste de lecture sur Youtube), sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/) (tutoriels en ligne en anglais), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (manuel en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
+<blockquote>
+Plus d'informations et de tutoriels sur :
+<ul>
+<li><a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/">le site Zeste du Savoir</a> (tutoriels en ligne avec une liste de lecture sur Youtube)</li>
+<li><a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/">le cours d'Arduino pour l'école sur Développez.com</a> (tutoriels en ligne)</li>
+<li><a href="https://docs.arduino.cc/built-in-examples/ ">le site d'Arduino</a> (tutoriels en ligne en anglais)</li>
+<li><a href="https://www.elegoo.com/pages/download">le site d'Elegoo > STEM Kits (Robotics, Arduino)</a> (téléchargement ZIP incluant des bibliothèques de code pour les différents composants)</li> 
+<li><a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html">le manuel pour la trousse de démarrage d'UCTronics</a> (manuel en ligne)</li>
+</ul>
+</blockquote>
 
 ## Projet 3 : Structures mécaniques
 
