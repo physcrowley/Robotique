@@ -116,7 +116,7 @@ Il y a aussi cette courte vidéo de présentation de la carte :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hAkWL495-qk?si=CzZ0y9tJYW2ryCf_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Le simulateur utilisé dans la vidéo se trouve ici : [TinkerCAD - Introduction à Arduino](https://www.tinkercad.com). Voici un modèle de base que vous pouvez modifier en ligne : [Arduino - clignoter un DEL](https://www.tinkercad.com/things/72zvNBYzOAw-arduino-basic)
+> Le simulateur utilisé dans la vidéo se trouve ici : [TinkerCAD](https://www.tinkercad.com). Voici un modèle de base que vous pouvez modifier en ligne : [Arduino - clignoter un DEL](https://www.tinkercad.com/things/72zvNBYzOAw-arduino-basic)
 
 Les sections suivantes résument les caractéristiques de chaque partie de la carte Arduino Uno.
 
