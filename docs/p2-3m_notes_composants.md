@@ -1,4 +1,13 @@
-<button onclick="window.history.back()" style="border: 'none';border-radius: 12px">Retour</button>
+<style>
+    button {
+        background-color: #0366d6;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 12px;
+    }
+</style>
+<button onclick="window.history.back()" >Retour</button>
 
 [Accueil](./index.md) > [3M](./acceuil3M.md#projet-2--circuits-électroniques-et-programmation)
 
