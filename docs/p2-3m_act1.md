@@ -1,4 +1,6 @@
-# Électronique - Activité 1 : circuits de base
+[Accueil](./index.md) > [3M](./acceuil3M.md)
+
+# Projet 2 - Activité 1 : circuits et composants de base
 
 ## Objectif
 
@@ -7,16 +9,25 @@
 
 ## Matériel
 
-Nom | Image
---- | ---
-1 Carte Arduino Uno | ![Arduino](./images/arduino-uno.jpg)
-1 Câble USB | ![USB](./images/usb-a-b.jpg)
-1 Bouton-poussoir | ![bouton](./images/push-button.jpg)
-1 DEL | ![DEL](./images/led.jpg)
-1 Résistance de 220 ohms (code couleur : rouge, rouge, violet, or) | ![résistance](./images/220-ohm-resistor.jpg)
-1 Plaque d'essai | ![plaque](./images/breadboard.jpg)
+Nom | Diagramme | Image 
+--- | --- | ---
+1 Carte Arduino Uno | ![uno](./images/diag-uno.png) | ![Arduino](./images/arduino-uno.jpg)
+1 Câble USB |  | ![USB](./images/usb-a-b.jpg)
+1 Bouton-poussoir | ![button](./images/diag-button.png) | ![bouton](./images/push-button.jpg)
+1 DEL | ![del](./images/diag-led.png) | ![DEL](./images/led.jpg)
+1 Résistance de 220 ohms (code couleur : rouge, rouge, violet, or) | ![résistance](./images/diag-resistor.png) | ![résistance](./images/220ohm.drawio.png)
+1 Plaque d'essai |  | ![plaque](./images/breadboard.jpg)
 
 ## Révision
+
+Cette section passe en revue les concepts suivants :
+* [Circuit électrique](#circuit-électrique)
+    * [Diviseurs de tension](#diviseurs-de-tension)
+    * [Diviseurs de courant](#diviseurs-de-courant)
+* [Plaque d'essai](#plaque-d'essai)
+* [DEL](#del)
+* [Résistance](#résistance)
+* [Bouton-poussoir](#bouton-poussoir)
 
 ### Concepts électriques
 
@@ -62,7 +73,7 @@ Voici une vidéo qui explique comment utiliser une plaque d'essai :
 
 Un DEL est une diode électroluminescente. C'est un composant qui émet de la lumière lorsqu'il est traversé par un courant électrique. Il est polarisé, c'est-à-dire qu'il a un sens de branchement. Il faut donc le brancher dans le bon sens pour qu'il fonctionne.
 
-![DEL](./images/led.jpg)
+![DEL](./images/led-annotation.drawio.png)
 
 La longue patte de la DEL est la patte positive. Elle doit être connectée au courant positif pour que la DEL s'allume. La patte négative est la patte la plus courte.
 
@@ -74,6 +85,17 @@ Notamment, les DEL ne peuvent pas survivre à des tensions trop élevées et la 
 
 Par exemple, voici [les spécifications pour un affichage DEL 7 segments](https://docs.rs-online.com/b51e/0900766b801bf827.pdf).
 
+La valeur d'une résistance est indiquée par un code de bandes de couleurs. Le tableau suivant, en couleurs plus naturelles, peut vous aider à identifier la couleur de chaque bande sur une résistances :
+
+![résistance](./images/resistance-table.png)
+_source : [FabLabUTC](https://fablabutc.fr/wp-content/uploads/2021/01/Tutoriel_Electronique-Generale-3.pdf)_
+
+Le [calculateur de résistances sur le site de DigiKey](https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band), un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes. 
+
+P. ex. pour une résistance de 220 ohms à 4 bandes les couleurs sont rouge, rouge, brun/marron _et or (±5%)_; mais avec 5 bandes les couleurs sont rouge, rouge, noir, noir _et rouge (±2%)_.
+
+![résistance](./images/220ohm.drawio.png)
+
 #### Bouton-poussoir
 
 Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il est souvent utilisé pour démarrer ou arrêter un circuit.
@@ -84,11 +106,11 @@ Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il 
 
 ### Schéma du circuit
 
-...à venir
+![schéma](./images/schematic.png)
 
 ### Image du circuit
 
-...à venir
+![image](./images/picture.drawio.png)
 
 ### Description du circuit
 Brancher la carte Arduino à l'ordinateur avec le câble USB. L'ordinateur devient la source d'énergie et la carte Arduino offre des prises de 5V, de 3.3V et de masse (GND). 
