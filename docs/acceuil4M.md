@@ -17,17 +17,17 @@
 
 * Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
 * [Activité 2 : inventaire, installation et tests pour la trousse Arduino ShieldBot de Parallax](./p1-4m_act2.md)
-* [Notes : définitions de base en robotique](https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view)
+* [📚 Notes : définitions de base en robotique](https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view)
 
 ## Projet 2 : Circuits électroniques et programmation
 
 * 🚧 _Activité 1 : tutoriel de démarrage avec PlatformIO pour Arduino_ (problèmes d'installation sur les ordinateurs du laboratoire d'informatique)
-* [Notes : revue de la programmation de base](./p2-4m_notes_prog.md)
-* [Notes : revue des composants de base en électronique](./p2-3m_act1.md)
+* [📚 Notes : revue de la programmation de base](./p2-4m_notes_prog.md)
+* [📚 Notes : revue des composants de base en électronique](./p2-3m_notes_composants.md)
 * Activité 2 : boutons-poussoirs et temps de réponse
 * Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas
     * [Introduction à XOD IDE pour la programmation visuelle de circuits électroniques](./p2-4m_act3_xod.md)
-* Notes : circuits classiques pour des moteurs
+* 📚 Notes : circuits classiques pour des moteurs
 * Activité 4 : indicateur de distance
 
 > Plus d'informations et de tutoriels sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/) (tutoriels en ligne), [le site d'Elegoo > STEM Kits (Robotics, Arduino)](https://www.elegoo.com/pages/download) (téléchargement PDF), [le manuel pour la trousse de démarrage d'UCTronics](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html) (manuel en ligne) et d'autres selon une recherche en ligne pour le composant spécifique.
@@ -35,26 +35,26 @@
 ## Projet 3 : Structures mécaniques
 
 * Activité 1 : boxeur mécanique
-* Notes : cames et mécanismes à barres 
+* 📚 Notes : cames et mécanismes à barres 
 * Activité 2 : robot trépied ou quadrupède sauteur
 
 ## Projet 4 : Recherche sur l'apprentissage machine
 
-* Notes : histoire de l'apprentissage machine
+* 📚 Notes : histoire de l'apprentissage machine
 * Activité 1 : recherche sur les domaines d'avenir en apprentissage machine
 
 ## Projet 5 : Systèmes mécaniques
 
 * Activité 1 : tourelle universelle
-* Notes : degres de liberté
+* 📚 Notes : degres de liberté
 * Activité 2 : bras robotique avec pince
 
 ## Projet 6 : Mouvement avec mission
 
 * Activité 1 : contrôler les moteurs de robots à commande différentielle
-* Notes : créer des modules réutilisables en C++/Arduino
+* 📚 Notes : créer des modules réutilisables en C++/Arduino
 * Activité 2 : utiliser la caméra Pixy2 pour se stationner
-* Notes : contrôleur classique - la machine à états finis
+* 📚 Notes : contrôleur classique - la machine à états finis
 
 > Plus de projets et de tutoriels sur le [site de Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino) : navigation infrarouge, navigation par ultrasons, etc.
 
