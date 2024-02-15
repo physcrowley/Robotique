@@ -110,6 +110,13 @@ L'Arduino Uno est un microcontrôleur populaire pour les projets d'électronique
 
 ### Comprendre les composants sur la carte
 
+Ce site présente une bonne introduction à la carte Arduino : [Zeste du Savoir - Présentation d'Arduino](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/742_decouverte-de-larduino/3414_presentation-darduino/).
+
+Il y a aussi cette courte vidéo de présentation de la carte qui vous montre également un simulateur de circuits pour l'Arduno Uno : [TinkerCAD - Introduction à Arduino](https://www.tinkercad.com/learn/circuits/arduino).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hAkWL495-qk?si=CzZ0y9tJYW2ryCf_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Les sections suivantes résument les caractéristiques de chaque partie de la carte Arduino Uno.
 
 ### Broches numériques
 
