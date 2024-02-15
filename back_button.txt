@@ -1,0 +1,10 @@
+<style>
+    button {
+        background-color: #0366d6;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 12px;
+    }
+</style>
+<button onclick="window.history.back()" >Retour</button>
