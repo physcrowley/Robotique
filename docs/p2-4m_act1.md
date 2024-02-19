@@ -11,7 +11,7 @@ Ce tutoriel présente les environnements de développement suivants :
 Caractéristiques | Arduino IDE | PlatformIO
 --- | --- | ---
 Installation | [Télécharger](https://www.arduino.cc/en/software) le logiciel autonome | [Installer](https://docs.platformio.org/en/latest/ide/vscode.html) l'extension pour [Visual Studio Code](https://code.visualstudio.com/) _(🚧 L'installation complète de PlatformIO est impossible actuellement sur les G7 du local d'informatique)_
-Avantages | Facile à créer un nouveau projet | Connexion automatique avec la carte Arduino, meilleure assistance pour la programmation (VS Code), format de fichier standard (`.cpp`), fonctionne avec plusieurs platformes (pas juste Arduino)
+Avantages | Facile à créer un nouveau projet, interface utilisateur simplifiée | Connexion automatique avec la carte Arduino, meilleure assistance pour la programmation (VS Code), format de fichier standard (`.cpp`), fonctionne avec plusieurs platformes (pas juste Arduino)
 Inconvénients | Pas de connexion automatique avec la carte Arduino, format de fichier spécial (`.ino`) | Structure de projet plus complexe (dossier `src` et fichier `platformio.ini`)
 
 ## Arduino IDE
