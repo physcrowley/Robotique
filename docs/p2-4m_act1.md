@@ -37,7 +37,7 @@ Les bibliothèques ajoutées de ces façons sont disponibles par la suite pour t
 
 ### Convertir un projet PlatformIO vers Arduino IDE
 
-Si vous voulez utliser le code source `.cpp` d'un projet PlatformIO dans un projet Arduino IDE, voici les étapes pour le transfert :
+Si vous voulez utiliser le code source `.cpp` d'un projet PlatformIO dans un projet Arduino IDE, voici les étapes pour le transfert :
 * Créez une copie du fichier `main.cpp` (ou `nom-du-projet.cpp`) et renommez-la `nom-du-projet.ino`.
 * Déplacer le fichier `.ino` dans le dossier du projet Arduino IDE, généralement `~/Documents/Arduino` où `~` est le répertoire personnel de l'utilisateur.
 * Ouvrez le fichier `.ino` dans Arduino IDE et accepter la proposition de corriger la structure du projet.
