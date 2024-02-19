@@ -35,6 +35,14 @@ Si le projet nécessite une bibliothèque qui n'est pas déjà incluse dans l'ID
 
 Les bibliothèques ajoutées de ces façons sont disponibles par la suite pour tous les projets.
 
+### Convertir vers un projet PlatformIO
+
+Si vous voulez utliser des fichiers `.ino` dans un projet PlatformIO, voici les étapes pour le transfert :
+* À la page d'accueil de PlatformIO, cliquez sur le bouton _New Project_ et choisissez un nom de projet et la carte Arduino Uno. 
+* Copiez le code dans le fichier original `.ino` et le coller dans le fichier `./src/main.cpp` du nouveau projet PlatformIO.
+* Ajouter l'instruction `#include <Arduino.h>` comme première ligne dans le fichier.
+* Si nécessaire, [ajoutez les bibliothèques requis](#ajouter-des-bibliothèques-avec-platformio).
+
 
 ## PlatformIO
 
@@ -69,6 +77,19 @@ Si le projet nécessite une bibliothèque qui ne fait pas partie de la biblioth�
 Parfois, un tutoriel fournira une bibliothèque spécifique à utiliser. Vous pouvez l'extraire dans le dossier `lib` du projet. Dans les deux cas, le projet se compilera en incluant la bibliothèque.
 
 Les bibliothèques ajoutées de ces façons sont seulement disponibles dans le projet actuel. Il faut donc gérer les bibliothèques projet-par-projet.
+
+## Convertir vers un projet Arduino IDE
+
+Si vous voulez utliser le code source `.cpp` dans un projet Arduino IDE, voici les étapes pour le transfert :
+* Créez une copie du fichier `main.cpp` (ou `nom-du-projet.cpp`) et renommez-la `nom-du-projet.ino`.
+* Déplacer le fichier `.ino` dans le dossier du projet Arduino IDE, généralement `~/Documents/Arduino` où `~` est le répertoire personnel de l'utilisateur. Assurez-vous de créer le sous-dossier `nom-du-projet` afin d'avoir la structure suivante :
+    ```
+    nom-du-projet
+    `--- nom-du-projet.ino
+    ```
+* Ouvrez le fichier `.ino` dans Arduino IDE.
+* Si nécessaire, [ajoutez les bibliothèques requis](#ajouter-des-bibliothèques-avec-arduino-ide).
+
 
 ## Soumettre votre travail
 
