@@ -5,4 +5,4 @@ Ce répertoire contient le site public pour le cours de robotique 3M et 4M. Vous
 
 Le site vise à structurer des liens vers des documents sur Google Drive (éventuellement migré vers des sous-pages) et des références à trouver le devoir dans Google Classroom pour soumettre le travail.
 
-![architecture](./architecture.png)
+![architecture](./architecture.drawio.png)
