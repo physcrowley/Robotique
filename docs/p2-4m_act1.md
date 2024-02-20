@@ -88,4 +88,13 @@ Si vous voulez utliser des fichiers `.ino` dans un projet PlatformIO, voici les 
 
 ## Soumettre votre travail
 
-Montrez votre environnement de développement avec un projet correctement ouvert à votre enseignant pour obtenir une note de participation.
+Téléchargez le projet `Clignoter` à partir du [site public pour les exemples de code](https://physcrowley.github.io/TER-Arduino/). 
+
+Capturez sur vidéo :
+* l'écran de votre environnement de développement (Arduino IDE ou PlatformIO dans VS Code) **montrant le projet correctement compilé** et
+* le résultat sur la carte Arduino connectée (le DEL intégé près de la broche 13 clignote)
+
+Rendez la vidéo dans la tâche appropriée sur Google Classroom.
+
+
+
