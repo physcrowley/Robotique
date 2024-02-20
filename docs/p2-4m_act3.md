@@ -6,11 +6,8 @@
 
 Consultez la vidéo d'introduction suivante :
 
+> 🚧 à ajouter
 
-Télécharger le projet. Choisir la version applicable à l'environnement de développement que vous utilisez :
-
-Arduino IDE | PlatformIO |
---- | ---
-[servo-test](../codes/servo-test.zip) | [servo-test](../codes/servo-test-pio.zip)
+Télécharger le projet via [le site de partage des exemples de code](https://physcrowley.github.io/TER-Arduino/). Choisir la version applicable à l'environnement de développement que vous utilisez :
 
 > Extraire le code dans un dossier nommé `servo-test` dans le répertoire de travail de votre environnement de développement.
