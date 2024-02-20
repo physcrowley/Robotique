@@ -1,32 +1,46 @@
-# Code à télécharger
+[Accueil](./index.md)
 
-Ce site vous permet de télécharger des exemples de code pour les projets de robotique et d'ingénierie, notamment les activités pour les cours TER3M et TER4M enseignés par M. Crowley.
+# Exemples de code à télécharger
 
+Cette page vous permet de télécharger des exemples de code pour les projets de robotique et d'ingénierie décrit dans les activités des cours TER3M et TER4M.
+
+[EV3 (pybricks)](#ev3-pybricks)
+
+[Arduino](#arduino)
+
+## EV3 (pybricks)
+
+­>🚧 à venir
+
+## Arduino
 Les exemples sont en format `.zip` ou `.ino` pour Arduino IDE et en format `.zip` pour PlatformIO (VSCode).
 
-## Programme d'initiation classique
+* [Initiation](#programme-dinitiation-classique)
+* [Lié aux activités](#lié-aux-activités)
+* [Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N](#lié-au-cours-software-foundations-with-arduino-shieldbot-de-cs2n)
+
+### Programme d'initiation classique
 
 Clignoter un DEL pour tester la connexion entre l'ordinateur et la carte Arduino.
 
 - [Clignoter pour Arduino IDE](./arduinoide/blink/blink.ino) (`.zip`)
 - [Clignoter pour PlatformIO](./platformio/blink-pio.zip) (`.zip`)
 
-## Lié aux activités sur le site de M. Crowley
+### Lié aux activités
+_Source : voir les pages [3M](../acceuil3M.md) et [4M](../acceuil4M.md) pour les activités_
 
-_Source : [https://physcrowley.github.io/Robotique](https://physcrowley.github.io/Robotique)_
-
-### Test de servomoteurs
+#### Test de servomoteurs
 
 Utilise la bibliothèque `Servo.h` pour contrôler un servomoteur. Définit des fonctions pour le mouvement dans les deux sens et pour le retour à la position neutre ou l'arrêt. Vous devrez ajuster les valeurs de la durrée des impulsions selon le servomoteur que vous utilisez.
 
 - [Servo-test pour Arduino IDE](./arduinoide/servo-test.zip) (`.zip`)
 - [Servo-test pour PlatformIO](./platformio/servo-test-pio.zip) (`.zip`)
 
-## Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N
+### Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N
 
 _Source : [Software Foundations with Arduino (Shieldbot) de CS2N](https://www.cs2n.org/u/track_progress?id=290)_
 
-## Exemple de Machine à états finis
+### Exemple de Machine à états finis
 
 Cet exemple est pour la caméra Pixy2, des moustaches tactiles et un haut-parleur piezoélectrique, comme pour [le défi proposé dans _Camera Programming with Arduino (Shieldbot)_](https://www.cs2n.org/u/mp/badge_pages/233). Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley](https://docs.google.com/document/d/1LxZwPFYOOgUi6hL9_VkzVpgnHcKnO2U3EskbVziUh4s/view) en modularisant les instructions de trois façons différentes.
 
