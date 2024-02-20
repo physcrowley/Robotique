@@ -5,24 +5,27 @@
 En robotique, nos programmes sont convertis en actions **par des circuits électroniques**, que ce soit pour capter des données ou pour actionner des moteurs.
 
 Ces notes sont directement applicables si :
-* vous voulez faire des projets d'électronique à la maison utilisant des composants standards et peu chers
-* vous avez envi d'apprendre comment utiliser un microcontrôleur comme l'Arduino, le Raspberry Pi ou l'ESP32
-* vous pensez à une carrière en génie électrique ou en robotique où la connaissance des composants électroniques est essentielle
+
+- vous voulez faire des projets d'électronique à la maison utilisant des composants standards et peu chers
+- vous avez envi d'apprendre comment utiliser un microcontrôleur comme l'Arduino, le Raspberry Pi ou l'ESP32
+- vous pensez à une carrière en génie électrique ou en robotique où la connaissance des composants électroniques est essentielle
 
 Ces notes couvrent les sujets suivants en guise d'introduction à l'électronique :
-* [les circuits électriques de base](#circuits-électriques-de-base)
-* [les composants électroniques de base](#composants-électroniques-de-base)
-* [l'Arduino Uno, un microcontrôleur populaire](#arduino-uno)
+
+- [les circuits électriques de base](#circuits-électriques-de-base)
+- [les composants électroniques de base](#composants-électroniques-de-base)
+- [l'Arduino Uno, un microcontrôleur populaire](#arduino-uno)
 
 > Avec la trousse de robotique LEGO EV3 Mindstorms, la plupart de ce que nous verrons dans cette unité est masqué afin de simplifier l'expérience de l'utilisateur. Par contre, ces notes vous aideront à comprendre ce qui se passe sous le capot et peuvent vous aider à résoudre des problèmes plus complexes.
 
 ## Circuits électriques de base
 
-Circuits  |  [Composants](#composants-électroniques-de-base)  |  [Arduino Uno](#arduino-uno)
+Circuits | [Composants](#composants-électroniques-de-base) | [Arduino Uno](#arduino-uno)
 
 ![circuit](./images/p2/circuit.drawio.png)
 
 Un circuit électrique est un chemin fermé par lequel circule un courant électrique. Il est composé de plusieurs éléments :
+
 1. Une source d'énergie, qui fournit le courant électrique. Par exemple une pile ou une batterie.
 2. Un conducteur, qui transporte le courant électrique. Par exemple un fil de cuivre.
 3. Un récepteur, qui utilise le courant électrique. Par exemple une DEL ou un moteur.
@@ -31,12 +34,11 @@ Un circuit électrique est un chemin fermé par lequel circule un courant élect
 
 #### Diviseurs de tension
 
-Un circuit qui divise la tension place plusieurs récepteurs **en série**. Chaque récepteur reçoit une partie de la tension totale. L'effet est que la résistance totale du circuit augmente et le courant diminue. 
+Un circuit qui divise la tension place plusieurs récepteurs **en série**. Chaque récepteur reçoit une partie de la tension totale. L'effet est que la résistance totale du circuit augmente et le courant diminue.
 
 ![diviseur de tension](./images/p2/voltage-divider.drawio.png)
 
 C'est parfois nécessaire d'ajouter des résistances **pour limiter le courant dans un circuit** afin de protéger les composants. C'est une application classique des diviseurs de tension. Pour déterminer le courant, on peut utiliser la **Loi d'Ohm** : `I = V / R` où `I` est le courant, `V` est la tension (généralement 5 volts) et `R` est la somme des résistances dans le circuit.
-
 
 #### Diviseurs de courant
 
@@ -48,15 +50,16 @@ Pour connaître le courant qui sera sollicité par la source d'énergie, vous po
 
 ## Composants électroniques de base
 
-[Circuits](#circuits-électriques-de-base)  |  Composants  |  [Arduino Uno](#arduino-uno)
+[Circuits](#circuits-électriques-de-base) | Composants | [Arduino Uno](#arduino-uno)
 
-* [Plaque d'essai](#plaque-d'essai)
-* [DEL](#del)
-* [Résistance](#résistance)
-* [Bouton-poussoir](#bouton-poussoir)
-* [Potentiomètre linéaire](#potentiomètre-linéaire)
+- [Plaque d'essai](#plaque-d'essai)
+- [DEL](#del)
+- [Résistance](#résistance)
+- [Bouton-poussoir](#bouton-poussoir)
+- [Potentiomètre linéaire](#potentiomètre-linéaire)
 
 #### Plaque d'essai
+
 Une plaque d'essai est un support pour les composants électroniques. Elle permet de créer des circuits temporaires sans souder les composants. Les trous sont connectés horizontalement et verticalement selon un schéma standard.
 
 ![plaque](./images/p2/breadboard_connections.drawio.png)
@@ -89,7 +92,7 @@ La valeur d'une résistance est indiquée par un code de bandes de couleurs. Le 
 
 _source : [FabLabUTC](https://fablabutc.fr/wp-content/uploads/2021/01/Tutoriel_Electronique-Generale-3.pdf)_
 
-Le [calculateur de résistances sur le site de DigiKey](https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band), un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes. 
+Le [calculateur de résistances sur le site de DigiKey](https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band), un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes.
 
 P. ex. pour une résistance de 220 ohms à 4 bandes les couleurs sont rouge, rouge, brun/marron _et or (±5%)_; mais avec 5 bandes les couleurs sont rouge, rouge, noir, noir _et rouge (±2%)_.
 
@@ -101,27 +104,26 @@ Un bouton poussoir est un interrupteur qui se ferme lorsqu'on appuie dessus. Il 
 
 ![bouton](./images/p2/push-button-internals.drawio.png)
 
-
 #### Potentiomètre linéaire
 
 Un potentiomètre est un composant qui permet de régler une tension. Il est souvent utilisé pour régler la luminosité d'une DEL, le volume d'un haut-parleur, la position d'un servo-moteur, la vitessse d'un moteur, etc.
 
 ![potentiomètre](./images/p2/potentiometer.drawio.png)
 
->_source : [arduino.developpez.com](https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/?page=projet-10-le-potentiometre)_
+> _source : [arduino.developpez.com](https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/?page=projet-10-le-potentiometre)_
 
 ## Arduino Uno
 
-[Circuits](#circuits-électriques-de-base)  |  [Composants](#composants-électroniques-de-base)  |  Arduino Uno
+[Circuits](#circuits-électriques-de-base) | [Composants](#composants-électroniques-de-base) | Arduino Uno
 
 L'Arduino Uno est un microcontrôleur populaire pour les projets d'électronique. Il est basé sur un microcontrôleur ATmega328P de la compagnie Microchip. Il est programmable en C++ et est compatible avec plusieurs capteurs et actionneurs. Il y a aussi plusieurs environnement de développement intégrés (IDE) pour programmer l'Arduino, dont l'IDE Arduino - le plus populaire pour les novices - et Visual Studio Code avec l'extension PlatformIO qui fonctionne également avec d'autres microcontrôleurs dont l'ESP32.
 
-* [Comprendre les composants sur la carte](#comprendre-les-composants-sur-la-carte)
-* [Alimentation](#alimentation)
-* [Communication série](#communication-série)
-* [Broches numériques](#broches-numériques)
-* [Broches analogiques](#broches-analogiques)
-* [Broches numériques à modulation de largeur d'impulsion (PWM)](#broches-numériques-à-modulation-de-largeur-d'impulsion-(PWM))
+- [Comprendre les composants sur la carte](#comprendre-les-composants-sur-la-carte)
+- [Alimentation](#alimentation)
+- [Communication série](#communication-série)
+- [Broches numériques](#broches-numériques)
+- [Broches analogiques](#broches-analogiques)
+- [Broches numériques à modulation de largeur d'impulsion (PWM)](<#broches-numériques-à-modulation-de-largeur-d'impulsion-(PWM)>)
 
 ### Comprendre les composants sur la carte
 
@@ -137,15 +139,20 @@ Les sections suivantes résument les caractéristiques de chaque partie de la ca
 
 ### Broches numériques
 
+> 🚧 texte à venir... consulter la vidéo pour l'instant
 
 ### Broches analogiques
 
+> 🚧 texte à venir... consulter la vidéo pour l'instant
 
 ### Broches numériques à modulation de largeur d'impulsion (PWM)
 
+> 🚧 texte à venir... consulter la vidéo pour l'instant
 
 ### Alimentation
 
+> 🚧 texte à venir... consulter la vidéo pour l'instant
 
 ### Communication série
 
+> 🚧 texte à venir... consulter la vidéo pour l'instant
