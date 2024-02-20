@@ -1,4 +1,4 @@
-[Accueil](./index.md)
+[Accueil](../index.md)
 
 # Exemples de code à télécharger
 
