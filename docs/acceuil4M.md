@@ -25,7 +25,7 @@
 * [📚 Notes : revue de la programmation de base](./p2-4m_notes_prog.md)
 * [📚 Notes : revue des composants de base en électronique](./p2-3m_notes_composants.md)
 * Activité 2 : boutons-poussoirs et temps de réponse
-* Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas
+* [Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas](./p2-4m_act3.md)
     * [Introduction aux servomoteurs](./p2-4m_act3_servo.md)
 * 📚 Notes : circuits classiques pour des moteurs
 * Activité 4 : indicateur de distance
