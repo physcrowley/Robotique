@@ -1,6 +1,11 @@
-[Accueil](./index.md) > [3M](./acceuil3M.md)
+[Accueil](./index.md) > [3M](./acceuil3M.md#projet-1--inventaire-installation-et-tests-du-matériel-et-des-logiciels)
 
 # Projet 1, Activité 2 : Inventaire et tests pour la trousse LEGO EV3
+
+## Objectif
+
+* Vérifier que la trousse LEGO EV3 est complète et fonctionnelle avant de commencer les projets de robotique.
+* Faire connaissance des divers composants de la trousse.
 
 ## Inventaire
 

@@ -1,3 +1,5 @@
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-2--circuits-électroniques-et-programmation)
+
 # Introduction à XOD IDE pour la programmation visuelle de circuits électroniques
 
 Voir la vidéo suivante pour un projet utilisant XOD pour spécifier le code qui contrôle deux servomoteurs avec des potentiomètres. C'est une très belle introduction au logiciel (ainsi qu'aux servomoteurs et aux potentiomètres).

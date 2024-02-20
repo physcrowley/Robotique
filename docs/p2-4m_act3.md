@@ -1,6 +1,11 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md)
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-2--circuits-électroniques-et-programmation)
 
 # Projet 2, Activité 3 : Servomoteurs, moteurs à courant continu et moteurs pas-à-pas
+
+## Objectif
+
+* Comprendre les différences concrètes entre les servomoteurs, les moteurs à courant continu et les moteurs pas-à-pas.
+* Apprendre à contrôler ces moteurs avec un microcontrôleur.
 
 ## Servomoteurs
 

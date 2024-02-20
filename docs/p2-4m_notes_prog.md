@@ -1,3 +1,5 @@
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-2--circuits-électroniques-et-programmation)
+
 # Revue de la programmation de base
 
 Vous pouvez consulter [ce document pour une comparaison entre les langages de programmation C++ (Arduino) et Python (EV3)](https://docs.google.com/document/d/1BZSA5YHnHIE4soRjD27xLf0DBFgv_7X-c3QdOJV2r9Q/view#heading=h.t7i4zfuou57t).

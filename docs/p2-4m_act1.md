@@ -1,8 +1,15 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md)
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-2--circuits-électroniques-et-programmation)
 
 # Projet 2, Activité 1 : Les environnements de développement pour Arduino
 
 [Détails pour Arduino IDE](#arduino-ide)   |   [Détails pour PlatformIO](#platformio)
+
+## Objectif
+
+* Prendre connaissance des deux principaux environnements de développement pour programmer des microcontrôleurs Arduino.
+* Savoir comment utiliser l'environnement choisi pour créer et gérer des projets Arduino.
+
+## Introduction
 
 Ce tutoriel présente les environnements de développement suivants :
 * **Arduino IDE**, un environnement de développement intégré pour programmer des microcontrôleurs Arduino
@@ -92,7 +99,7 @@ Téléchargez le projet `Clignoter` à partir du [site public pour les exemples 
 
 Capturez sur vidéo :
 * l'écran de votre environnement de développement (Arduino IDE ou PlatformIO dans VS Code) **montrant le projet correctement compilé** et
-* le résultat sur la carte Arduino connectée (le DEL intégé près de la broche 13 clignote)
+* le résultat sur la carte Arduino connectée (la DEL intégrée près de la broche 13 clignote)
 
 Rendez la vidéo dans la tâche appropriée sur Google Classroom.
 

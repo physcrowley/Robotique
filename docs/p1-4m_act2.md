@@ -1,6 +1,13 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md)
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-1--inventaire-installation-et-tests-du-matériel-et-des-logiciels)
 
 # Projet 1, Activité 2 : Inventaire et tests pour la trousse Arduino ShieldBot de Parallax
+
+## Objectif
+
+* Vérifier que la trousse Arduino ShieldBot de Parallax est complète et fonctionnelle avant de commencer les projets de robotique.
+* Faire connaissance des divers composants de la trousse.
+
+## Tâche
 
 1. Créer une copie du document ci-dessous.
 1. Compléter et signer les listes de vérification pour l'inventaire et les tests.
