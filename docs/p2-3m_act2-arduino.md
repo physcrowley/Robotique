@@ -13,6 +13,8 @@ nom-du-projet
 `--- nom-du-projet.ino
 ```
 
+### Utiliser du code de démarrage
+
 La plupart des tutoriels dans ce cours fournissent du code de démarrage dans un fichier compressé au format `.zip`. Il faut extraire le code dans le répertoire de projet par défaut d'Arduino, généralement `~/Documents/Arduino` où `~` est le répertoire personnel de l'utilisateur. Vous pouvez ensuite cliquer sur le fichier `.ino` pour ouvrir le projet dans Arduino IDE. Si ce fichier n'est pas déjà dans son propre dossier, l'IDE vous demandera de corriger la structure du projet et le fera automatiquement si vous acceptez.
 
 ### Ajouter des bibliothèques avec Arduino IDE

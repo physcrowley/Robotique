@@ -20,6 +20,8 @@ nom-du-projet
 
 > Le code du projet peut être dans un fichier avec n'importe quel nom, mais il doit avoir l'extension `.cpp`. La seule restriction est qu'il n'y ait qu'un seul fichier dans le projet avec les fonctions Arduino standard `void setup()` et `void loop()`.
 
+### Utiliser du code de démarrage
+
 La plupart des tutoriels dans ce cours fournissent du code de démarrage dans un fichier compressé au format `.zip`. Il faut extraire le code dans le répertoire de projet par défaut de PlafortmIO, généralement `~/Documents/PlatformIO/Projects` où `~` est le répertoire personnel de l'utilisateur. Vous pouvez ensuite importer le projet dans VS Code à partir de la page d'accueil de PlatformIO (`PIO Home`) en cliquant sur le bouton :
 *  _Import Arduino Project_ (avec l'option d'ajouter les bibliothèques d'Arduino IDE) ou 
 * _Open Project_ (parce que le code de démarrage est déjà un projet PlatformIO).
