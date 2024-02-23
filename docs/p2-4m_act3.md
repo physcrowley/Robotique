@@ -42,13 +42,15 @@ Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant (le ut
 
 ## Moteurs à courant continu
 
-### Introduction aux moteurs à courant continu et à la puce L293D
+### Introduction aux moteurs à courant continu et à la puce L9110H
 
 ### Activité
 
 🚧 Suivre ces instructions :
 
 [tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=38#manual)
+
+[détails sur la puce L9110H](https://cdn-shop.adafruit.com/product-files/4489/4489_datasheet-l9110.pdf)
 
 Obtenir le code ici : [Activité 13 sur la page GitHub d'UCTronics](https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_13_Controlling_DC_motor/Lesson_13_Controlling_DC_motor.ino)
 
