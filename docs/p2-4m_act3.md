@@ -46,6 +46,10 @@ Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant (le ut
 
 ### Activité
 
+🚧 Suivre ces instructions :
+
+[tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=38#manual)
+
 #### Matériel
 
 
@@ -59,6 +63,9 @@ Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant (le ut
 ### Introduction aux moteurs pas-à-pas et au module de contrôle ULN2003
 
 ### Activité
+🚧 Suivre ces instructions :
+
+[tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=40#manual)
 
 #### Matériel
 
