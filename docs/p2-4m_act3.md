@@ -50,6 +50,8 @@ Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant (le ut
 
 [tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=38#manual)
 
+Obtenir le code ici : [Activité 13 sur la page GitHub d'UCTronics](https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_13_Controlling_DC_motor/Lesson_13_Controlling_DC_motor.ino)
+
 #### Matériel
 
 
@@ -66,6 +68,8 @@ Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant (le ut
 🚧 Suivre ces instructions :
 
 [tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=40#manual)
+
+Obtenir le code ici : [Activité 14 sur la page GitHub d'UCTronics](https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_14_Controlling_Stepper_Motor/Lesson_14_Controlling_Stepper_Motor.ino)
 
 #### Matériel
 
