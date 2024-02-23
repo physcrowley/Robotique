@@ -31,4 +31,8 @@ void loop() {
     }
     delay(50); // délai pour éviter les rebonds
 }
+```
 
+### À soumettre
+
+Rendre votre vidéo dans le devoir pour l'activité 2, même si vous avez également complété la version de l'activité 2 pour le cours 3M. Vous aurez donc deux vidéos pour cette activité.
