@@ -20,6 +20,8 @@
 
 ## Schéma
 
+![schéma](./images/p2/schematic-act4.png)
+
 ## Image
 
 ![distance 1](./images/p2/distance1.jpg)
