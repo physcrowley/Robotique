@@ -24,7 +24,7 @@
 * [Activité 2 : tutoriel de démarrage avec Arduino](./p2-3m_act2.md)
 * [Activité 3 : microcontrôleur Arduino - pourquoi? comment?](./p2-3m_act3.md)
 * [📚 Notes : programmation Arduino de base](./p2-3m_notes_programmes.md)
-* Activité 4 : indicateur de distance
+* [Activité 4 : indicateur de distance](./p2-3m_act4.md)
 
 <blockquote>
 Plus d'informations et de tutoriels sur :
