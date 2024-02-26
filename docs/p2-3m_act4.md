@@ -34,7 +34,7 @@
 * Monter le circuit comme illustré dans les images ci-dessus.
 
 * Ouvrir l'exemple `distance-leds` dans votre environnement de développement Arduino. 
-    * Version Arduino IDE : [distance-leds.ino](./code/arduinoide/distance-leds.ino)
+    * Version Arduino IDE : [distance-leds.ino](./code/arduinoide/distance-leds/distance-leds.ino)
     * _🚧 N'existent pas encore_ Version PlatformIO : [distance-leds-pio.zip](./code/platformio/distance-leds-pio.zip)
 * Vérifier et lancer le code sur l'Arduino
 * Compléter le code selon le commentaire `TODO` dans le fichier `distance-leds.ino`.
