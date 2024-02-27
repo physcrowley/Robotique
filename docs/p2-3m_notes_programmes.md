@@ -265,7 +265,7 @@ Voici un exemple considérant une lecture qui vient d'un capteur quelconque :
 
 ```cpp
 const int DEL = 12;
-const int capteur = A0;
+const int capteur = A0; // un capteur quelconque est connecté à la broche A0
 
 void setup() {
   pinMode(DEL, OUTPUT);
