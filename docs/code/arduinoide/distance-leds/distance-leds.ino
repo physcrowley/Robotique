@@ -42,17 +42,17 @@ void setup() {
 void loop() {
   // prendre un lecture de distance
   digitalWrite(trig, HIGH);
-  delayMicroseconds(1000);
-  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
   duree = pulseIn(echo, HIGH);
-  distance = (duree / 2) / 14;
+  distance = duree / 58;
   Serial.println(distance);
 
   // activer le led1 selon la valeur
   if (distance <= 10) {
-    digitalWrite(led1, LOW);
-  } else {
     digitalWrite(led1, HIGH);
+  } else {
+    digitalWrite(led1, LOW);
   }
 
   // TODO - activer les autre DEL à des distances variées afin de donner
