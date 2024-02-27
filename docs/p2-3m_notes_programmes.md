@@ -253,13 +253,13 @@ On peut aussi combiner des conditions en utilisant des opérateurs logiques. Voi
 La sélection nous permet d'écrire du code qui s'exécute seulement si une condition est vraie. On peut optionnellement écrire du code qui s'exécute si la condition est fausse. On utilise la structure `if` pour faire une sélection simple et la structure `if...else` pour faire une sélection avec une alternative. Voici la syntaxe de base :
 
 ```cpp
-if ([condition]) {
+if (condition) {
   // code qui s'exécute si la condition est vraie
 } else {
   // code qui s'exécute si la condition est fausse
 }
 ```
-où `[condition]` est remplacée par une expression écrite comme expliqué dans la section précédente.
+où `condition` est remplacée par une expression écrite comme expliqué dans la section précédente.
 
 Voici un exemple considérant une lecture qui vient d'un capteur quelconque :
 
@@ -290,7 +290,6 @@ void loop() {
 🚧 en développement
 
 La répétition nous permet d'écrire du code qui s'exécute plusieurs fois. On utilise la structure `for` pour répéter une action un nombre fixe de fois et la structure `while` pour répéter une action tant qu'une condition est vraie.
-
 
 
 ## Ressources additionnelles
