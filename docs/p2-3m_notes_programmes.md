@@ -102,6 +102,7 @@ On utilise la fonction `pinMode(broche, mode)` pour définir le mode d'utilisati
 > Les constantes `INPUT` et `OUTPUT` sont définies dans la bibliothèque Arduino.
 
 ```cpp
+const int DEL = 12;
 void setup() {
   pinMode(DEL, OUTPUT); // la broche DEL est utilisée pour envoyer une valeur à une DEL
 }
