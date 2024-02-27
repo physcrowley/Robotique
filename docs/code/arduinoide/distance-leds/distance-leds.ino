@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 /*
 Code produit durant un atelier à La Cité Collégial
 Adapté par Charles Norminton et M. Crowley
@@ -43,7 +45,7 @@ void loop() {
   delayMicroseconds(1000);
   digitalWrite(trig, HIGH);
   duree = pulseIn(echo, HIGH);
-  distance = (duree / 58);
+  distance = (duree / 2) / 14;
   Serial.println(distance);
 
   // activer le led1 selon la valeur
