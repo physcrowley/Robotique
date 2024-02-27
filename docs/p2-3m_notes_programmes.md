@@ -150,6 +150,42 @@ La DEL est connectée à la broche 12.
 ### La fonction loop()
 
 
+La fonction `loop()` est exécutée en boucle, jusqu'à ce que le microcontrolleur soit éteint. On l'utilise généralement pour lire les valeurs des composantes électroniques et pour envoyer des valeurs à d'autres composantes électroniques.
+
+#### Lire ou écrire une valeur sur une broche
+
+On utilise la fonction `digitalRead(broche)` pour lire une valeur d'une broche. La valeur lue est soit `HIGH` (équivalent à 1) ou `LOW` (équivalent à 0). On utilise la fonction `digitalWrite(broche, valeur)` pour envoyer une valeur à une broche. La valeur envoyée est encore soit `HIGH` ou `LOW`.
+
+```cpp
+// présumant que la DEL est connectée à la broche 12 et activité en mode OUTPUT,
+// le code suivant fait clignoter la DEL
+void loop() {
+  digitalWrite(DEL, HIGH); // allumer la DEL
+  delay(1000); // attendre 1 seconde
+  digitalWrite(DEL, LOW); // éteindre la DEL
+  delay(1000); // attendre 1 seconde
+}
+```
+
+Certains composants donnent ou utilisent une valeur analogique, soit une valeur qui se trouve dans un intervalle de valeurs permises. Des résistances variables (potentiomètres) ou des capteurs de distance fournissent des valeurs analogiques. Des moteurs reçoivent des valeurs analogiques pour ajuster leur position ou leur vitesse. Pour lire une valeur analogique, on utilise la fonction `analogRead(broche)`. Pour envoyer une valeur analogique, on utilise la fonction `analogWrite(broche, valeur)`. La broche doit être compatible avec la fonction `analogWrite()` pour envoyer une valeur analogique. Ces broches sur la carte Arduino Uno sont soit des broches numériques précédés d'un `~` (3, 5, 6, 9, 10 et 11) ou des broches spéciales (A0 à A5).
+
+```cpp
+const int DEL = 9; // la DEL est connectée à la broche 9
+const int capteur = A0; // un capteur est connecté à la broche A0
+void setup() {
+  pinMode(DEL, OUTPUT); // la broche DEL est utilisée pour envoyer une valeur à une vraie DEL
+  pinMode(capteur, INPUT); // la broche capteur est utilisée pour lire une valeur 
+}
+void loop() {
+  int valeur = analogRead(capteur); // lire la valeur du capteur
+  analogWrite(DEL, valeur / 4); // ajuster la luminosité de la DEL selon la valeur lue
+}
+```
+
+En robotique, c'est dans la fonction `loop()` qu'on met le code pour contrôler les moteurs, lire les capteurs et prendre des décisions basées sur les valeurs lues, notamment décider si on a atteint un objectif ou si on doit changer de direction.
+
+Pour faire ces choses, on utilise les structures de contrôle de la section suivante afin d'obtenir la logique désirée.
+
 ## Structures de contrôle
 
 ### La sélection
