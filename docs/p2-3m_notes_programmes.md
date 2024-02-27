@@ -6,6 +6,25 @@ Travailler avec un microcontrolleur veut dire remplacer de la logique électroni
 
 Pour d'autres microcontrolleurs, le langage de programmation peut être différent. Par exemple, pour la brique EV3 (un microordinateur), le langage de programmation est une version simplifiée de Python.
 
+Sauter directement à la section qui vous intéresse :
+- [Démarrage](#démarrage)
+  - [Commentaires dans le code C++](#commentaires-dans-le-code-c)
+  - [Structure d'un programme Arduino](#structure-dun-programme-arduino)
+  - [Ajouter des bibliothèques de code](#ajouter-des-bibliothèques-de-code)
+  - [Constantes et variables](#constantes-et-variables)
+    - [Syntaxe](#syntaxe)
+    - [Types de données](#types-de-données)
+  - [La fonction setup()](#la-fonction-setup)
+    - [Définir le mode d'utilisation des broches](#définir-le-mode-dutilisation-des-broches)
+    - [Démarrer la communication série](#démarrer-la-communication-série)
+    - [Afficher des messages dans le moniteur série](#afficher-des-messages-dans-le-moniteur-série)
+  - [La fonction loop()](#la-fonction-loop)
+    - [Lire ou écrire une valeur sur une broche](#lire-ou-écrire-une-valeur-sur-une-broche)
+- [Structures de contrôle](#structures-de-contrôle)
+  - [Conditions](#conditions)
+  - [La sélection](#la-sélection)
+  - [La répétition](#la-répétition)
+
 ## Démarrage
 
 ### Commentaires dans le code C++
@@ -120,7 +139,7 @@ void setup() {
 }
 ```
 
-### Afficher des messages dans le moniteur série
+#### Afficher des messages dans le moniteur série
 
 On utilise la fonction `Serial.println(message)` pour afficher un message dans le moniteur série. Le message peut être un texte entre guillemets ou une variable. Dans le cas d'une variable, c'est sa valeur qui sera affichée.
 
@@ -172,10 +191,12 @@ Certains composants donnent ou utilisent une valeur analogique, soit une valeur 
 ```cpp
 const int DEL = 9; // la DEL est connectée à la broche 9
 const int capteur = A0; // un capteur est connecté à la broche A0
+
 void setup() {
   pinMode(DEL, OUTPUT); // la broche DEL est utilisée pour envoyer une valeur à une vraie DEL
   pinMode(capteur, INPUT); // la broche capteur est utilisée pour lire une valeur 
 }
+
 void loop() {
   int valeur = analogRead(capteur); // lire la valeur du capteur
   analogWrite(DEL, valeur / 4); // ajuster la luminosité de la DEL selon la valeur lue
@@ -188,8 +209,81 @@ Pour faire ces choses, on utilise les structures de contrôle de la section suiv
 
 ## Structures de contrôle
 
+Les **structures de contrôle** sont des instructions qui permettent de contrôler l'exécution du programme. On utilise des structures de contrôle pour prendre des décisions, répéter des actions ou exécuter des actions seulement si certaines conditions sont remplies.
+
+Ces structures de contrôle existent dans tous les langages de programmation et sont essentielles pour écrire des programmes qui font des choses utiles. Les sections suivantes présentent la syntaxe C++ pour les structures de contrôle les plus communes, mais les concepts sont transférables aux autres langages.
+
+### Conditions
+
+Les **conditions** sont des expressions qui sont soit vraies ou fausses. On utilise des conditions pour prendre des décisions dans un programme. Les conditions sont souvent utilisées avec des structures de contrôle pour exécuter des actions seulement si certaines conditions sont remplies.
+
+Par exemple, on peut voir si une valeur captée est plus grande (ou plus petite) qu'une valeur limite ou si une variable qui compte quelque chose à atteint une certaine valeur.
+
+```cpp	
+int valeur = 5;
+Serial.println(valeur > 3); // affiche "1" (vrai) dans le moniteur série
+Serial.println(valeur < 3); // affiche "0" (faux) dans le moniteur série
+```
+
+```cpp
+int compteur = 0;
+compteur++; // ajoute 1 à la valeur de compteur
+Serial.print("Le compteur est à ");
+Serial.println(compteur); // affiche "Le compteur est à 1" dans le moniteur série
+Serial.println(compteur == 5); // affiche "0" (faux) dans le moniteur série
+```
+
+Les conditions sont souvent exprimées en utilisant des opérateurs de comparaison. Voici quelques exemples d'opérateurs de comparaison :
+
+- `==` pour égal
+- `!=` pour différent
+- `>` pour plus grand
+- `<` pour plus petit
+- `>=` pour plus grand ou égal
+- `<=` pour plus petit ou égal
+
+On peut aussi combiner des conditions en utilisant des opérateurs logiques. Voici quelques exemples d'opérateurs logiques :
+
+- `&&` pour ET
+- `||` pour OU
+- `!` pour NON (ou l'inverse)
+
 ### La sélection
 
+La sélection nous permet d'écrire du code qui s'exécute seulement si une condition est vraie. On peut optionnellement écrire du code qui s'exécute si la condition est fausse. On utilise la structure `if` pour faire une sélection simple et la structure `if...else` pour faire une sélection avec une alternative. Voici la syntaxe de base :
+
+```cpp
+if ([condition]) {
+  // code qui s'exécute si la condition est vraie
+} else {
+  // code qui s'exécute si la condition est fausse
+}
+```
+où `[condition]` est remplacée par une expression écrite comme expliqué dans la section précédente.
+
+Voici un exemple considérant une lecture qui vient d'un capteur quelconque :
+
+```cpp
+const int DEL = 12;
+const int capteur = A0;
+
+void setup() {
+  pinMode(DEL, OUTPUT);
+  pinMode(capteur, INPUT);
+}
+
+void loop() {
+  int valeur = analogRead(capteur);
+  
+  if (valeur > 500) {
+    // si la valeur est plus grande que 500 fait ceci
+    digitalWrite(DEL, HIGH);
+  } else {
+    // sinon fait cela
+    digitalWrite(DEL, LOW);
+  }
+}
+```
 
 ### La répétition
 
