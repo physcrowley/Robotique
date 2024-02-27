@@ -287,6 +287,10 @@ void loop() {
 
 ### La répétition
 
+🚧 en développement
+
+La répétition nous permet d'écrire du code qui s'exécute plusieurs fois. On utilise la structure `for` pour répéter une action un nombre fixe de fois et la structure `while` pour répéter une action tant qu'une condition est vraie.
+
 
 
 ## Ressources additionnelles
