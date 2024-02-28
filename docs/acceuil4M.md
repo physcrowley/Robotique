@@ -28,7 +28,7 @@
 * [Activité 3 : circuits pour des moteurs - courant continu, servomoteur, moteur pas-à-pas](./p2-4m_act3.md)
     * [Introduction aux servomoteurs](./p2-4m_act3_servo.md)
 * 📚 Notes : circuits classiques pour des moteurs
-* Activité 4 : indicateur de distance
+* [Activité 4 : indicateur de distance](./p2-4m_act4.md)
 
 <blockquote>
 Plus d'informations et de tutoriels sur :
