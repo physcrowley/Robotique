@@ -1,6 +1,6 @@
 [Accueil](./index.md) > [3M](./acceuil3M.md#projet-2--circuits-électroniques-et-programmation)
 
-# Projet 2 - Activité 3 : pourquoi utiliser un microcontrôleur comme l'Arduino?
+# Projet 2 - Activité 4 : Indicateur de distance
 
 ## Objectif
 
