@@ -21,12 +21,6 @@ const int led3 = 4;
 const int led4 = 5;
 const int led5 = 6;
 
-/*
-variables globales
-*/
-int duree = 0;
-int distance = 0;
-
 void setup() {
   // spéficier le mode d'utilisation de chaque broche
   pinMode(echo, INPUT);
@@ -44,8 +38,8 @@ void loop() {
   digitalWrite(trig, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
-  duree = pulseIn(echo, HIGH);
-  distance = duree / 58;
+  int echoTime = pulseIn(echo, HIGH);
+  int distance = echoTime / 58;
   Serial.println(distance);
 
   // activer le led1 selon la valeur

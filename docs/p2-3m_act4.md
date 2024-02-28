@@ -33,7 +33,7 @@
 
 - Monter le circuit comme illustré dans le schéma et dans les images ci-dessus.
 - Ouvrir l'exemple `distance-leds` dans votre environnement de développement Arduino.
-  - Version Arduino IDE : [distance-leds.ino](./code/arduinoide/distance-leds/distance-leds.ino)
+  - Version Arduino IDE : [distance-leds.ino](./code/arduinoide/distance-leds.ino)
   - Version PlatformIO : [distance-leds-pio.zip](./code/platformio/distance-leds-pio.zip)
 - Vérifier et téléverser le code sur l'Arduino. Le code de démarrage ne contrôle qu'une seule DEL.
 - Compléter le code selon le commentaire `TODO` dans le fichier `distance-leds.ino`. Notamment, ajouter les instructions pour allumer les autres DELs en fonction de la distance mesurée par le capteur de distance à ultrasons. 
