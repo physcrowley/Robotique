@@ -34,7 +34,7 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
-  // prendre un lecture de distance
+  // prendre une lecture de distance
   digitalWrite(trig, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
