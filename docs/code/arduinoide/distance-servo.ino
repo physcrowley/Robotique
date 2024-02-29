@@ -11,6 +11,14 @@ const int echo = 11;
 const int servoPin = 6; // broche avec modulation de la largeur de pulsations
 
 /*
+ Constantes obtenues durant le calibrage
+ >>> VÉRIFIER CES VALEURS AVEC VOTRE PROPRE CAPTEUR ET SERVO <<<
+*/
+const int maxDistance = 200; // en cm
+const int minSignal = 1300; // en microsecondes
+const int maxSignal = 1700; // en microsecondes
+
+/*
  Objets
 */
 Servo indicator;
@@ -34,6 +42,7 @@ void loop() {
   Serial.println(distance);
 
   // TODO utiliser la fonction map() pour convertir la distance en valeur appropriée pour le signal du servo
+  // Indice : utiliser les constantes maxDistance, minSignal, maxSignal comme arguments pour map()
   int servoSignal;
 
   // TODO contrôler la position du servo avec le signal calculé
