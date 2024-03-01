@@ -1,52 +1,76 @@
+/*
+Code de démarrage pour créer un cadran indicatur de distance avec
+un capteur ultrason HC-SR04 plus la bibliothèque NewPing et un servomoteur.
+
+Ce code bâti sur NewPingExample.ino de la bibliothèque NewPing
+
+Créé : 2024-02
+Mis à jour : 2024-02
+Auteur : David Crowley
+*/
+
 #include <Arduino.h>
+#include <NewPing.h> // ajouter la bibliothèque via le menu Libraries
 #include <Servo.h>
 
 /*
- Broches physiques
+définir les broches utilisées
 */
-// broches du capteur de distance HC SR04
+
+// capteur ultrason
 const int trig = 12;
 const int echo = 11;
+
 // broche pour le signal du servomoteur
 const int servoPin = 6; // broche avec modulation de la largeur de pulsations
 
 /*
- Constantes obtenues durant le calibrage
- >>> VÉRIFIER CES VALEURS AVEC VOTRE PROPRE CAPTEUR ET SERVO <<<
+Constantes obtenues durant le calibrage
+>>> VÉRIFIER CES VALEURS AVEC VOTRE PROPRE CAPTEUR ET SERVO <<<
 */
+
 const int maxDistance = 200; // en cm
 const int minSignal = 1300; // en microsecondes
 const int maxSignal = 1700; // en microsecondes
 
 /*
- Objets
+Objets pour gérer les capteurs et moteurs
 */
-Servo indicator;
+
+NewPing sonar(trig, echo, maxDistance); // capteur ultrason
+Servo indicator; // servomoteur
 
 void setup() {
   indicator.attach(servoPin);
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
   Serial.begin(9600); // pour le déboggage
 }
 
 void loop() {
   // prendre une lecture de distance
-  // voir une fiche de spécification HC SR04 pour la technique 
-  // et pour le calcul détaillé de la distance
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-  int echoTime = pulseIn(echo, HIGH);
-  int distance = echoTime / 58; 
-  Serial.println(distance);
+  int distance = sonar.ping_cm(); // lire le capteur et convertir la réponse en cm
+  
+  // afficher le résultat de la lecture
+  Serial.print("Distance : ");
+  if (distance == 0 ){
+    // la valeur 0 indique que la réponse a pris plus de temps que nécessaire pour maxDistance
+    Serial.println("hors limites"); 
+    distance = maxDistance; // modifier la distance à utiliser pour le cadran
+  } else {
+    // les autres valeurs sont valides
+    Serial.print(distance);
+    Serial.println("cm");
+  }
 
   // TODO utiliser la fonction map() pour convertir la distance en valeur appropriée pour le signal du servo
   // Indice : utiliser les constantes maxDistance, minSignal, maxSignal comme arguments pour map()
   int servoSignal;
+  
 
   // TODO contrôler la position du servo avec le signal calculé
 
 
-  delay(500); // laisser le temps au servo de se positionner correctement
+  // délai pour laisser le servo se positionner
+  // le strict minimum est de 29ms pour le temps entre les lectures de distance
+  // TODO minimiser cette valeur pour une meilleur réactivité sans compromettre la fiabilité
+  delay(500); 
 }
