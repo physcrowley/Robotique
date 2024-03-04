@@ -52,6 +52,8 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 
 1. Monter le circuit selon le schéma complété.
 1. Tester le code de démarrage pour vérifier que la distance s'affiche correctement dans le moniteur série.
+1. Calibrez le servomoteur pour qu'il tourne de 0 à 180 degrés.
+   > [Voir l'activité 3](p2-4m_act3.md) pour des instructions sur comment calibrer un servomoteur.
 1. Compléter le code - les tâches décrites dans les `TODO`- pour que le servomoteur tourne en fonction de la distance mesurée.
    > Ajouter un bras de façon temporaire à l'arbre du servomoteur pour visualiser le mouvement.
 1. Construire un cadran pour l'indicateur de distance.
