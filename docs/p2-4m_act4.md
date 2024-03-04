@@ -63,7 +63,7 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 
 Enrichissement fortement suggérée :
 
-- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). Voir l'activité 2 pour des idées sur comment ajouter un bouton-poussoir à un projet.
+- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). [Voir l'activité 2](p2-4m_act2.md) pour des idées sur comment ajouter un bouton-poussoir à un projet.
 - Si l'indication de distance est désactivé, l'indicateur devrait indiquer l'état éteint (p. ex. à 0 degré pour le servomoteur). Sinon, l'indicateur devrait indiquer la distance mesurée sur le cadran (p. ex. entre 30 degrés et 180 degrés).
   - Il faudrait refaire le mappage original afin de changer l'angle qui indique la distance minimale.
 - Créer un nouveau cadran de carton afin de refléter les nouvelles positions du servomoteur:
