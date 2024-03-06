@@ -173,11 +173,11 @@ La fonction `loop()` est exécutée en boucle, jusqu'à ce que le microcontrolle
 
 #### Lire ou écrire une valeur sur une broche
 
-On utilise la fonction `digitalRead(broche)` pour lire une valeur d'une broche. La valeur lue est soit `HIGH` (équivalent à 1) ou `LOW` (équivalent à 0). On utilise la fonction `digitalWrite(broche, valeur)` pour envoyer une valeur à une broche. La valeur envoyée est encore soit `HIGH` ou `LOW`.
+On utilise la fonction `digitalRead(broche)` pour lire une valeur d'une broche. La valeur lue est soit `HIGH` (équivalent à 1) ou `LOW` (équivalent à 0). On utilise la fonction `digitalWrite(broche, valeur)` pour envoyer une valeur à une broche. La valeur envoyée est encore soit `HIGH` ou `LOW`. Le mot anglais "digital", ce qu'on appelle des **valeurs numériques**, fait référence à des valeurs qui sont soit 1 ou 0.
 
 ```cpp
-// présumant que la DEL est connectée à la broche 12 et activité en mode OUTPUT,
-// le code suivant fait clignoter la DEL
+// présumant que la DEL fait référence à un numéro de broche activée 
+// en mode OUTPUT, le code suivant fait clignoter la DEL
 void loop() {
   digitalWrite(DEL, HIGH); // allumer la DEL
   delay(1000); // attendre 1 seconde
@@ -186,7 +186,11 @@ void loop() {
 }
 ```
 
-Certains composants donnent ou utilisent une valeur analogique, soit une valeur qui se trouve dans un intervalle de valeurs permises. Des résistances variables (potentiomètres) ou des capteurs de distance fournissent des valeurs analogiques. Des moteurs reçoivent des valeurs analogiques pour ajuster leur position ou leur vitesse. Pour lire une valeur analogique, on utilise la fonction `analogRead(broche)`. Pour envoyer une valeur analogique, on utilise la fonction `analogWrite(broche, valeur)`. La broche doit être compatible avec la fonction `analogWrite()` pour envoyer une valeur analogique. Ces broches sur la carte Arduino Uno sont soit des broches numériques précédés d'un `~` (3, 5, 6, 9, 10 et 11) ou des broches spéciales (A0 à A5).
+##### Valeurs analogiques
+
+Certains composants donnent ou utilisent une **valeur analogique**, soit une valeur qui se trouve dans un intervalle de valeurs permises. Des résistances variables (potentiomètres) ou des capteurs de distance fournissent des valeurs analogiques. Des moteurs reçoivent des valeurs analogiques pour ajuster leur position ou leur vitesse. Pour lire une valeur analogique, on utilise la fonction `analogRead(broche)`. Pour envoyer une valeur analogique, on utilise la fonction `analogWrite(broche, valeur)`. 
+
+La broche doit être compatible avec la fonction `analogWrite()` pour envoyer une valeur analogique. Ces broches sur la carte Arduino Uno sont soit des broches numériques précédées d'un `~` (3, 5, 6, 9, 10 et 11) ou des broches spéciales (A0 à A5). Le `~` sur les broches numériques signifie que la broche change la durée du signal `HIGH` ou `LOW` pour simuler une valeur analogique. Cette technique s'appelle la **modulation de largeur d'impulsion** (PWM).
 
 ```cpp
 const int DEL = 9; // la DEL est connectée à la broche 9
@@ -211,7 +215,7 @@ Pour faire ces choses, on utilise les structures de contrôle de la section suiv
 
 Les **structures de contrôle** sont des instructions qui permettent de contrôler l'exécution du programme. On utilise des structures de contrôle pour prendre des décisions, répéter des actions ou exécuter des actions seulement si certaines conditions sont remplies.
 
-Ces structures de contrôle existent dans tous les langages de programmation et sont essentielles pour écrire des programmes qui font des choses utiles. Les sections suivantes présentent la syntaxe C++ pour les structures de contrôle les plus communes, mais les concepts sont transférables aux autres langages.
+Ces structures de contrôle existent dans tous les langages de programmation et sont essentielles pour écrire des programmes qui font des choses utiles. Les sections suivantes présentent la syntaxe C++ pour les structures de contrôle les plus communes, mais les concepts sont transférables aux autres langages, comme Python.
 
 ### Conditions
 
