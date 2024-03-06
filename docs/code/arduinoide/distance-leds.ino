@@ -1,18 +1,29 @@
-#include <Arduino.h>
-
 /*
-Code produit durant un atelier à La Cité Collégial
-Adapté par Charles Norminton et M. Crowley
-2024-02
+Code de démarrage pour créer un indicateur lumineux de distance avec
+un capteur ultrason HC-SR04 avec la bibliothèque NewPing et des DEL
+de différentes couleurs.
+
+Ce code bâti sur NewPingExample.ino de la bibliothèque NewPing et sur
+un projet fait par Charles Norminton durant un atelier à La Cité Collégiale
+à Ottawa, ON, Canada.
+
+Créé : 2024-02
+Mis à jour : 2024-02
+Auteur : David Crowley
 */
 
-/* 
-définir les broches utilisées
+#include <Arduino.h>
+#include <NewPing.h> // ajouter la bibliothèque via le menu Libraries
+
+/*
+définir les broches utilisées et les constantes physiques
 */
 
 // capteur ultrason
 const int trig = 12;
 const int echo = 11;
+const int maxDistance = 250; //cm
+NewPing sonar(trig, echo, maxDistance); // créer un objet NewPing pour gérer le capteur
 
 // DEL
 const int led1 = 2;
@@ -23,8 +34,6 @@ const int led5 = 6;
 
 void setup() {
   // spéficier le mode d'utilisation de chaque broche
-  pinMode(echo, INPUT);
-  pinMode(trig, OUTPUT);
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
@@ -33,14 +42,22 @@ void setup() {
   // démarrer la communication série
   Serial.begin(9600);
 }
+
 void loop() {
   // prendre une lecture de distance
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-  int echoTime = pulseIn(echo, HIGH);
-  int distance = echoTime / 58;
-  Serial.println(distance);
+  delay(50); //ms; le délai minimal entre lectures est 29ms
+  int distance = sonar.ping_cm(); // lire le capteur et convertir la réponse en cm
+  
+  // afficher le résultat de la lecture
+  Serial.print("Distance : ");
+  if (distance == 0 ){
+    // la valeur 0 indique que la réponse a pris plus de temps que nécessaire pour maxDistance
+    Serial.println("hors limites"); 
+  } else {
+    // les autres valeurs sont valides
+    Serial.print(distance);
+    Serial.println("cm");
+  }
 
   // activer le led1 selon la valeur
   if (distance <= 10) {

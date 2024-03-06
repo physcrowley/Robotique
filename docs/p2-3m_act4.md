@@ -37,9 +37,9 @@
   - Version PlatformIO : [distance-leds-pio.zip](./code/platformio/distance-leds-pio.zip)
 - Vérifier et téléverser le code sur l'Arduino. Le code de démarrage ne contrôle qu'une seule DEL.
 - Compléter le code selon le commentaire `TODO` dans le fichier `distance-leds.ino`. Notamment, ajouter les instructions pour allumer les autres DELs en fonction de la distance mesurée par le capteur de distance à ultrasons. 
-    - La première DEL à s'allumer (verte) le fait quand la distance est moins que 150cm.
-    - La deuxième DEL à s'allumer (verte encore) le fait quand la distance est moins que 100cm.
-    - La troisième DEL à s'allumer (jaune) le fait quand la distance est moins que 50cm.
+    - La première DEL à s'allumer (verte) le fait quand la distance est moins que 50cm.
+    - La deuxième DEL à s'allumer (verte encore) le fait quand la distance est moins que 40cm.
+    - La troisième DEL à s'allumer (jaune) le fait quand la distance est moins que 30cm.
     - La quatrième DEL à s'allumer (jaune encore) le fait quand la distance est moins que 20cm.
     - La dernière DEL à s'allumer (rouge) le fait quand la distance est moins que 10cm.
 
@@ -52,7 +52,7 @@ Pour le projet final, votre défi est d'utiliser ce que vous avez fait précéde
 <blockquote>
 <h3>Description de la logique pour une solution potentielle</h3>
 <ul> 
-    <li>Ajouter une variable <code>int lastLed;</code> dans la fonction <code>loop()</code> avant la série de conditions <code>if () {} else {}</code></li>
+    <li>Ajouter une variable <code>int lastLed = 0;</code> dans la fonction <code>loop()</code> avant la série de conditions <code>if () {} else {}</code></li>
     <li>Assurez-vous d'avoir placé toutes les conditions en ordre décroissant de distance (de la plus grande distance à la plus petite distance), sinon les placer dans cet ordre.</li>
     <li>Dans chaque bloc <code>if</code>, ajoutez une autre instruction après l'instruction pour allumer la DEL, soit : <code>lastLed = ledN;</code> où vous remplacez <code>N</code> avec le numéro de chaque DEL.</li>
     <li>Une fois que vous avez passé à travers toutes les conditions, la dernière fois que la condition est vrai vous donne la bonne DEL dans la variable <code>lastLed</code>.</li>
