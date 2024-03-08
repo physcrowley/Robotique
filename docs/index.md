@@ -9,4 +9,4 @@ Veuillez choisir votre cours pour accéder aux ressources appropriées :
 
 Il y a aussi les exemples de code utilisés dans les deux cours sur cette page :
 
-- [Exemples de code](./code/index.md)
+- [Exemples de code](./code/code_samples.md)
