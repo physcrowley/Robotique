@@ -37,7 +37,7 @@ Testez un servomoteur à la fois en utilisant les mêmes branchements. Commencez
 #### Instructions
 
 1. Ouvrir l'exemple servo-test dans votre environnement de développement Arduino.
-   - Version Arduino IDE : [servo-test.zip](./code/arduinoide/servo-test.zip)
+   - Version Arduino IDE : [servo-test.ino](./code/arduinoide/servo-test.ino)
    - Version PlatformIO : [servo-test-pio.zip](./code/platformio/servo-test-pio.zip)
 1. Masquer tout le code actif dans `setup()` (après la connexion du servomoteur) et dans `loop()` derrière un commentaire (sélectionner le code et appuyer sur `Ctrl` + `é` pour commenter/décommenter). 
 1. Ajouter une seule commande `stopMotor()` dans `setup()`. Quand la position du bras s'immobilise, attachez le bras au servomoteur afin qu'il soit parallèle au corps du servomoteur.

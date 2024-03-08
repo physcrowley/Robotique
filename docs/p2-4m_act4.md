@@ -51,21 +51,23 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 ## Instructions
 
 1. Monter le circuit selon le schéma complété.
-1. Tester le code de démarrage pour vérifier que la distance s'affiche correctement dans le moniteur série.
-1. Calibrez le servomoteur pour qu'il tourne de 0 à 180 degrés.
-   > [Voir l'activité 3](p2-4m_act3.md) pour des instructions sur comment calibrer un servomoteur.
+1. Tester le montage de base :
+   1. Tester le code de démarrage pour vérifier que la distance s'affiche correctement dans le moniteur série.
+   1. Calibrez le servomoteur pour qu'il tourne de 0 à 180 degrés.
+      > [Utilisez les instructions et le code de l'activité 3](p2-4m_act3.md) pour cette étape. Si vous travaillez dans **Arduino IDE**, simplement ouvrir le projet dans une fenêtre séparée. Si vous travaillez dans **PlatformIO**, vous pouvez copier le code du dossier `src` de l'activité 3 dans le dossier `tests` de ce projet et lancer le test au lieu de lancer le projet.
 1. Compléter le code - les tâches décrites dans les `TODO`- pour que le servomoteur tourne en fonction de la distance mesurée.
-   > Ajouter un bras de façon temporaire à l'arbre du servomoteur pour visualiser le mouvement.
+   > Indices : vous devrez faire une recherche dans la documentation ou dans des tutoriels pour découvrir comment la fonction `map()` fonctionne. Vous devrez aussi ajouter un bras au servomoteur afin de visualiser correctement sa position. Ce bras deviendra l'indicateur de distance.
 1. Construire un cadran pour l'indicateur de distance.
-   1. Fixer un morceau de carton ou de papier sur la bôitier du servomoteur afin que le bras du servomoteur passe à travers la feuille (couper un fente ou un trou pour l'arbre)
+   1. Fixer un morceau de carton ou de papier sur la bôitier du servomoteur afin que l'axe du servomoteur passe à travers la feuille (couper un fente ou un trou pour l'arbre). Attacher le bras au servomoteur une fois que la feuille est attachée.
    1. Créer un cadran sur le carton avec des graduations pour les distances. Commencer avec les distances extrêmes (2 cm et 200 cm) et ajouter des graduations intermédiaires. Retirer le carton du moteur, au besoin, pour bien tracer les graduations et le rattacher par la suite.
 1. Filmer le fonctionnement de l'indicateur de distance en action.
 
 Enrichissement fortement suggérée :
 
-- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). [Voir l'activité 2](p2-4m_act2.md) pour des idées sur comment ajouter un bouton-poussoir à un projet.
+- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). [Voir l'activité 2](p2-4m_act2.md) pour des idées sur comment ajouter un bouton-poussoir à un projet. Comme avec les tests du servomoteur, tester le bouton-poussoir indépendamment du projet principal pour vous assurer qu'il fonctionne correctement avant de l'ajouter au projet principal.
 - Si l'indication de distance est désactivé, l'indicateur devrait indiquer l'état éteint (p. ex. à 0 degré pour le servomoteur). Sinon, l'indicateur devrait indiquer la distance mesurée sur le cadran (p. ex. entre 30 degrés et 180 degrés).
-  - Il faudrait refaire le mappage original afin de changer l'angle qui indique la distance minimale.
+  - Ajoutez une nouvelle constante pour l'angle de repos (état éteint) de l'indicateur.
+  - Changez la valeur pour le signal pour la distance minimal pour donner une séparation avec la position de repos.
 - Créer un nouveau cadran de carton afin de refléter les nouvelles positions du servomoteur:
   - Le cadran devrait inclure les positions suivantes : Off 2cm ... 200cm
 - Filmer le nouveau fonctionnement de l'indicateur de distance en action.

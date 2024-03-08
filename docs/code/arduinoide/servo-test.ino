@@ -1,3 +1,16 @@
+/*
+Ce programme vous aide à vérifier indépendamment le comportement de chaque servomoteur avant de
+l'intégrer dans un projet.
+
+Chaque fois que vous utilisez un nouveau servomoteur, vous devrez :
+  1) lire les spécifications pour le servo (faire une recherche en ligne ou auprès du fournisseur)
+  2) et tester le servo
+
+Cela élimine les incertitudes concernant le contrôle du servo. S'il y a des problèmes
+après ces tests, on peut savoir que c'est causé par quelque chose d'autre (connexions
+électriques, source d'énergie ou logique du programme)
+*/
+
 #include <Arduino.h>
 #include <Servo.h>
 
@@ -6,76 +19,49 @@ const int motorPin = 5;
 
 /*
 SIGNAUX POUR LES SERVOMOTEURS
-
-1500 us = 1.5ms -> position centrale (ou vitesse nulle)
-
-2000 us = 2.0 ms -> position (vitesse) extrême dans le sens des aiguilles
-  ... mais certains servos se limitent à 2300 (1700)
-
-1000 us = 1.0 ms -> position (vitesse) extrême dans le sens opposé des aiguilles
-  ... mais certains servos se limitent à 700 (1300)
-
-Si c'est un servo standard, ces signaux spécifient des positions
-Si c'est un servo à rotation continue, ces signaux spécifient 
-    la vitesse et la direction de rotation
-
-Il faut 
-  1) lire les spécifications pour le servo
-  2) et tester le servo 
-pour connaître son comportement exact avant de l'intégrer dans un projet.
-
-Cela élimine les incertitudes concernant le contrôle du servo. S'il y a des problèmes
-après ces tests, on peut savoir que c'est causé par quelque chose d'autre (connexions
-électriques, source d'énergie ou logique du programme)
+À vérifier/modifier durant les tests de calibrage
 */
-const int STOPPED = 1500;
-const int RIGHT = 2300;
-const int LEFT = 700;
-
-// Variables d'état - seront changés durant le programme
-int counter = 0;
+const int CENTER_OR_STOP = 1500; // microsecondes et fixe -> calibrez le servomoteur au besoin
+const int CLOCKWISE_LIMIT = 2300; // microsecondes -> à vérifier durant les tests
+const int COUNTERCLOCKWISE_LIMIT = 700; // microsecondes -> à vérifier durant les tests
 
 /*
-emballer les commandes moteur avec des noms plus descriptifs
+FONCTIONS PERSONNELLES POUR LES MOTEURS
+Emballer les commandes moteur avec des noms plus descriptifs
 */ 
-void turnRight() {
-  motor.writeMicroseconds(RIGHT);
 
+void clockWise() {
+  motor.writeMicroseconds(CLOCKWISE_LIMIT);
 }
 
-void turnLeft() {
-  motor.writeMicroseconds(LEFT);
+void counterClockWise() {
+  motor.writeMicroseconds(COUNTERCLOCKWISE_LIMIT);
 }
 
-void stopMotor() {
-  motor.writeMicroseconds(STOPPED);
+void centerOrStop() {
+  motor.writeMicroseconds(CENTER_OR_STOP);
 }
 
 void setup() {
-  // put your setup code here, to run once:
-  motor.attach(motorPin);
+  motor.attach(motorPin); // initialiser l'objet Servo en spécifiant sa broche de signal
 
-  // tester une fois chaque instruction
-  turnRight();
+  // TODO tester d'abord cette instruction seule, puis enlever progressivement les commentaires sur les commandes de rotation. Si le servo à rotation continue n'est pas immobile avec ce signal ajuster le vis de calibrage sur le moteur
+  centerOrStop();
   delay(5000);
-  stopMotor();
-  delay(1000);
-  turnLeft();
-  delay(5000);
-  stopMotor();
+
+  // TODO changer CLOCKWISE_LIMIT jusqu'à ce que la position n'augmente plus (entre 2000 et 2300) ou la vitesse de rotation n'augmente plus (près de 1700). La valeur minimale qui atteint cet état est la valeur à utiliser pour ce servomoteur.
+  // clockWise(); 
+  // delay(5000);
+
+  // TODO changer COUNTERCLOCKWISE_LIMIT jusqu'à ce que la position n'augmente plus (entre 1000 et 500) ou la vitesse de rotation n'augmente plus (près de 1300). La valeur minimale qui atteint cet état est la valeur à utiliser pour ce servomoteur.
+  // counterClockWise();
+  // delay(5000);
+
+  centerOrStop(); // recentrer/arrêter le moteur à la fin
   delay(1000);
 }
 
 void loop() {
-  // donne un signal de position/vitesse pendant 10000 itérations
-  // puis arrête/revient à la position centrale
-  if (counter < 10000){
-    // turnRight();
-    turnLeft();
-    counter++;
-  } else {
-    stopMotor();
-  }
-  delay(1); // attend 1 milliseconde
+  // pas utilisé 
 }
 
