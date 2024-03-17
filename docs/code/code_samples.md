@@ -9,7 +9,7 @@ Cette page vous permet de télécharger des exemples de code pour les projets de
 
 ## EV3 (pybricks)
 
-[Sauter à Arduino](#arduino)
+_[🔗 Sauter à Arduino](#arduino)_
 
 Les exemples sont en format `.py` et devraient remplacer le fichier `main.py` dans le dossier de votre projet EV3 Pybricks.
 
@@ -23,7 +23,9 @@ Les exemples sont en format `.py` et devraient remplacer le fichier `main.py` da
 
 ## Arduino
 
-[Sauter à EV3 (pybricks)](#ev3-pybricks)
+_[🔗 Sauter à EV3 (pybricks)](#ev3-pybricks)_
+
+Sections
 
 - [Projet 2 : Circuits électroniques et programmation](#projet-2)
 - [Projet 5 : Systèmes mécaniques](#projet-5)
@@ -66,7 +68,7 @@ Version 3M : avec indicateurs DEL
 - Arduino IDE [distance-leds.ino](./arduinoide/distance-leds.ino)
 - PlatformIO [distance-leds-pio.zip](./platformio/distance-leds-pio.zip)
 
-Version 4M : avec un servomoteur pour un indicateur de distance
+Version 4M : avec un servomoteur comme indicateur de distance
 
 - Arduino IDE [distance-servo.ino](./arduinoide/distance-servo.ino)
 - PlatformIO [distance-servo-pio.zip](./platformio/distance-servo-pio.zip)
@@ -86,7 +88,9 @@ _Source : [Software Foundations with Arduino (Shieldbot) de CS2N](https://www.cs
 
 #### Exemple de Machine à états finis
 
-Cet exemple est pour la caméra Pixy2, des moustaches tactiles et un haut-parleur piezoélectrique, comme pour [le défi proposé dans _Camera Programming with Arduino (Shieldbot)_](https://www.cs2n.org/u/mp/badge_pages/233). Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley](https://docs.google.com/document/d/1LxZwPFYOOgUi6hL9_VkzVpgnHcKnO2U3EskbVziUh4s/view) en modularisant les instructions de trois façons différentes.
+Cet exemple est pour la caméra Pixy2, des moustaches tactiles et un haut-parleur piezoélectrique, comme pour [le défi proposé dans _Camera Programming with Arduino (Shieldbot)_](https://www.cs2n.org/u/mp/badge_pages/233). 
+
+Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley](https://docs.google.com/document/d/1LxZwPFYOOgUi6hL9_VkzVpgnHcKnO2U3EskbVziUh4s/view) en modularisant les instructions de trois façons différentes.
 
 - [PixyFSM.ino](./arduinoide/PixyFSM.ino) - code de base, purement procédural
 - [PixyFSM_functions.ino](./arduinoide/PixyFSM_functions.ino)- code découpé en fonctions
