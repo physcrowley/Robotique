@@ -12,4 +12,6 @@ Construisez votre propre version d'un boxeur mécanique en suivant les diagramme
 
 ## Livrables
 
-Prenez une vidéo de votre boxeur mécanique en action. Soumettez la vidéo dans le devoir approprié sur Google Classroom.
+1. Répondre aux questions d'analyse à la fin du document `Lego coup de poing` dans un document Google Docs.
+1. Prenez une vidéo de votre boxeur mécanique en action. 
+1. Soumettez la vidéo et le Google Docs dans le devoir approprié sur Google Classroom.
