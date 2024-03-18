@@ -40,7 +40,7 @@ Plus d'informations et de tutoriels sur :
 ## Projet 3 : Structures mécaniques
 
 * Activité 1 : concours de tours spaghetti + guimauves
-* 📚 Notes : charpentes, joints, montures
+* [📚 Notes : charpentes, joints, montures](./p3-3m_notes.md)
 * Activité 2 : robot sur roues le plus haut et le plus large
 
 ## Projet 4 : Recherche sur les domaines d'avenir en robotique
