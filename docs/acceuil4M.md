@@ -43,7 +43,7 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 3 : Structures mécaniques
 
-* Activité 1 : boxeur mécanique
+* [Activité 1 : boxeur mécanique](./p3-4m_act1.md)
 * 📚 Notes : cames et mécanismes à barres 
 * Activité 2 : robot trépied ou quadrupède sauteur
 
