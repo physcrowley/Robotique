@@ -18,7 +18,9 @@ Ces notes couvrent les sujets suivants :
 
 ## Connecteurs
 
-Il y a deux types de connecteurs LEGO :
+Les connecteurs, aussi appelés **clavettes**, sont utilisés pour lier deux ou plusieurs fléaux ensemble. Il y a aussi des connecteurs pour joindre des arbres cruciformes ensemble, mais cette leçon se concentre sur les connecteurs pour les fléaux.
+
+Il y a deux types de clavettes LEGO :
 
 - ceux avec friction et
 - ceux sans friction.
