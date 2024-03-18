@@ -54,13 +54,13 @@ Les joints rigides relient deux pièces tout en empêchant le mouvement relatif 
 
 On utilise des connecteurs **avec friction** pour tous les joints rigides.
 
-Dans le cas d'un cadre rigide, c'est la géométrie du cadre qui empêche le mouvement entre les pièces (voir [la section ci-dessous](#cadres-rigides)).
+Dans le cas d'un _cadre rigide_, c'est la géométrie du cadre qui empêche le mouvement entre les pièces.
 
 ![cadre rigide](./images/p3/cadre_rigide.png)
 
-> _Notez l'utilisation de triangles pour stabiliser le cadre. Avec LEGO, on ne peut pas former un triangle sur le même plan, alors les trois membres du triangle se trouvent sur des plans différents. Il faut souvent faire preuve de créativité pour aligner les pièces pour obtenir ce que vous voulez. (Voir aussi [la section ci-dessous](#alignement))._
+> _Notez l'utilisation de triangles pour stabiliser le cadre. Avec LEGO, on ne peut pas former un triangle sur le même plan, alors les trois membres du triangle se trouvent sur des plans différents. Il faut souvent faire preuve de créativité pour aligner les pièces pour obtenir ce que vous voulez. (Voir aussi [la section ci-dessous sur l'alignement](#alignement))._
 
-Dans le cas d'un joint rigide qui prolonge un fléau, la friction des connecteurs n'est pas suffisant. On se sert alors d'au moins deux connecteurs pour prévenir le mouvement.
+Dans le cas d'un joint rigide qui _prolonge un fléau_, la friction des connecteurs n'est pas suffisant. On se sert alors d'au moins deux connecteurs pour prévenir le mouvement.
 
 ![joint rigide](./images/p3/joint_rigide_fleau.png)
 
