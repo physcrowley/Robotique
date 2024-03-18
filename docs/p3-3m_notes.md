@@ -6,28 +6,29 @@ Le corps et tous les membres d'un robot sont des structures mécaniques. Les str
 
 Comme initiation au sujet, nous utiliserons les pièces de votre trousse LEGO EV3 pour expliquer les concepts de base des structures mécaniques.
 
-Ces notes couvrent les sujets suivants  :
+Ces notes couvrent les sujets suivants :
 
 - [Connecteurs](#connecteurs)
 - [Joints](#joints)
-    - [Joints mobiles](#joints-mobiles)
-    - [Joints rigides](#joints-rigides)
+  - [Joints mobiles](#joints-mobiles)
+  - [Joints rigides](#joints-rigides)
 - [Cadres](#cadres)
-    - [Cadres rigides](#cadres-fixes)
-    - [Cadres mobiles (mécanismes à barres)](#cadres-mobiles)
+  - [Cadres rigides](#cadres-fixes)
+  - [Cadres mobiles (mécanismes à barres)](#cadres-mobiles)
 
 ## Connecteurs
 
-Il y a deux types de connecteurs LEGO : 
-* ceux avec friction et 
-* ceux sans friction. 
+Il y a deux types de connecteurs LEGO :
 
+- ceux avec friction et
+- ceux sans friction.
 
 ![connecteurs](./images/p3/connecteurs.drawio.png)
 
 Faites donc attention de choisir le bon type de connecteur pour votre application.
-* Les connecteurs **avec friction** sont utilisés pour les joints fixes, comme dans les cadres rigides.
-* Les connecteurs **sans friction** sont utilisés pour les joints mobiles, comme dans les articulations.
+
+- Les connecteurs **avec friction** sont utilisés pour les joints fixes, comme dans les cadres rigides.
+- Les connecteurs **sans friction** sont utilisés pour les joints mobiles, comme dans les articulations.
 
 ## Joints
 
@@ -36,14 +37,14 @@ Faites donc attention de choisir le bon type de connecteur pour votre applicatio
 Les joints mobiles relient deux pièces tout en permettant un mouvement entre les pièces. Les joints mobiles sont utilisés pour les articulations, comme les coudes, les genoux, les épaules, etc.
 
 Le joint pivotant est le joint mobile le plus simple. Il relie deux pièces autour d'un axe commun de rotation. Ces joints peuvent être :
-* **libres** : les pièces peuvent tourner librement autour du connecteur
-* **actionnés** : l'actionneur est connecté à une autre pièce et contrôle son mouvement, p. ex. l'axe de rotation d'un moteur qui contrôle un bras robotique.
 
-Joint pivotant libre | Joint pivotant actionné
---- | ---
-![joint pivotant libre](./images/p3/joint_pivotant_libre.png) | ![joint pivotant actionné](./images/p3/joint_pivotant_actionne.png)
-membres liés par un connecteur **sans friction** | membres liés par arbre cruciforme
+- **libres** : les pièces peuvent tourner librement autour du connecteur
+- **actionnés** : l'actionneur est connecté à une autre pièce et contrôle son mouvement, p. ex. l'axe de rotation d'un moteur qui contrôle un bras robotique.
 
+| Joint pivotant libre                                          | Joint pivotant actionné                                             |
+| ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![joint pivotant libre](./images/p3/joint_pivotant_libre.png) | ![joint pivotant actionné](./images/p3/joint_pivotant_actionne.png) |
+| membres liés par un connecteur **sans friction**              | membres liés par arbre cruciforme                                   |
 
 ### Joints rigides
 
@@ -76,7 +77,6 @@ Voici quelques exemples :
 ![fléau angulaire](./images/p3/align_fleau-angle.png)
 
 ## Cadres
-
 
 ### Cadres rigides
 
