@@ -76,9 +76,11 @@ Voici quelques exemples :
 
 ![alignement impossible](./images/p3/cadre_align-impossible.png)
 
-> _Ici, on tente de créer un cadre avec juste 3 membres, mais c'est un design impossible car on ne peut jamais aligner les trous pour le dernier joint un par dessus l'autre. Ça prend toujours au moins un autre membre pour compléter un cadre... ou bien un membre qui contient déjà un angle._
+> _Ici, on tente de créer un cadre avec juste 3 membres, mais c'est un design impossible car on ne peut jamais aligner les trous pour le dernier joint un par dessus l'autre. Des stratégies pour ça incluent : utiliser un membre séparateur (comme dans le cadre rigide plus haut), se servir de connecteurs spécialisés ou d'utiliser un fléau qui inclut déjà un angle._
 
-![fléau angulaire](./images/p3/align_fleau-angle.png)
+Connecteur spécial | Fléau avec angle
+--- | ---
+![connecteur spécial](./images/p3/align_connecteur-special.png) | ![fléau angulaire](./images/p3/align_fleau-angle.png)
 
 ## Cadres
 
