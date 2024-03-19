@@ -15,5 +15,5 @@ Votre construction doit être capable de se déplacer lentment sur une surface p
 
 ## Livrables
 
-1. Compléter le Journal d'ingénierie pour cette activité.
+1. Compléter le Journal d'ingénierie pour cette activité. Un gabarit est disponible sur Google Classroom dans les _Informations générales_.
 1. Soumettre le Journal d'ingénierie dans la tâche appropriée sur Google Classroom.
