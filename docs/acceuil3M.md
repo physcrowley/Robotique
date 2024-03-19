@@ -41,7 +41,7 @@ Plus d'informations et de tutoriels sur :
 
 * Activité 1 : concours de tours spaghetti + guimauves
 * [📚 Notes : charpentes, joints, montures](./p3-3m_notes.md)
-* Activité 2 : robot sur roues le plus haut et le plus large
+* [Activité 2 : robot sur roues le plus haut et le plus large](./p3-3m_act2.md)
 
 ## Projet 4 : Recherche sur les domaines d'avenir en robotique
 
