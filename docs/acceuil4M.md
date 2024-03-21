@@ -45,7 +45,7 @@ Plus d'informations et de tutoriels sur :
 
 * [Activité 1 : boxeur mécanique](./p3-4m_act1.md)
 * [📚 Notes : cames et mécanismes à barres](./p3-4m_notes.md) 
-* Activité 2 : robot trépied ou quadrupède sauteur
+* [Activité 2 : robot trépied ou quadrupède sauteur](./p3-4m_act2.md)
 
 ## Projet 4 : Recherche sur l'apprentissage machine
 
