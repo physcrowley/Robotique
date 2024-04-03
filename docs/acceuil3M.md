@@ -50,7 +50,7 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 5 : Systèmes mécaniques
 
-* Activité 1 : faire tourner un fléau le plus rapidement possible
+* [Activité 1 : faire tourner un fléau le plus rapidement possible](./p5-3m_act1.md)
 * 📚 Notes : avantage mécanique - leviers, poulies et engrenages
 * Activité 2 : concours de biceps (de robot)
 
