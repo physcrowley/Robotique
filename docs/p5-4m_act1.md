@@ -25,7 +25,7 @@ Visionner la vidéo suivante :
 ## Instructions
 
 1. Connectez les servomoteurs à la carte Arduino selon le schéma suivant :
-    > 🚧 à ajouter
+    ![circuit_tourelle](./images/p5/circuit_tourelle.png)
 1. Fixez le 1e servomoteur à une base en carton.
 1. Ajouter un des bras de servomoteur à l'axe de rotation du 1e servomoteur.
 1. Fixez le 2e servomoteur à l'extrémité du bras du 1e servomoteur. Utilisez un bâtonnet de bois ou du carton pour créer une plateforme pour le 2e servomoteur. **L'axe de rotation du 2e servomoteur doit être dans le plan de rotation du 1e servomoteur.**
