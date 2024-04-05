@@ -51,7 +51,7 @@ Plus d'informations et de tutoriels sur :
 ## Projet 5 : Systèmes mécaniques
 
 * [Activité 1 : faire tourner un fléau le plus rapidement possible](./p5-3m_act1.md)
-* 📚 Notes : avantage mécanique - leviers, poulies et engrenages
+* [📚 Notes : avantage mécanique - leviers, poulies et engrenages](./p5-3m_notes.md)
 * Activité 2 : concours de biceps (de robot)
 
 ## Projet 6 : Mouvement avec mission
