@@ -95,4 +95,4 @@ Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley
 - [PixyFSM.ino](./arduinoide/PixyFSM.ino) - code de base, purement procédural
 - [PixyFSM_functions.ino](./arduinoide/PixyFSM_functions.ino)- code découpé en fonctions
 - [PixyFSM_header pour Arduino IDE](./arduinoide/PixyFSM_header.zip) (`.zip`) - code déclarant une classe (dans un fichier `.h`) pour les constantes et les fonctions du robot
-- [PixyFSM_header pour PlatformIO](./platformio/PixyFSM_header_pio.zip) (`.zip`) - même code que ci-dessus, mais pour PlatformIO. Le fichier `.h` est dans le dossier `include` et le fichier `.cpp` est dans le dossier `src`.
+- [PixyFSM_header pour PlatformIO](./platformio/PixyFSM-header-pio.zip) (`.zip`) - même code que ci-dessus, mais pour PlatformIO. Le fichier `.h` est dans le dossier `include` et le fichier `.cpp` est dans le dossier `src`.
