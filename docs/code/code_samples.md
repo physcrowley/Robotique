@@ -75,10 +75,21 @@ Version 4M : avec un servomoteur comme indicateur de distance
 
 ### Projet 5
 
+#### Activité 1 (4M seulement) - tourelle universelle
+
+- PlatformIO [pot-test-pio.zip](./platformio/pot-test-pio.zip) - pour tester les potentiomètres
+- PlatformIO [servo-test-pio.zip](./platformio/servo-test-pio.zip) - pour tester les servomoteurs
+- PlatformIO [tourelle-pio.zip](./platformio/tourelle-pio.zip) - code de démarrage pour le projet de tourelle universelle
+
+#### Activité 2
+
 Version 3M : concours de biceps
 
 - [safe_motor.zip](./pybricks/safe_motor.zip) - pour contrôler un moteur EV3 en toute sécurité
 
+Version 4M : bras robotique avec pince
+
+­> 🚧 à venir
 
 ### Projet 6
 
