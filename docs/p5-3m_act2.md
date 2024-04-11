@@ -25,13 +25,13 @@ Pour prévenir les bris et les blessures potentielles, nous utiliserons un logic
 
 1. Créez-vous une copie du [Journal d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view) pour ce projet.
 1. Complétez les sections _Spécifications_ et _Idées de projet_. Montrez votre travail à l'enseignant pour valider votre compréhension de la tâche.
-1. Connectez votre brique EV3 avec l'EV3 Device Browser dans VS Code et transféré le projet à la brique.
+1. Connectez votre brique EV3 avec l'EV3 Device Browser dans VS Code et transférez le projet à la brique.
 1. Une fois qu'il est sur la brique, vous pouvez le lancer à partir de la brique sans l'ordinateur. Naviguez dans le menu "File Browser" de la brique, ouvrir le dossier "safe_motor" et cliquez sur `main.py` pour lancer le programme.
 1. Construisez et testez votre prototype en lançant le programme pour contrôler le moteur. Documentez les développements dans la section _Prototypes_ de votre journal, incluant des photos des différents éléments de votre design.
 1. Pour les tests, l'enseignant vous fournira un dynamomètre pour mesurer la force de levage de votre bras robotique.
 
 ## Livrables
 
-- Prendre une vidéo de votre test final
+- Prendre une vidéo de votre test final.
 - Complétez la section _Itération finale_ du journal.
 - Soumettre le journal et la vidéo dans le devoir approprié sur Classroom.
