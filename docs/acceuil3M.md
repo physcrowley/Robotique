@@ -52,7 +52,7 @@ Plus d'informations et de tutoriels sur :
 
 - [Activité 1 : faire tourner un fléau le plus rapidement possible](./p5-3m_act1.md)
 - [📚 Notes : avantage mécanique - leviers, poulies et engrenages](./p5-3m_notes.md)
-- Activité 2 : concours de biceps (de robot)
+- [Activité 2 : concours de biceps (de robot)](./p5-3m_act2.md)
 
 ## Projet 6 : Conception 3D
 
