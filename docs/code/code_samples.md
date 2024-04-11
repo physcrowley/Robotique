@@ -75,7 +75,10 @@ Version 4M : avec un servomoteur comme indicateur de distance
 
 ### Projet 5
 
-­> 🚧 à venir
+Version 3M : concours de biceps
+
+- [safe_motor.zip](./pybricks/safe_motor.zip) - pour contrôler un moteur EV3 en toute sécurité
+
 
 ### Projet 6
 
