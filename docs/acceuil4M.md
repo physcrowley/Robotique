@@ -57,7 +57,7 @@ Plus d'informations et de tutoriels sur :
 
 - [Activité 1 : tourelle universelle](./p5-4m_act1.md)
 - [📚 Notes : degres de liberté](./p5-4m_notes.md)
-- Activité 2 : bras robotique avec pince
+- [Activité 2 : bras robotique avec pince](./p5-4m_act2.md)
 
 ## Projet 6 : Conception 3D
 
