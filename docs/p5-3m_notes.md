@@ -41,3 +41,10 @@ Les réducteurs de vitesse sont utiles pour les applications qui demandent beauc
 Voici une vidéo qui présente les différents types d'engrenages :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oi1g6w8ZqyE?si=of-FXsH0m-svU6go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Exemples avec LEGO
+
+Ces deux listes de lectures montrent plusieurs expériences ludiques et éducatives en lien avec la mécanique :
+
+- [Avantage de mouvement](https://www.youtube.com/watch?v=zJ3TABb1MRY&list=PLjs42dxcRiGNCF-Mjh9NXZjFEOtkf2ZVn)
+- [Avantage mécanique](https://www.youtube.com/watch?v=Ra2enBbzwWQ&list=PLjs42dxcRiGMh56wQSB7J5DfLpdsvuHOy)
