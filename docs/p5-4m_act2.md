@@ -16,7 +16,7 @@ Analyser une construction plus complexe en termes de ses degrés de liberté et 
 
 1. Il y a combien de degrés de liberté dans ce bras robotique?
 1. Il y a combien d'actionneurs dans le bras robotique?
-1. Nommez les mécanismes utilisés pour chaque partie du bras robotique :
+1. Nommez les mécanismes (cames, mécanismes à barres, engrenages, etc.) utilisés pour chaque partie du bras robotique :
     - base
     - coude
     - pince
