@@ -62,10 +62,13 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 7 : Mouvement avec mission
 
-- 📚 Notes : programmer l'EV3 avec Python
-- Activité 1 : robot qui suit une ligne
+- [📚 Notes : programmer l'EV3 avec Python](./p7-3m_notes.md)
+- Activité 1 : robot de base (entraînement différentiel)
 - Activité 2 : robot qui évite des obstacles
+- Activité 3 : robot qui suit une ligne (algorithme de base)
 - 📚 Notes : utiliser des fonctions dans ses programmes
-- Activité 3 : robot qui cherche un mur d'une couleur spécifique
+- Activité 4 : robot qui cherche une couleur spécifique
 
 ## Projet 8 : Projet cumulatif
+
+- Description du projet
