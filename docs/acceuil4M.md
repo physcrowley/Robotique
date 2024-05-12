@@ -67,9 +67,9 @@ Plus d'informations et de tutoriels sur :
 ## Projet 7 : Mouvement avec mission
 
 - Activité 1 : contrôler les moteurs de robots à commande différentielle
-- 📚 Notes : créer des modules réutilisables en C++/Arduino
-- Activité 2 : utiliser la caméra Pixy2 pour se stationner
 - 📚 Notes : contrôleur classique - la machine à états finis
+- Activité 2 : utiliser la caméra Pixy2 pour se stationner
+
 
 > Plus de projets et de tutoriels sur le [site de Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino) : navigation infrarouge, navigation par ultrasons, etc.
 
