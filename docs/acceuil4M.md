@@ -60,6 +60,9 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 6 : Conception 3D
 
+- Activité 1 : introduction à OnShape - un domino
+- Activité 2 : défi de conception paramétrique
+
 ## Projet 7 : Mouvement avec mission
 
 - Activité 1 : contrôler les moteurs de robots à commande différentielle
