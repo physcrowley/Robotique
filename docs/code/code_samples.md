@@ -75,6 +75,20 @@ Version 4M : avec un servomoteur comme indicateur de distance
 
 ### Projet 5
 
+#### Activité 1 (4M seulement) - tourelle universelle
+
+- PlatformIO [pot-test-pio.zip](./platformio/pot-test-pio.zip) - pour tester les potentiomètres
+- PlatformIO [servo-test-pio.zip](./platformio/servo-test-pio.zip) - pour tester les servomoteurs
+- PlatformIO [tourelle-pio.zip](./platformio/tourelle-pio.zip) - code de démarrage pour le projet de tourelle universelle
+
+#### Activité 2
+
+Version 3M : concours de biceps
+
+- [safe_motor.zip](./pybricks/safe_motor.zip) - pour contrôler un moteur EV3 en toute sécurité
+
+Version 4M : bras robotique avec pince
+
 ­> 🚧 à venir
 
 ### Projet 6
@@ -95,4 +109,4 @@ Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley
 - [PixyFSM.ino](./arduinoide/PixyFSM.ino) - code de base, purement procédural
 - [PixyFSM_functions.ino](./arduinoide/PixyFSM_functions.ino)- code découpé en fonctions
 - [PixyFSM_header pour Arduino IDE](./arduinoide/PixyFSM_header.zip) (`.zip`) - code déclarant une classe (dans un fichier `.h`) pour les constantes et les fonctions du robot
-- [PixyFSM_header pour PlatformIO](./platformio/PixyFSM_header_pio.zip) (`.zip`) - même code que ci-dessus, mais pour PlatformIO. Le fichier `.h` est dans le dossier `include` et le fichier `.cpp` est dans le dossier `src`.
+- [PixyFSM_header pour PlatformIO](./platformio/PixyFSM-header-pio.zip) (`.zip`) - même code que ci-dessus, mais pour PlatformIO. Le fichier `.h` est dans le dossier `include` et le fichier `.cpp` est dans le dossier `src`.

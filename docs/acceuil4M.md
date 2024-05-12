@@ -6,6 +6,7 @@
 
 - [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
 - [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
+- [Grille d'évaluation pour les projets d'ingénierie](https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view)
 - Documentation :
   - [Arduino](https://docs.arduino.cc/built-in-examples/)
   - [PlatformIO](https://docs.platformio.org/en/latest/ide/vscode.html)
@@ -55,8 +56,8 @@ Plus d'informations et de tutoriels sur :
 ## Projet 5 : Systèmes mécaniques
 
 - [Activité 1 : tourelle universelle](./p5-4m_act1.md)
-- 📚 Notes : degres de liberté
-- Activité 2 : bras robotique avec pince
+- [📚 Notes : degres de liberté](./p5-4m_notes.md)
+- [Activité 2 : bras robotique avec pince](./p5-4m_act2.md)
 
 ## Projet 6 : Conception 3D
 

@@ -6,6 +6,7 @@
 
 - [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
 - [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
+- [Grille d'évaluation pour les projets d'ingénierie](https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view)
 - Documentation :
   - [Pybricks EV3 Micropython](https://pybricks.com/ev3-micropython/)
   - [Arduino](https://docs.arduino.cc/built-in-examples/)
@@ -52,7 +53,7 @@ Plus d'informations et de tutoriels sur :
 
 - [Activité 1 : faire tourner un fléau le plus rapidement possible](./p5-3m_act1.md)
 - [📚 Notes : avantage mécanique - leviers, poulies et engrenages](./p5-3m_notes.md)
-- Activité 2 : concours de biceps (de robot)
+- [Activité 2 : concours de biceps (de robot)](./p5-3m_act2.md)
 
 ## Projet 6 : Conception 3D
 
