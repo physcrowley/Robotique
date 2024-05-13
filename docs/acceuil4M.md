@@ -66,7 +66,7 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 7 : Mouvement avec mission
 
-- Activité 1 : contrôler les moteurs de robots à commande différentielle
+- A[ctivité 1 : robots à entraînement différentiel avec divers capteurs](./p7-4m_act1.md)
 - 📚 Notes : contrôleur classique - la machine à états finis
 - Activité 2 : utiliser la caméra Pixy2 pour se stationner
 
