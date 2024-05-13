@@ -66,9 +66,11 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 7 : Mouvement avec mission
 
-- [Activité 1 : robots à entraînement différentiel avec divers capteurs](./p7-4m_act1.md)
+- [Activité 1 : robot à entraînement différentiel](./p7-4m_act1.md)
+- Activité 2 : capteurs
+- 📚 Notes : la multi-tâche avec Arduino
 - 📚 Notes : contrôleur classique - la machine à états finis
-- Activité 2 : utiliser la caméra Pixy2 pour se stationner
+- Activité 3 : utiliser la caméra Pixy2 pour se stationner
 
 
 > Plus de projets et de tutoriels sur le [site de Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino) : navigation infrarouge, navigation par ultrasons, etc.
