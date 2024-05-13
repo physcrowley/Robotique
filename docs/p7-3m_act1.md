@@ -9,7 +9,7 @@
 
 ## Instructions
 
-1. Construire une base robotique LEGO EV3 avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessou).
+1. Construire une base robotique LEGO EV3 avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessous).
 1. Dans VS Code, **chaque membre du groupe** crée un nouveau projet EV3 nommé `base`.
     > Assurez-vous d'ajuster les paramètres dans le fichier `.vscode/settings.json` pour bien bénéficier des outils de documentation et de complétion automatique.
 1. Remplacer le code dans le fichier `main.py` du projet `base` avec le code sur la page du tutoriel.
