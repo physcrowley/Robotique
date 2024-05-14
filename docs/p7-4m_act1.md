@@ -14,7 +14,7 @@
     - Test Left Motor -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
     - Test Motors -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
     - Forward Movement -> [forward-movement.zip](./code/platformio/forward-movement.zip) _Cette version crée des fonctions pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles._
-1. Exécuter les programmes sur le robot monté, selon le cas.
+1. Exécuter les programmes sur le robot monté et ajuster le code pour obtenir le mouvement visé.
 
 [Intructions - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
 
