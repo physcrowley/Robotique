@@ -16,7 +16,7 @@
     - Forward Movement -> [forward-movement.zip](./code/platformio/forward-movement.zip) _Cette version crée des fonctions pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles._
 1. Exécuter les programmes sur le robot monté, selon le cas.
 
-[Intructions pour la construction et code de démarrage - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
+[Intructions - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
 
 ## Analyses
 
