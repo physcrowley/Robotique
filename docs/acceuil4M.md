@@ -69,7 +69,7 @@ Plus d'informations et de tutoriels sur :
 > Pour vous rafraîchir la mémoire, consultez aussi les notes sur la programmation de base pour Arduino dans le [projet 2](./p2-4m_notes_prog.md).
 
 - [Activité 1 : robot à entraînement différentiel](./p7-4m_act1.md)
-- Activité 2 : capteurs
+- [Activité 2 : capteurs](./p7-4m_act2.md)
 - 📚 Notes : la multi-tâche avec Arduino
 - 📚 Notes : contrôleur classique - la machine à états finis
 - Activité 3 : utiliser la caméra Pixy2 pour se stationner

@@ -64,7 +64,7 @@ Plus d'informations et de tutoriels sur :
 
 - [📚 Notes : programmer l'EV3 avec Python](./p7-3m_notes.md)
 - [Activité 1 : robot de base (entraînement différentiel)](./p7-3m_act1.md)
-- Activité 2 : robot qui évite des obstacles
+- [Activité 2 : robot qui évite des obstacles](./p7-3m_act2.md)
 - Activité 3 : robot qui suit une ligne (algorithme de base)
 - 📚 Notes : utiliser des fonctions dans ses programmes
 - Activité 4 : robot qui cherche une couleur spécifique
