@@ -2,6 +2,10 @@
 
 # Projet 1 : Entraînement différentiel
 
+## Intrdocution
+
+L'entrâinement différentiel est une méthode de contrôle de mouvement qui utilise des moteurs indépendants pour chaque roue d'un robot. Cela permet de contrôler la vitesse et la direction du robot en ajustant la vitesse des moteurs. Dans ce projet, vous allez construire une base robotique avec un entraînement différentiel et programmer le mouvement de base d'un robot en utilisant cette méthode.
+
 ## Objectifs
 
 1. Monter une base robotique polyvalente.
@@ -10,17 +14,23 @@
 ## Instructions
 
 1. Construire une base robotique Arduino ShieldBot avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessous).
-1. Dans VS Code, crée des nouveaux projets PlatformIO pour chaque partie du tutoriel ci-dessous. Ces projets ont déjà été configurés pour vous et vous n'avez qu'à les extraire dans votre dossier `~/Documents/PlatformIO/Projects` et les importer avec l'extension PlatformIO.
-    - Test Left Motor -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
-    - Test Motors -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
-    - Forward Movement -> [forward-movement.zip](./code/platformio/forward-movement.zip) _Cette version crée des fonctions pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles._
-1. Exécuter les programmes sur le robot monté et ajuster le code pour obtenir le mouvement visé.
+1. Suivre les tests et les observations mentionées dans le tutoriel pour vérifier que les moteurs sont bien connectés et fonctionnent correctement.
+    > Utiliser le code suivant pour remplacer ce qui est fourni dans les tutoriels. Le code est équivalent mais avec des commentaires en français et avec certains ajouts pour mieux organiser votre code utile à la fin de l'activité. Extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
+    - TestMotors.ino -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
+    - TestDriveMotors.ino -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
+    - ForwardMovement.ino -> [forward-movement.zip](./code/platformio/forward-movement.zip)
+        > Cette version crée des **fonctions** pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles.
+1. Ajuster votre code selon les instructions dans le tutoriel.
 
-[Intructions - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
+[Tutoriel - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
 
 ## Analyses
 
-1. Suivre les instructions dans le tutoriel :
-    1. Répondez aux questions de validation de la compréhension sur le site.
-    1. Appliquez les mises à jour du code suggérés dans le projet approprié.
-1. Créez un dossier compressé `.zip` qui contient tous les projets PlatformIO que vous avez produits pour ce tutoriel et le joindre à la tâche Google Classroom associée. Il devrait seulement y avoir un dossier .zip dans votre soumission.
+1. Répondez à toutes les questions de validation de la compréhension sur le site.
+
+
+## Modifications au code
+
+1. Appliquez les modifications requises pour les activités du tutoriel.
+1. Pour `Forward Movement`, créer des nouvelles fonctions pour chaque mouvement de base (reculer, tourner à gauche, tourner à droite) en suivant le modèle des fonctions `forward` et `stop`.
+1. Créez un dossier compressé `.zip` qui contient tous les projets PlatformIO que vous avez produits pour ce tutoriel et le joindre à la tâche Google Classroom associée. Il devrait seulement y avoir un dossier .zip dans votre soumission qui englobe les 3 dossiers.
