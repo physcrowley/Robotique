@@ -66,6 +66,8 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 7 : Mouvement avec mission
 
+> Pour vous rafraîchir la mémoire, consultez aussi les notes sur la programmation de base pour Arduino dans le [projet 2](./p2-4m_notes_prog.md).
+
 - [Activité 1 : robot à entraînement différentiel](./p7-4m_act1.md)
 - Activité 2 : capteurs
 - 📚 Notes : la multi-tâche avec Arduino
