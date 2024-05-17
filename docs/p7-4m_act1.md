@@ -15,10 +15,10 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
 
 1. Construire une base robotique Arduino ShieldBot avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessous).
 1. Suivre les tests et les observations mentionées dans le tutoriel pour vérifier que les moteurs sont bien connectés et fonctionnent correctement.
-    > Utiliser le code suivant pour remplacer ce qui est fourni dans les tutoriels. Le code est équivalent mais avec des commentaires en français et avec certains ajouts pour mieux organiser votre code utile à la fin de l'activité. Extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
-    - TestMotors.ino -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
-    - TestDriveMotors.ino -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
-    - ForwardMovement.ino -> [forward-movement.zip](./code/platformio/forward-movement.zip)
+   > Utiliser le code suivant pour remplacer ce qui est fourni dans les tutoriels. Le code est équivalent mais avec des commentaires en français et avec certains ajouts pour mieux organiser votre code utile à la fin de l'activité. Extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
+   - TestMotors.ino -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
+   - TestDriveMotors.ino -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
+   - ForwardMovement.ino -> [forward-movement.zip](./code/platformio/forward-movement.zip)
         > Cette version crée des **fonctions** pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles.
 1. Ajuster votre code selon les instructions dans le tutoriel.
 
@@ -29,7 +29,6 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
 ## Analyses
 
 1. Répondez à toutes les questions de validation de la compréhension sur le site.
-
 
 ## Modifications au code
 
