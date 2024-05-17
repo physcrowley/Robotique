@@ -2,7 +2,7 @@
 
 # Projet 1 : Entraînement différentiel
 
-## Intrdocution
+## Introduction
 
 L'entrâinement différentiel est une méthode de contrôle de mouvement qui utilise des moteurs indépendants pour chaque roue d'un robot. Cela permet de contrôler la vitesse et la direction du robot en ajustant la vitesse des moteurs. Dans ce projet, vous allez construire une base robotique avec un entraînement différentiel et programmer le mouvement de base d'un robot en utilisant cette méthode.
 
