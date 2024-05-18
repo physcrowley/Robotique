@@ -190,3 +190,13 @@ Et la prochaine fois que vous avez besoin de cette fonctionnalité, vous n'avez 
 Les variables déclarées dans le fichier source de la bibliothèque  - comme `leftMotor` et `rightMotor` dans `RobotDrive.cpp` - **ne sont pas accessibles** dans le fichier principal `main.cpp`. Alors il faut faire attention à ce que les fonctions de la bibliothèque s'occupent de fournir toutes les manipulations nécessaires pour les variables internes, afin que le programme principal n'ait pas besoin de les utiliser directement.
 
 > _Note : Inclure des variables accessibles à l'extérieur d'une bibliothèque dépasse le cadre de cette introduction. Mais c'est possible, notament en utilisant des classes._
+
+
+## Créer une archive des bibliothèques personnelles
+
+Afin de plus facilement réutiliser vos bibliothèques personnelles dans d'autres projets, vous pouvez :
+
+1. Créer un nouveau dossier `libraries` à la racine de votre dossier `PlatformIO/Projects/`.
+1. Copier votre dossier de bibliothèque, p. ex. le dossier `RobotDrive`, et le coller dans ce dossier `libraries`. 
+1. Ouvrir ce dossier dans votre espace de travail VS Code, via "File" > "Add Folder to Workspace...". Par la suite, votre dossier `libraries` sera visible quand vous travaillez dans d'autres projets.
+1. Alors, vous pourrez simplement copier la bibliothèque voulu du dossier `libraries` et le coller dans le dossier `lib` de votre nouveau projet.
