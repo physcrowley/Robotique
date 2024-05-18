@@ -1,6 +1,6 @@
 [Accueil](./index.md) > [4M](./acceuil4M.md#projet-7--mouvement-avec-mission)
 
-# Projet 1 : Entraînement différentiel
+# Projet 7 - Activité 1 : Entraînement différentiel
 
 ## Introduction
 
@@ -15,7 +15,7 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
 
 1. Construire une base robotique Arduino ShieldBot avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessous).
 1. Suivre les tests et les observations mentionées dans le tutoriel pour vérifier que les moteurs sont bien connectés et fonctionnent correctement.
-   > Utiliser le code suivant pour remplacer ce qui est fourni dans les tutoriels. Le code est équivalent mais avec des commentaires en français et avec certains ajouts pour mieux organiser votre code utile à la fin de l'activité. Extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
+   > Remplacer le code de démarrage fourni dans les tutoriels par le code équivalent suivant. Le code ci-dessous est structuré pour un projet PlatformIO et inclut certains ajouts et modifications pour rendre votre code plus compréhensible et réutilisable. Télécharger et extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
    - TestMotors.ino -> [test-drive-motors.zip](./code/platformio/test-drive-motors.zip)
    - TestDriveMotors.ino -> [test-drive-differential.zip](./code/platformio/test-drive-differential.zip)
    - ForwardMovement.ino -> [forward-movement.zip](./code/platformio/forward-movement.zip)
