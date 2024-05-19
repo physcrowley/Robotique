@@ -22,22 +22,22 @@ Vous devrez être capable de :
 
 ### Vocabulaire
 
-**header file** (fichier d'en-tête) : un fichier avec l'extension `.h` qui contient les déclarations des fonctions. C'est ce fichier qui est importé avec la directive `#include` dans d'autres fichiers et permet à ce code de savoir ce qui est disponible dans la bibliothèque.
+**header file** (fichier d'en-tête) : un fichier avec l'extension `.h` qui contient les **déclarations** des fonctions. C'est ce fichier qui est importé avec la directive `#include` dans d'autres fichiers et permet à ce code de savoir ce qui est disponible dans la bibliothèque.
 
-**source file** (fichier source) : un fichier avec l'extension `.cpp` qui définit les fonctions qui sont déclarées dans le fichier d'en-tête de la bibliothèque. Le fichier principal du programme, souvent `main.cpp`, est aussi un fichier source.
+**source file** (fichier source) : un fichier avec l'extension `.cpp` qui **définit** les fonctions qui sont déclarées dans le fichier d'en-tête de la bibliothèque. Le fichier principal du programme, souvent `main.cpp`, est aussi un fichier source.
 
-**`lib`** : sous-dossier du projet PlatformIO où on place les bibliothèques personnalisées.
+**`lib`** : sous-dossier du projet PlatformIO où on place les bibliothèques personnalisées, soit des dossiers contenant des fichiers .h et .cpp.
 
 **déclaration** : la signature d'une fonction sans sons corps. Une signature inclut :
 
 - le type de retour,
 - le nom et
 - les paramètres entre parenthèses `()`, et
-- elles se terminent avec `;` (pas un corps `{}`)
+- elles se terminent avec `;` _(pas un corps `{}`)_
 
-Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se trouver dans un fichier source si les fonctions sont définies après leur première utilisation (p. ex. on l'utilise dans `loop()` mais on le définit après `loop()` alors ça prend une déclaration avant `loop()`).
+Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se trouver dans un fichier source si les fonctions sont définies après leur première utilisation (p. ex. on utilise une fonction dans `loop()` mais on le définit après `loop()` -> ça prend une déclaration avant `loop()`).
 
-**définition** : le code qui implémente une fonction, incluant sa signature et le corps de la fonction entre des `{}` suivant sa signature. Les définitions se trouvent dans un fichier source.
+**définition** : le code qui implémente une fonction, incluant sa signature et le corps de la fonction. Le corps est la paire de `{}` avec toutes les instructions qu'on écrit entre ces accolades.
 
 ## Créer une bibliothèque
 
