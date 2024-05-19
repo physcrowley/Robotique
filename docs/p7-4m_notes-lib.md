@@ -28,6 +28,17 @@ Vous devrez être capable de :
 
 **`lib`** : sous-dossier du projet PlatformIO où on place les bibliothèques personnalisées.
 
+**déclaration** : la signature d'une fonction sans sons corps. Une signature inclut :
+
+- le type de retour,
+- le nom et
+- les paramètres entre parenthèses `()`, et
+- elles se terminent avec `;` (pas un corps `{}`)
+
+Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se trouver dans un fichier source si les fonctions sont définies après leur première utilisation (p. ex. on l'utilise dans `loop()` mais on le définit après `loop()` alors ça prend une déclaration avant `loop()`).
+
+**définition** : le code qui implémente une fonction, incluant sa signature et le corps de la fonction entre des `{}` suivant sa signature. Les définitions se trouvent dans un fichier source.
+
 ## Créer une bibliothèque
 
 Selon le fichier README inclut dans le dossier `lib` de votre projet PlatformIO, voici la structure la plus simple pour une bibliothèque personnelle (nommée `Foo` dans cet exemple) :
@@ -187,16 +198,15 @@ Et la prochaine fois que vous avez besoin de cette fonctionnalité, vous n'avez 
 
 ### Accès aux variables dans le fichier source de la bibliothèque
 
-Les variables déclarées dans le fichier source de la bibliothèque  - comme `leftMotor` et `rightMotor` dans `RobotDrive.cpp` - **ne sont pas accessibles** dans le fichier principal `main.cpp`. Alors il faut faire attention à ce que les fonctions de la bibliothèque s'occupent de fournir toutes les manipulations nécessaires pour les variables internes, afin que le programme principal n'ait pas besoin de les utiliser directement.
+Les variables déclarées dans le fichier source de la bibliothèque - comme `leftMotor` et `rightMotor` dans `RobotDrive.cpp` - **ne sont pas accessibles** dans le fichier principal `main.cpp`. Alors il faut faire attention à ce que les fonctions de la bibliothèque s'occupent de fournir toutes les manipulations nécessaires pour les variables internes, afin que le programme principal n'ait pas besoin de les utiliser directement.
 
 > _Note : Inclure des variables accessibles à l'extérieur d'une bibliothèque dépasse le cadre de cette introduction. Mais c'est possible, notament en utilisant des classes._
-
 
 ## Créer une archive des bibliothèques personnelles
 
 Afin de plus facilement réutiliser vos bibliothèques personnelles dans d'autres projets, vous pouvez :
 
 1. Créer un nouveau dossier `libraries` à la racine de votre dossier `PlatformIO/Projects/`.
-1. Copier votre dossier de bibliothèque, p. ex. le dossier `RobotDrive`, et le coller dans ce dossier `libraries`. 
+1. Copier votre dossier de bibliothèque, p. ex. le dossier `RobotDrive`, et le coller dans ce dossier `libraries`.
 1. Ouvrir ce dossier dans votre espace de travail VS Code, via "File" > "Add Folder to Workspace...". Par la suite, votre dossier `libraries` sera visible quand vous travaillez dans d'autres projets.
 1. Alors, vous pourrez simplement copier la bibliothèque voulu du dossier `libraries` et le coller dans le dossier `lib` de votre nouveau projet.
