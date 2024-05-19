@@ -41,6 +41,8 @@ Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se t
 
 ## Créer une bibliothèque
 
+> Suivre ces instructions dans votre plus récent projet PlatformIO, soit le projet `forward-movement`.
+
 Selon le fichier README inclut dans le dossier `lib` de votre projet PlatformIO, voici la structure la plus simple pour une bibliothèque personnelle (nommée `Foo` dans cet exemple) :
 
 ```
@@ -84,7 +86,7 @@ Project
 
 ### RobotDrive.h - le fichier d'en-tête
 
-**`#ifndef` (if not defined)** : une directive qui vérifie si un symbole n'a pas été défini avant. Si ce n'est pas le cas, le code entre `#ifndef` et `#endif` est inclus. Cela permet d'éviter d'inclure plusieurs fois le même fichier d'en-tête, ce qui revient à copier-coller le code plusieurs fois et donc déclarer plusieurs fois les mêmes fonctions générant des erreurs de compilation.
+**`#ifndef` (if not defined)** : une directive qui vérifie si un symbole n'a pas été défini avant. Si ce n'est pas le cas, le code entre `#ifndef` et `#endif` est inclus. Cela permet d'éviter d'inclure plusieurs fois le même fichier d'en-tête, ce qui revient à copier-coller plusieurs fois les mêmes déclarations de fonctions générant des erreurs de compilation.
 
 La structure d'un fichier `.h` est généralement la suivante :
 
@@ -97,7 +99,7 @@ La structure d'un fichier `.h` est généralement la suivante :
 #endif
 ```
 
-> Notez que le `.h` devient `_h` dans les directives `#ifndef` et `#define`.
+> **Note importante** : le `.h` devient `_h` dans les directives `#ifndef` et `#define`.
 
 Spécifiquement pour `RobotDrive.h`, on a :
 
@@ -210,3 +212,17 @@ Afin de plus facilement réutiliser vos bibliothèques personnelles dans d'autre
 1. Copier votre dossier de bibliothèque, p. ex. le dossier `RobotDrive`, et le coller dans ce dossier `libraries`.
 1. Ouvrir ce dossier dans votre espace de travail VS Code, via "File" > "Add Folder to Workspace...". Par la suite, votre dossier `libraries` sera visible quand vous travaillez dans d'autres projets.
 1. Alors, vous pourrez simplement copier la bibliothèque voulu du dossier `libraries` et le coller dans le dossier `lib` de votre nouveau projet.
+
+Ainsi, votre dossier `PlatformIO/Projects/` pourrait ressembler à ceci :
+
+```plaintext
+Projects
+|-- libraries
+|   |-- RobotDrive
+|   |-- ...autres dossiers de bibliothèques personnelles
+|-- Project1
+|   |-- lib
+|   |   |-- RobotDrive (copié de `libraries`)
+|   |...autres dossiers et fichiers de projet
+|...autres projets
+```
