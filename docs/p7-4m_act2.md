@@ -28,10 +28,18 @@ D'ordre général :
 
 > _Page d'accueil de l'ensemble de ces tutoriels : [CS2N - Bases logicielles avec Arduino](https://www.cs2n.org/u/track_progress?id=290)_
 
+### Liste des sections du tutoriel
 
-
+- [Haut-parleur (piézo-électrique)](#haut-parleur-piézo-électrique)
+- [Capteurs tactiles](#capteurs-tactiles-moustaches)
+- [Pseudocode](#pseudocode)
+- [Capteur lumineux (phototransistor)](#capteur-lumineux-phototransistors)
+- [Application : balayeuse nocturne](#application--balayeuse-nocturne)
+- [Application : balayeuse-compteur](#application--balayeuse-compteur)
 
 ### Haut-parleur (piézo-électrique)
+
+[Instructions générales](#instructions)
 
 Code de démarrage : PiezospeakerDemoV2 -> [piezo-pio.zip](./code/platformio/piezo-pio.zip)
 
@@ -49,12 +57,14 @@ Code de démarrage : PiezospeakerDemoV2 -> [piezo-pio.zip](./code/platformio/pie
 
 1. Modifier le code pour avoir des durées de tons différentes pour setup() et pour loop().
 1. Faites des tests avec le délai pour le virage à droite pour obtenir un virage d'environs :
-    1. 45 degrés,
-    1. 90 degrés,
-    1. 120 degrés.
+   1. 45 degrés,
+   1. 90 degrés,
+   1. 120 degrés.
 1. Notez les valeurs obtenues dans votre document d'analyse. C'est de l'information qui pourrait être utile plus tard dans d'autres programmes.
 
-### Capteurs tactiles
+### Capteurs tactiles (moustaches)
+
+[Instructions générales](#instructions)
 
 Code de démarrage : WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisker-pio.zip)
 
@@ -70,10 +80,43 @@ Code de démarrage : WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisk
 
 ### Pseudocode
 
+[Instructions générales](#instructions)
+
 Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platformio/vacuum-pio.zip)
 
 #### Questions d'analyse
 
 #### Modifications au code
 
+### Capteur lumineux (phototransistors)
 
+[Instructions générales](#instructions)
+
+Code de démarrage :
+
+- PhototransistorsV2 -> ...
+- LightLevelPitchV2 ->
+
+#### Questions d'analyse
+
+#### Modifications au code
+
+### Application : balayeuse nocturne
+
+[Instructions générales](#instructions)
+
+Code de démarrage : NightimeVacuumV2 -> ...
+
+#### Questions d'analyse
+
+#### Modifications au code
+
+### Application : balayeuse-compteur
+
+[Instructions générales](#instructions)
+
+Code de démarrage : CountingVacuum -> ...
+
+#### Questions d'analyse
+
+#### Modifications au code
