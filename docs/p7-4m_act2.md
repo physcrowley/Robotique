@@ -31,7 +31,7 @@ D'ordre général :
 ### Liste des sections du tutoriel
 
 - [Haut-parleur (piézo-électrique)](#haut-parleur-piézo-électrique)
-- [Capteurs tactiles](#capteurs-tactiles-moustaches)
+- [Capteurs tactiles (moustaches)](#capteurs-tactiles-moustaches)
 - [Pseudocode](#pseudocode)
 - [Capteur lumineux (phototransistor)](#capteur-lumineux-phototransistors)
 - [Application : balayeuse nocturne](#application--balayeuse-nocturne)
