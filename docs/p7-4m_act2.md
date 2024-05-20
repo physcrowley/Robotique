@@ -24,22 +24,22 @@ D'ordre général :
 - Sur cette page du cours (ici), répondez aux questions d'analyse additionnelles (dans votre Google Docs) et appliquez les autres modifications indiquées pour chaque section du tutoriel.
 - Après avoir complété toutes les sections, créez un dossier compressé `.zip` qui contient tous les projets PlatformIO que vous avez produits/modifiés pour ce tutoriel et le joindre à la tâche Google Classroom associée.
 
-[Page d'accueil du tutoriel - capteurs](https://www.cs2n.org/u/mp/badge_pages/158)
+[ACCÉDER AUX TUTORIELS CS2N POUR LES CAPTEURS ICI](https://www.cs2n.org/u/mp/badge_pages/158)
 
 > _Page d'accueil de l'ensemble de ces tutoriels : [CS2N - Bases logicielles avec Arduino](https://www.cs2n.org/u/track_progress?id=290)_
 
-### Liste des sections du tutoriel
+### Code adapté, questions d'analyse et modifications additionnelles pour chaque section du tutoriel
 
 - [Haut-parleur (piézo-électrique)](#haut-parleur-piézo-électrique)
 - [Capteurs tactiles (moustaches)](#capteurs-tactiles-moustaches)
-- [Pseudocode](#pseudocode)
+- [Pseudocode (virer aux obstacles)](#pseudocode)
 - [Capteur lumineux (phototransistor)](#capteur-lumineux-phototransistors)
 - [Application : balayeuse nocturne](#application--balayeuse-nocturne)
 - [Application : balayeuse-compteur](#application--balayeuse-compteur)
 
 ### Haut-parleur (piézo-électrique)
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage : PiezospeakerDemoV2 -> [piezo-pio.zip](./code/platformio/piezo-pio.zip)
 
@@ -64,15 +64,19 @@ Code de démarrage : PiezospeakerDemoV2 -> [piezo-pio.zip](./code/platformio/pie
 
 ### Capteurs tactiles (moustaches)
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage : WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisker-pio.zip)
 
+> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
+
 #### Questions d'analyse
 
-1. Dans la partie `loop()` du programme, il n'y a pas d'instruction `delay()` suite aux instructions pour les moteurs. **C'est fait intentionnellement et avec bonne raison**. Ajoutez un délai de 2 secondes après les instructions pour les moteurs et observer comment le robot réagit. Est-ce une réaction fiable? Pourquoi ou pourquoi pas? Notez vos observations et réflexions dans le document d'analyse.
+Dans la partie `loop()` du programme, il n'y a pas d'instruction `delay()` suite aux instructions pour les moteurs. **C'est fait intentionnellement et avec bonne raison**.
 
-> On revient sur cette réflexion plus tard quand on discute de la multi-tâche, soit comment gérer plusieurs objectifs en même temps.
+1. Ajoutez un délai de 2 secondes après les instructions pour les moteurs et observer comment le robot réagit. Est-ce une réaction fiable? Pourquoi ou pourquoi pas? Notez vos observations et réflexions dans le document d'analyse.
+
+   > On revient sur cette réflexion plus tard quand on discute de la multi-tâche, soit comment gérer plusieurs objectifs en même temps.
 
 #### Modifications au code
 
@@ -80,9 +84,11 @@ Code de démarrage : WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisk
 
 ### Pseudocode
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platformio/vacuum-pio.zip)
+
+> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 
 #### Questions d'analyse
 
@@ -90,12 +96,14 @@ Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platform
 
 ### Capteur lumineux (phototransistors)
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage :
 
 - PhototransistorsV2 -> ...
 - LightLevelPitchV2 ->
+
+> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 
 #### Questions d'analyse
 
@@ -103,9 +111,11 @@ Code de démarrage :
 
 ### Application : balayeuse nocturne
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage : NightimeVacuumV2 -> ...
+
+> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 
 #### Questions d'analyse
 
@@ -113,9 +123,11 @@ Code de démarrage : NightimeVacuumV2 -> ...
 
 ### Application : balayeuse-compteur
 
-[Instructions générales](#instructions)
+> _[Instructions générales](#instructions)_
 
 Code de démarrage : CountingVacuum -> ...
+
+> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 
 #### Questions d'analyse
 
