@@ -70,9 +70,9 @@ Plus d'informations et de tutoriels sur :
 
 - [Activité 1 : robot à entraînement différentiel](./p7-4m_act1.md)
 - [📚 Notes : créer ses propres bibliothèques Arduino](./p7-4m_notes-lib.md)
-- [📚 Notes : la multi-tâche avec Arduino](./p7-4m_notes-multi.md)
+- [📚 Notes : plusieurs tâches en séquence - la machine à états finis](./p7-4m_notes-fsm.md)
+- [📚 Notes : plusieurs tâches en parallèle (la multi-tâche) - synchroniser avec millis()](./p7-4m_notes-multi.md)
 - [Activité 2 : capteurs](./p7-4m_act2.md)
-- 📚 Notes : atteindre plusieurs objectifs - la machine à états finis
 - Activité 3 : utiliser la caméra Pixy2 pour se stationner
 
 
