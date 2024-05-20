@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Dans le domaine de la robotique, le robot autonome peut avoir à choisir quel tâche accomplir en fonction de son environnement. Par exemple, un robot aspirateur peut avoir à décider s'il doit nettoyer une pièce ou retourner à sa base de recharge. Pour gérer ces situations, on utilise souvent une machine à états finis (_FSM - Finite State Machine_ en anglais) pour décrire les différents états possibles du robot et les transitions entre ces états.
+Dans le domaine de la robotique, le robot autonome peut avoir à choisir quelle tâche accomplir en fonction de son environnement. Par exemple, un robot aspirateur peut avoir à décider s'il doit nettoyer une pièce ou retourner à sa base de recharge. Pour gérer ces situations, on utilise souvent une machine à états finis (_FSM - Finite State Machine_ en anglais) pour décrire les différents états possibles du robot et les transitions entre ces états.
 
 Dans cette leçon, nous allons voir comment représenter une machine à états finis avec un diagramme d'états et comment le programmer pour un microcontrôleur Arduino (ou tout autre microcontrôleur compatible avec le langage C++).
 
@@ -12,19 +12,19 @@ La **machine à états finis** est utile pour choisir une tâche ou une action p
 
 ## En bref
 
-**Machine à états finis** (_FSM_) : un système qui peut être dans un seul état parmi un nombre défini d'états à un moment donné. Chaque état est associé à un ensemble d'actions et de transitions vers d'autres états.
+**Machine à états finis** (_FSM_) : un système qui, à un moment donné, peut être dans un seul état parmi un nombre défini d'états. Chaque état est associé à un ensemble d'actions et de transitions vers d'autres états.
 
-**Diagramme d'états** : une représentation graphique d'une machine à états finis. Chaque état est représenté par un cercle et chaque transition par une flèche. On peut annoter les flèches avec la condition de transition. Ainsi, le diagramme d'états remplace à très haut niveau le pseudocode pour décrire le comportement du robot.
+**Diagramme d'états** : une représentation graphique d'une machine à états finis. Chaque état est représenté par un ovale et chaque transition par une flèche. On peut annoter les flèches avec la condition de transition. Ainsi, le diagramme d'états remplace à très haut niveau le pseudocode pour décrire le comportement du robot.
 
 **Énumération (`enum`)** : un type de données qui permet de définir un ensemble de constantes numériques. C'est utile pour définir les différents états de la machine à états finis parce qu'on peut les nommer de façon descriptive au lieu de se rappeler du chiffre associé.
 
-**Switch-case** : une structure de contrôle qui permet de comparer une variable à une liste de valeurs possibles. C'est une façon plus lisible qu'une structure `if-else if` pour gérer plusieurs cas quand on compare l'égalité d'une valeur avec un ensemble de valeurs possibles. Dans les FSM, la valeur à comparer est l'état et chaque cas représente un état défini dans l'énumération.
+**Switch-case** : une structure de contrôle qui permet de comparer une variable à une liste de valeurs possibles. C'est une façon plus lisible qu'une structure `if-else if` pour gérer ce type de cas. Dans les FSM, la valeur à comparer est l'état et chaque valeur possible est un état défini dans l'énumération.
 
 ## Exemple - robot qui pivote à gauche et à droite puis s'arrête
 
 Imagine un robot qui fait 3 tours à gauche et ensuite 3 tours à droite et finalement s'arrête.
 
-C'est un exemple très simple qu'on peut programmer (_avec raison_) sans une machine à états finis. Mais sa simplicité nous permet de nous concentrer sur les nouveaux éléments de planification et de code qu'on voudra inclure pour gérer des cas plus complexes qui en aurait de besoin.
+C'est un exemple très simple qu'on peut programmer (_avec raison_) sans une machine à états finis. Mais sa simplicité nous permet de nous concentrer sur les nouveaux éléments de planification et de code qu'on voudra inclure pour gérer des cas plus complexes qui en auraient de besoin.
 
 ## Diagramme d'états
 
@@ -49,7 +49,7 @@ Il pourrait aussi y avoir des **embranchements** dans le diagramme d'états. Par
 
 ### L'extension _Draw.io Integration_ de Henning Dieterichs
 
-Si vous ajoutez l'extension _Draw.io Integration_ à VS Code, vous pouvez produire des diagrammes comme celui ci-dessus directement dans VS Code. Simplement créer un nouveau fichier avec l'extension de fichier `.drawio.png` et l'ouvrir en choisissant Draw.io comme éditeur. Vous aurez accès au même interface que sur le site web [app.diagrams.net](https://app.diagrams.net/) mais sans avoir à quitter votre environnement de travail ni à télécharger le fichier pour l'inclure dans votre projet.
+Si vous ajoutez l'extension _Draw.io Integration_ à VS Code, vous pouvez produire des diagrammes comme celui ci-dessus directement dans VS Code. Simplement créer un nouveau fichier avec l'extension de fichier `.drawio.png` et l'ouvrir en choisissant Draw.io comme éditeur. Vous aurez accès à la même interface que sur le site web [app.diagrams.net](https://app.diagrams.net/) mais sans avoir à quitter votre environnement de travail ni à télécharger le fichier pour l'inclure dans votre projet.
 
 ## Énumération des états
 
@@ -75,10 +75,10 @@ States currentState = States::SETUP;
   > C'est possible de déclarer un `enum` sans le mot-clé `class`, mais c'est déconseillé parce que les noms des états ne seront pas nécessairement exclusifs dans le programme ce qui peut introduire des erreurs difficiles à isoler.
 - Les états sont listés entre les accolades `{}` et séparés par des virgules `,`. Ils sont généralement écrits en majuscules pour indiquer qu'ils sont des constantes.
 - On termine la déclaration de l'énumération avec un point-virgule `;`.
-- Parce que l'énumération est déclarée en dehors de toute fonction, les états sont accessibles de partout dans le code (globalement)
-- la variable globale `States currentState` est déclarée pour stocker l'état initial du robot. Notez qu'elle est de type `States` parce que ces valeurs seront limitées à celles déclarées dans l'énumération.
-- On assigne des valeurs de type `States` avec la syntaxe `NomDeClasse::NomDeValeur`, dans notre cas `States::SETUP`. Notez les double deux-points entre les identifiants. Le programme assignera des nouvelles valeurs à cette variable en arrivant à chaque condition de transition.
-  > Un autre avantage de déclarer un `enum class` au lieu d'un simpl `enum` est que les outils dans VS Code peuvent vous aider à compléter les noms des états. Par exemple, si vous tapez `States::` vous verrez une info-bulle apparaître avec une liste cliquable des états possibles.
+- Parce que `States` est déclarée en dehors de toute fonction, les états sont accessibles de partout dans le code (globalement).
+- La variable globale `States currentState` est déclarée pour stocker l'état initial du robot. Notez qu'elle est de type `States` parce que ses valeurs seront limitées à celles déclarées dans l'énumération.
+- On assigne des valeurs de type `States` avec la syntaxe `NomDeClasse::NomDeValeur`, dans notre cas `States::SETUP`. Notez les double deux-points entre les identifiants. En arrivant à chaque condition de transition dans le programme, on assigne une nouvelle valeur à cette variable.
+  > Un autre avantage de déclarer un `enum class` au lieu d'un simple `enum` est que les outils dans VS Code vous aident à compléter les noms des états. Par exemple, si vous tapez `States::` vous verrez une info-bulle apparaître avec une liste cliquable des états possibles.
 
 Internellement, C++ assigne une valeur entière à chaque état dans l'énumération. Par défaut, la première valeur est 0 et chaque valeur suivante est incrémentée de 1. Ainsi, `SETUP` est 0, `TURN_LEFT` est 1, `TURN_RIGHT` est 2 et `STOP` est 3. **Par défaut, chaque état reçoit une valeur unique**. On peut définir nos propres valeurs si on veut, mais c'est rarement nécessaire pour une FSM où c'est simplement l'identifiant de l'état qui importe.
 
@@ -98,7 +98,7 @@ int currentState = SETUP; // même type que les états (int)
 
 ## Structure de contrôle switch-case
 
-La fin de la fonction `setup()` est la condition pour la transition vers le prochain état, alors on inclut une mise à jour de l'état à la toute fin de cette fonctio. Selon le diagramme d'états, on passe à l'état TURN_LEFT après l'état SETUP :
+La fin de la fonction `setup()` est la condition pour la transition vers le prochain état, alors on inclut une mise à jour de l'état à la toute fin de cette fonction. Selon le diagramme d'états, on passe à l'état TURN_LEFT après l'état SETUP :
 
 ```cpp
 void setup() {
@@ -125,9 +125,9 @@ void loop() {
 }
 ```
 
-On peut voir qu'à chaque fois que la boucle se répète, on vérifie l'état actuel du robot afin de choisir le code approprié à exécuter. Si l'état ne change pas, on exécute le même code à chaque itération de la boucle. Il faut alors inclure dans le code pour chaque état un mécanisme pour activer la condition de transition vers le prochain état.
+On peut voir qu'à chaque fois que la boucle se répète, on vérifie l'état actuel du robot afin de choisir le code approprié à exécuter. Si l'état ne change pas, on exécute le même code à chaque itération de la boucle. Il faut alors inclure un mécanisme pour activer la condition de transition vers le prochain état dans le code pour chaque état.
 
-Cette structure `if-else if` pour le faire est tout à fait acceptable, mais on se répète beaucoup : la condition est toujours `currentState == ÉTAT`. En plus, ces conditions sont un peu masquées par la structure du code, soit derrière `} else if (` et on peut avoir de la difficulté à trouver un cas spécifique.
+Cette structure `if-else if` est tout à fait acceptable, mais on se répète beaucoup : la condition est toujours `currentState == ÉTAT`. En plus, ces conditions sont un peu masquées par la structure du code, soit derrière `} else if ()` et on peut avoir de la difficulté à trouver un cas spécifique.
 
 Il y a une meilleure structure pour ce type de comparaison : `switch-case`.
 
@@ -222,18 +222,18 @@ void loop() {
 
 Vous voyez sans doute que la FSM n'était pas nécessaire ici : on aurait pu simplement décrire les trois tours d'un côté et les trois tours de l'autre dans la fonction `setup()` et laisser la fonction `loop()` vide. Notamment, la condition de transition est simplement la fin de l'état précédent.
 
-En général, la condition de transition est plus complexe que cela. Et certains états doivent gérer plusieurs actions en simultané. C'est là que la FSM devient très utile pour organiser le code.
+En général, la condition de transition est plus complexe que cela. Et certains états doivent gérer plusieurs actions en simultané. C'est là que la FSM devient très utile pour organiser le code. On verra un exemple dans la leçon sur la multi-tâche.
 
 ## Pratique
 
 1. Créez un nouveau projet PlatformIO nommé `FSM`.
 1. Configurez votre projet en lui ajoutant les bibliothèques nécessaires :
-   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : ` lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
+   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : `lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
    1. Copier le dossier `RobotDrive` de vos bibliothèques personnelles dans le dossier `lib` du projet.
 1. Copiez le code ci-dessus dans le fichier `/src/main.cpp` et compilez-le pour vérifier qu'il n'y a pas d'erreurs de transcription.
-1. Téléversez le code vers votre base à entraînement différentiel et observez le comportement du robot.
+1. Téléversez le code vers votre base robotique à entraînement différentiel et observez le comportement du robot.
 1. Calibrez la constante `millisForOneTurn` pour que le robot fasse exactement 3 tours à gauche et 3 tours à droite.
-1. Copiez le diagramme d'états plus haut dans le dossier `/src` votre projet en faisant un clic-droit et en choisissant `Save Image As...` pour le télécharger. C'est un fichier de type `.drawio.png` que vous pouvez ouvrir et modifier avec l'extension _Draw.io Integration_ de VS Code.
+1. Copiez le diagramme d'états plus haut dans le dossier `/src` de votre projet en faisant un clic-droit et en choisissant `Enregistrez l'image sous...` pour le télécharger. C'est un fichier de type `.drawio.png` que vous pouvez ouvrir et modifier avec l'extension _Draw.io Integration_ de VS Code.
 1. Définissez un nouvel état de votre choix.
    1. Ajoutez cet état dans l'énumération.
    1. Modifiez le diagramme d'états pour inclure votre nouvel état. Vous devrez avoir :
