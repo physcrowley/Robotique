@@ -115,11 +115,11 @@ Avec `if-else if`, cela ressemblerait à ceci :
 
 ```cpp
 void loop() {
-  if (currentState == TURN_LEFT) {
+  if (currentState == States::TURN_LEFT) {
     // code pour l'état TURN_LEFT
-  } else if (currentState == TURN_RIGHT) {
+  } else if (currentState == States::TURN_RIGHT) {
     // code pour l'état TURN_RIGHT
-  } else if (currentState == STOP) {
+  } else if (currentState == States::STOP) {
     // code pour l'état STOP
   }
 }
@@ -138,13 +138,13 @@ Avec `switch-case`, la même logique ressemblerait à ceci :
 ```cpp
 void loop() {
   switch (currentState) {
-    case TURN_LEFT:
+    case States::TURN_LEFT:
       // code pour l'état TURN_LEFT
       break;
-    case TURN_RIGHT:
+    case States::TURN_RIGHT:
       // code pour l'état TURN_RIGHT
       break;
-    case STOP:
+    case States::STOP:
       // code pour l'état STOP
       break;
   }
