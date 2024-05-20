@@ -220,7 +220,7 @@ void loop() {
 }
 ```
 
-Vous voyez sans doute que la FSM n'était pas nécessaire ici : on aurait pu simplement décrire les trois tours d'un côté et les trois tours de l'autre dans la fonction `setup()` et laisser la fonction `loop()` vide. Notamment, la condition de transition est simplement la fin de l'état précédent.
+Vous voyez sans doute que la FSM n'était pas nécessaire ici : on aurait pu simplement décrire les trois tours d'un côté et les trois tours de l'autre dans la fonction `setup()` et laisser la fonction `loop()` vide. Notamment, les conditions de transition ici sont simplement la fin de l'état précédent.
 
 En général, la condition de transition est plus complexe que cela. Et certains états doivent gérer plusieurs actions en simultané. C'est là que la FSM devient très utile pour organiser le code. On verra un exemple dans la leçon sur la multi-tâche.
 
