@@ -1,6 +1,6 @@
 [Accueil](./index.md) > [4M](./acceuil4M.md#projet-7--mouvement-avec-mission)
 
-# 📚 Notes - Créer ses propres bibliothèques Arduino
+# 📚 Notes : Créer ses propres bibliothèques Arduino
 
 > Ces notes s'adressent spécifiquement à la structure de projet PlatformIO. _Pour Arduino IDE, la même approche est valide, mais on place les fichiers `.h` et `.cpp` dans le même dossier que le projet `.ino`._
 
