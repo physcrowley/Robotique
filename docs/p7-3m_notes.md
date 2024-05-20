@@ -38,7 +38,8 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 1. Créer un sous-dossier nommé `pratique` dans votre dossier "Documents".
 1. Ouvrez ce dossier dans VS Code via "File" > "Open Folder".
 1. Dans VS Code, créez un nouveau fichier Python nommé `data.py` dans ce dossier utilisant le bouton "New File" à côté du nom du dossier.
-1. Ajoutez le code suivant dans le fichier `data.py` :
+1. Ajoutez le code suivant dans le fichier `data.py`. 
+    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [data.py](./code/python/data.py)_
     ```python
     # le commentaire suivant est un format typique d'en-tête de programme
     """
@@ -81,6 +82,7 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 ### Pratique
 
 1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller ce code :
+    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
     ```python
     """
     Fichier : calculations.py
@@ -123,6 +125,7 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 ### Pratique
 
 1. Créer un nouveau fichier Python nommé `comparisons.py` dans le dossier `pratique` et y coller ce code :
+    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py)_
     ```python
     """
     Fichier : comparisons.py
@@ -154,11 +157,12 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     print(values)
     print('5 est dans la liste:', 5 in values)
     print('6 est dans la liste:', 6 in values)
-    
+
     word = 'Bonjour'
     print(word)
     print('o est dans le mot:', 'o' in word)
     ```
+
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
 
