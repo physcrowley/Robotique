@@ -46,7 +46,7 @@
 ### Questions
 
 1. Quelles **variables** sont déclarées dans le programme? Donne le nom de chaque variable.
-1. Quelles **objets pybricks** sont utilisés dans le programme? Donne le type de chaque objet. _Indice : chacun est associé à une varaible._
+1. Quels **objets pybricks** sont utilisés dans le programme? Donne le type de chaque objet. _Indice : chacun est associé à une variable._
 1. Lisant la bulle d'information quand votre curseur est sur le mot `DriveBase`, décrivez ce que le paramètre `axle_track` représente.
 1. Le programme pour contrôler le robot ne fait aucun calcul visible pour la distance ou l'angle de rotation. Ces calculs sont faits par l'objet `DriveBase`. Quelles informations sont utilisées par l'objet pour déterminer la distance et l'angle de rotation? _Indice : regarder les informations géométriques données en créant l'objet._
 1. Quelle méthode est utilisée pour déplacer le le robot en ligne droite? Quelle valeur prend-elle en argument?

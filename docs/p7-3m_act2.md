@@ -40,8 +40,8 @@
 ### Questions
 
 1. Quelles **variables** sont déclarées dans ce programme? Donne le nom de chaque variable.
-1. Quelles **objets pybricks** sont utilisés dans le programme? 
-    1. Donne le type de chaque objet. _Indice : chacun est associé à une varaible._
+1. Quels **objets pybricks** sont utilisés dans le programme? 
+    1. Donne le type de chaque objet. _Indice : chacun est associé à une variable._
     1. Quel(s) objets sont nouveaux par rapport au dernier projet? À quoi servent-ils?
 1. Quel type de structure de contrôle est utilisée quand on utilise le mot-clé `while`? _Indice : voir les notes dans cette section du cours_
 1. Il y a deux endroits où on utilise `while` dans le programme. Le premier est `while True :` (à la ligne 45).
