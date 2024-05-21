@@ -56,9 +56,9 @@
 
 Travaillez dans le code du programme pour appliquer les changements suivants à `main.py` :
 
-1. Ajoutez un commentaire en-tête après la ligne `#!/usr/bin/env pybricks-micropython` pour indiquer **votre nom et la date de modification du programme**. Vous pouvez utiliser des commentaires de ligne `#` ou des commentaires multilignes `'''`.
+1. Ajoutez un commentaire en-tête après la ligne `#!/usr/bin/env pybricks-micropython` pour indiquer **votre nom et la date de modification du programme**. Vous pouvez utiliser des commentaires de ligne `#` ou des commentaires multilignes `''' ... '''`.
 1. Modifiez le programme pour que le robot se déplace de 500mm au lieu de 1000mm.
 1. Modifiez le programme pour que le robot tourne de 180 degrés au lieu de 360 degrés.
 1. Ajoutez un grand virage à gauche de 90 degrés en utilisant la méthode `robot.curve()`. En consultant la documentation (curseur sur le nom), vous pouvez voir les informations nécessaires pour utiliser cette méthode, notamment un rayon en mm et un angle en degrés.
-    1. Ajoutez un commentaire de ligne qui explique si le signe + ou - sur les degrés de rotation fait tourner le robot à gauche ou à droite.
+    1. Ajoutez un commentaire de ligne (`#`) qui explique si le signe + ou - sur les degrés de rotation fait tourner le robot à gauche ou à droite.
 1. Joindre le fichier `main.py` modifié à la tâche Google Classroom.
