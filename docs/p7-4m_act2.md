@@ -72,11 +72,10 @@ Code de démarrage : WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisk
 
 #### Questions d'analyse
 
-Dans la partie `loop()` du programme, il n'y a pas d'instruction `delay()` suite aux instructions pour les moteurs. **C'est fait intentionnellement et avec bonne raison**.
 
-1. Ajoutez un délai de 2 secondes après les instructions pour les moteurs et observer comment le robot réagit. Est-ce une réaction fiable? Pourquoi ou pourquoi pas? Notez vos observations et réflexions dans le document d'analyse.
-
-   > On revient sur cette réflexion plus tard quand on discute de la multi-tâche, soit comment gérer plusieurs objectifs en même temps.
+1. La constante `LOW` représente quelle valeur pour un signal numérique? La constante `HIGH`?
+1. Dans le programme `piezo` il y avait des instructions `delay()` suite aux instructions pour les moteurs mais il n'y en a pas dans ce programme. Expliquez pourquoi. _Indice : consultez les notes sur la multi-tâche._
+1. Selon la structure du code, est-ce que le contact avec la moustache met fin au programme? Pourquoi ou pourquoi pas? Qu'est-ce qui se passe si on enlève le contact avec la moustache?
 
 #### Modifications au code
 
@@ -92,7 +91,16 @@ Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platform
 
 #### Questions d'analyse
 
+1. Que veut dire le type `bool`?
+1. En C++ avec la bibliothèque `Arduino.h` un `bool` peut prendre quelles valeurs ...
+   1. s'il est faux?
+   1. s'il est vrai?
+1. Que veut dire l'opérateur `&&`? 
+1. Les deux autres opérateurs logiques sont `||` et `!`, mais ils ne sont pas utilisés dans ce programme. Que veulent-ils dire?
+
 #### Modifications au code
+
+1. Assurez-vous d'avoir suivi les modifications du code dans le tutoriel pour transformer la cascade des `if-else` en chaîne linéaire de `if-else if-else`.
 
 ### Capteur lumineux (phototransistors)
 
