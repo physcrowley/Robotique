@@ -17,7 +17,7 @@
 
 [Intructions pour la construction et code de démarrage - mouvement de base](https://pybricks.com/ev3-micropython/examples/robot_educator_basic.html)
 
-## Analyse du mouvement
+## 🤸‍♀️ Analyse du mouvement
 
 1. Créez un document Google Docs nommé "Analyse - base" et le joindre à la tâche Google Classroom associée.
 1. Partagez ce document avec votre partenaire de travail.
@@ -38,7 +38,7 @@
     1. 2 tours complets = combien de degrés?
     1. 1/2 tour complet = combien de degrés?
 
-## Analyse du code
+## 👓 Analyse du code
 
 1. Continuez à travailler dans le document Google Docs "Analyse - base".
 1. Répondez aux questions suivantes dans le document en consultant le code source du programme et les notes du cours.
@@ -52,7 +52,7 @@
 1. Quelle méthode est utilisée pour déplacer le le robot en ligne droite? Quelle valeur prend-elle en argument?
 1. Quelle méthode est utilisée pour tourner le robot? Quelle valeur prend-elle en argument?
 
-## Modifications
+## ✏️ Modifications
 
 Travaillez dans le code du programme pour appliquer les changements suivants à `main.py` :
 
