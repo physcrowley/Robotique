@@ -17,9 +17,7 @@ sensor = ColorSensor(Port.S3)
 
 
 # Définir une fonction avec le code du test de calibrage
-def reflection_test(c: str) :
-    """  c : le nom de la couleur à tester ('noir' ou 'blanc') """
-    
+def reflection_test() :
     # attendre qu'un bouton soit enfoncé sur la brique
     while not any(ev3.buttons.pressed()):
         continue
@@ -30,11 +28,18 @@ def reflection_test(c: str) :
     ev3.speaker.beep()
     
     # afficher la valeur captée à la console de l'ordinateur
-    print(f"couleur {c} : {colour_value}")
+    ev3.screen.print(colour_value)
 
 
 # Lancer le test de calibrage pour le noir
-reflection_test("noir")
+ev3.screen.print("noir... ")
+reflection_test()
 
 # Lancer le test de calibrage pour le blanc
-reflection_test("blanc")
+ev3.screen.print("blanc... ")
+reflection_test()
+
+# attendre qu'un bouton soit enfoncé sur la brique
+# avant de quitter
+while not any(ev3.buttons.pressed()):
+    continue
