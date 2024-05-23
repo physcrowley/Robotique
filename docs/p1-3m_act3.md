@@ -31,11 +31,11 @@ VS Code essaiera de signaler les erreurs dans vos programmes avec l'extension Py
 1. Installer **Python** sur votre compte (sans droits d'administrateur). Vous pouvez obtenir l'installateur à partir de [https://www.python.org/](https://www.python.org/).
    > Assurez vous de **décocher** la case _Use admin rights during installation_ parce que vous n'avez pas cette autorisation.
    > Assurez-vous de **cocher** la case _Add Python to PATH_ lors de l'installation. Cela permet à VS Code de trouver Python.
-1. Ajouter le module _pybricks_ à votre installation de Python.
+1. Ajouter la documentation _pybricks (version 2.0.0)_ à votre installation de Python.
    - Ouvrez un terminal dans VS Code (via le menu Terminal)
    - Exécutez la commande suivante :
      ```shell
-     pip install pybricks
+     pip install pybricks<3
      ```
 
 ### Connexion avec la brique EV3
