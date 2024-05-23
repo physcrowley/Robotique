@@ -12,11 +12,18 @@
 1. Dans VS Code, **chaque membre du groupe** crée un nouveau projet EV3 nommé `line`.
    > Assurez-vous d'ajuster les paramètres dans le fichier `.vscode/settings.json` pour bien bénéficier des outils de documentation et de complétion automatique.
 1. **Avant d'utiliser le code fourni**, faites d'abord le calibrage de votre capteur de lumière réfléchie en suivant les étapes ci-dessous :
-   1. Téléchargez le programme [calibrate_refl.py](./code/pybricks/calibrate_refl.py) et le placer dans le dossier de votre projet `line`.
-   1. Téléverser le programme sur le robot puis naviguer avec le File Explorer pour lancer le programme `~/line/calibrate_refl.py`.
-   1. Placez le robot sur une page de piste avec le capteur directement par-dessus la bande noir avant d'appuyez sur le bouton central pour démarrer le calibrage.
-   1. Répétez l'opération précédente pour la partie blanche de la feuille.
-   1. Notez les valeurs de lumière réfléchie pour le noir et le blanc qui sont affichées à la console de l'ordinateur afin d'ajuster les valeurs dans le programme `main.py`.
+   * _OPTION A : Avec la brique_
+      1. Ouvrez le menu "Device Browser" > "Sensors"
+      1. Sélectionnez le capteur de lumière réfléchie
+      1. Cliquez le bouton "view values"
+      1. Placez le capteur directement au-dessus de la bande _noire_ de la piste et notez la valeur de lumière réfléchie.
+      1. Placez le capteur directement au-dessus d'une zone _blanche_ de la piste et notez la valeur de lumière réfléchie.
+   * _OPTION B : Avec un programme_
+      1. Téléchargez le programme [calibrate_refl.py](./code/pybricks/calibrate_refl.py) et le placer dans le dossier de votre projet `line`.
+      1. Téléverser le programme sur le robot puis naviguer avec le "File Browser" pour lancer le programme `~/line/calibrate_refl.py`.
+      1. La lumière clignote et l'écran affiche "noir...". Placez le capteur directement au-dessus de la bande _noire_ de la piste et appuyez sur le bouton central pour enregistrer la valeur.
+      1. La lumière clignote et l'écran affiche "blanc...". Placez le capteur directement au-dessus d'une zone _blanche_ de la piste et appuyez sur le bouton central pour enregistrer la valeur.
+      1. Notez les valeurs de lumière réfléchie pour le noir et le blanc affichées sur l'écran du robot.
 1. Remplacer le code dans le fichier `main.py` du projet `line` avec le code sur la page du tutoriel.
 1. Ajustez les valeurs des variables `BLACK` et `WHITE` dans le programme pour correspondre aux valeurs mesurées lors du calibrage.
 1. Placez le robot sur la piste d'essai et exécuter le programme sur le robot et observer son comportement. **Chaque membre du groupe** devrait tester la connexion du robot avec son ordinateur et exécuter le programme pour valider qu'il a du code fonctionnel.
