@@ -27,7 +27,7 @@ def reflection_test() :
     colour_value = sensor.reflection()
     ev3.speaker.beep()
     
-    # afficher la valeur captée à la console de l'ordinateur
+    # afficher la valeur captée à l'écran de la brique 
     ev3.screen.print(colour_value)
 
 
