@@ -33,15 +33,16 @@ sensor = ColorSensor(Port.S3)
 timer = StopWatch()
 blinking = False
 lit = False
+last_time = timer.time()
 
 # DÉFINIR LES FONCTIONS DU PROGRAMME
 
 
 def blink():
     """Fonction qui gère le clignotement de la lumière"""
-    global blinking, lit
+    global blinking, lit, last_time
 
-    color = Color.PURPLE
+    color = Color.YELLOW 
 
     # seulement la première fois
     if not blinking:
@@ -49,17 +50,17 @@ def blink():
         ev3.light.on(color)
         lit = True
         # prend une référence de temps pour le clignotement
-        blink.last_time = timer.time()
+        last_time = timer.time()
         blinking = True
 
     # change l'état de la lumière chaque 500ms
-    if timer.time() - blink.last_time > 500:
+    if timer.time() - last_time > 500:
         if lit:
             ev3.light.off()
         else:
             ev3.light.on(color)
         lit = not lit  # change True à False et vice versa
-        blink.last_time = timer.time()  # réinitialise le temps
+        last_time = timer.time()  # réinitialise le temps
 
 
 def stop_blink():
@@ -97,11 +98,11 @@ def read_reflection_value():
 # LE PROGRAMME
 
 # Lancer la lecture de calibrage pour le noir
-ev3.screen.print("noir... ")
+ev3.screen.print("noir... ", end="")
 read_reflection_value()
 
 # Lancer la lecture de calibrage pour le blanc
-ev3.screen.print("blanc... ")
+ev3.screen.print("blanc... ", end="")
 read_reflection_value()
 
 # attendre avant de mettre fin au programmme
