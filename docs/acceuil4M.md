@@ -81,3 +81,5 @@ Plus d'informations et de tutoriels sur :
 > Plus de projets avec la caméra Pixy2 : utiliser les exemples disponibles quand la bibliothèque `pixy2` est installée pour votre projet; voir la documentation pour le [mode de suivi de ligne](https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:line_tracking) ou pour [l'opération d'une tourelle universelle](http://docs.pixycam.com/wiki/doku.php?id=wiki:v2:pan_tilt_demo).
 
 ## Projet 8 : Projet cumulatif
+
+- [Description du projet final](./p8-4m.md)

@@ -71,4 +71,4 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 8 : Projet cumulatif
 
-- Description du projet
+- [Description du projet final](./p8-3m.md)
