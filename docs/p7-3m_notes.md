@@ -6,13 +6,21 @@ La plupart de ces notes s'appliquent au langage Python en général et peuvent �
 
 Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiques à la programmation de l'EV3.
 
-- [Informations dans un programme](#informations-dans-un-programme)
-- [Calculs](#calculs)
-- [Comparaisons logiques](#comparaisons-logiques-avec-python)
-- [Sélection](#sélection)
-- [Répétition](#répétition)
-- [Bibliothèque `pybricks`](#bibliothèque-pybricks)
-- [Fonctions](#fonctions)
+- [Notes : Programmer avec ev3-micropython](#notes--programmer-avec-ev3-micropython)
+  - [Informations dans un programme](#informations-dans-un-programme)
+    - [Pratique](#pratique)
+  - [Calculs](#calculs)
+    - [Pratique](#pratique-1)
+  - [Comparaisons logiques avec Python](#comparaisons-logiques-avec-python)
+    - [Pratique](#pratique-2)
+  - [Sélection](#sélection)
+    - [Pratique](#pratique-3)
+  - [Répétition](#répétition)
+    - [Pratique](#pratique-4)
+  - [Bibliothèque `pybricks`](#bibliothèque-pybricks)
+    - [Pratique](#pratique-5)
+  - [Fonctions](#fonctions)
+    - [Pratique](#pratique-6)
 
 
 ## Informations dans un programme
@@ -179,7 +187,7 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 
 Voici la structure générale d'une sélection en Python :
 
-```
+```python
 if condition :
     # code à exécuter si la condition est vraie
 else :
@@ -190,7 +198,7 @@ else :
 
 S'il y a plusieurs conditions distinctes à vérifier, on peut utiliser `elif` (contraction de "else if") :
 
-```
+```python
 if condition1 :
     # code à exécuter si la condition1 est vraie
 elif condition2 :
@@ -213,7 +221,7 @@ La pratique pour cette section se fera en analysant le code pour les exemples da
 
 Voici la structure générale d'une boucle en Python :
 
-```
+```python
 while condition :
     # code à répéter tant que la condition est vraie
     # aussi, un mécanisme de contrôle pour changer la condition
