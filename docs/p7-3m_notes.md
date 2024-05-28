@@ -96,36 +96,35 @@ Réponses aux questions :
 
 ### Pratique
 
-1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller ce code :
-    >_Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
+```python
+"""
+Fichier : calculations.py
+Date : 11 mai 2024
+Auteur : David Crowley
+Description : Ce programme explore l'utilisation de calculs en Python
+"""
 
-    ```python
-    """
-    Fichier : calculations.py
-    Date : 11 mai 2024
-    Auteur : David Crowley
-    Description : Ce programme explore l'utilisation de calculs en Python
-    """
+# Assigner des valeurs à des variables
+x = 5
+y = 3
+print('Valeurs de x et y:', x, y)
 
-    # Assigner des valeurs à des variables
-    x = 5
-    y = 3
-    print('Valeurs de x et y:', x, y)
+# Afficher les résultats de calculs
+print('Somme:', x + y)
+print('Différence:', x - y)
+print('Produit:', x * y)
+print('Quotient:', x / y)
+print('Reste:', x % y)
 
-    # Afficher les résultats de calculs
-    print('Somme:', x + y)
-    print('Différence:', x - y)
-    print('Produit:', x * y)
-    print('Quotient:', x / y)
-    print('Reste:', x % y)
+exponent = x ** y # garder le résultat du calcul dans une variable
+print('Exposant:', exponent)
 
-    exponent = x ** y # garder le résultat du calcul dans une variable
-    print('Exposant:', exponent)
+biggest = max(x, y) # garder le résultat d'une fonction dans une variable
+print('Max', biggest)
+```
 
-    biggest = max(x, y) # garder le résultat d'une fonction dans une variable
-    print('Max', biggest)
-    ```
-
+1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller le code ci-dessus.
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py).
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
@@ -141,44 +140,44 @@ Réponses aux questions :
 
 ### Pratique
 
-1. Créer un nouveau fichier Python nommé `comparisons.py` dans le dossier `pratique` et y coller ce code :
-    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py)_
-    
-    ```python
-    """
-    Fichier : comparisons.py
-    Date : 11 mai 2024
-    Auteur : David Crowley
-    Description : Ce programme explore l'utilisation de comparaisons en Python
-    """
-    # Assigner des valeurs à des variables
-    x = 5
-    y = 3
-    print('Valeurs de x et y:', x, y)
+```python
+"""
+Fichier : comparisons.py
+Date : 11 mai 2024
+Auteur : David Crowley
+Description : Ce programme explore l'utilisation de comparaisons en Python
+"""
+# Assigner des valeurs à des variables
+x = 5
+y = 3
+print('Valeurs de x et y:', x, y)
 
-    # Comparer les valeurs
-    print('x est égal à y:', x == y)
-    print('x est différent de y:', x != y)
-    print('x est plus grand que y:', x > y)
-    print('x est plus petit que y:', x < y)
-    print('x est plus grand ou égal à y:', x >= y)
-    print('x est plus petit ou égal à y:', x <= y)
+# Comparer les valeurs
+print('x est égal à y:', x == y)
+print('x est différent de y:', x != y)
+print('x est plus grand que y:', x > y)
+print('x est plus petit que y:', x < y)
+print('x est plus grand ou égal à y:', x >= y)
+print('x est plus petit ou égal à y:', x <= y)
 
-    # Comparer du texte
-    nom = 'Alice'
-    print('Le nom est Alice:', nom == 'Alice')
-    print('Le nom est différent de Bob:', nom != 'Bob')
+# Comparer du texte
+nom = 'Alice'
+print('Le nom est Alice:', nom == 'Alice')
+print('Le nom est différent de Bob:', nom != 'Bob')
 
-    # Comparer des valeurs dans une liste ou un texte
-    values = [1, 2, 3, 4, 5]
-    print(values)
-    print('5 est dans la liste:', 5 in values)
-    print('6 est dans la liste:', 6 in values)
+# Comparer des valeurs dans une liste ou un texte
+values = [1, 2, 3, 4, 5]
+print(values)
+print('5 est dans la liste:', 5 in values)
+print('6 est dans la liste:', 6 in values)
 
-    word = 'Bonjour'
-    print(word)
-    print('o est dans le mot:', 'o' in word)
-    ```
+word = 'Bonjour'
+print(word)
+print('o est dans le mot:', 'o' in word)
+```
+
+1. Créer un nouveau fichier Python nommé `comparisons.py` dans le dossier `pratique` et y coller le code ci-dessus.
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py).
 
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
