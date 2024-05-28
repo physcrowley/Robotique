@@ -24,9 +24,9 @@ D'ordre général :
 - Sur cette page du cours (ici), répondez aux questions d'analyse additionnelles (dans votre Google Docs) et appliquez les autres modifications indiquées pour chaque section du tutoriel.
 - Après avoir complété toutes les sections, créez un dossier compressé `.zip` qui contient tous les projets PlatformIO que vous avez produits/modifiés pour ce tutoriel et le joindre à la tâche Google Classroom associée.
 
-[ACCÉDER AUX TUTORIELS CS2N POUR LES CAPTEURS ICI](https://www.cs2n.org/u/mp/badge_pages/158)
+<a href="https://www.cs2n.org/u/mp/badge_pages/158" target="_blank">ACCÉDER AUX TUTORIELS CS2N POUR LES CAPTEURS ICI</a>
 
-> _Page d'accueil de l'ensemble de ces tutoriels : [CS2N - Bases logicielles avec Arduino](https://www.cs2n.org/u/track_progress?id=290)_
+> _Page d'accueil de l'ensemble de ces tutoriels : <a href="(https://www.cs2n.org/u/track_progress?id=290)" target="_blank">CS2N - Bases logicielles avec Arduino</a>_
 
 ### Code adapté, questions d'analyse et modifications additionnelles pour chaque section du tutoriel
 

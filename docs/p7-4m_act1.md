@@ -22,9 +22,9 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
         > Cette version crée des **fonctions** pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles.
 1. Ajuster votre code selon les instructions dans le tutoriel.
 
-[Tutoriel - mouvement de base](https://www.cs2n.org/u/mp/badge_pages/195)
+<a href="https://www.cs2n.org/u/mp/badge_pages/195" target="_blank">Tutoriel - mouvement de base</a>
 
-> _Page d'accueil de l'ensemble de ces tutoriels : [CS2N - Bases logicielles avec Arduino](https://www.cs2n.org/u/track_progress?id=290)_
+> _Page d'accueil de l'ensemble de ces tutoriels : <a href="(https://www.cs2n.org/u/track_progress?id=290)" target="_blank">CS2N - Bases logicielles avec Arduino</a>, pratique notamment pour une référence vers la vérification initiale du matériel_
 
 ## Analyses
 
