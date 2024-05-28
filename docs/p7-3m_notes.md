@@ -94,13 +94,6 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
 
     ```python
-    """
-    Fichier : calculations.py
-    Date : 11 mai 2024
-    Auteur : David Crowley
-    Description : Ce programme explore l'utilisation de calculs en Python
-    """
-
     # Assigner des valeurs à des variables
     x = 5
     y = 3
@@ -138,13 +131,6 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py)_
     
     ```python
-    """
-    Fichier : comparisons.py
-    Date : 11 mai 2024
-    Auteur : David Crowley
-    Description : Ce programme explore l'utilisation de comparaisons en Python
-    """
-
     # Assigner des valeurs à des variables
     x = 5
     y = 3
