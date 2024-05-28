@@ -28,7 +28,7 @@
 1. Ajustez les valeurs des variables `BLACK` et `WHITE` dans le programme pour correspondre aux valeurs mesurées lors du calibrage.
 1. Placez le robot sur la piste d'essai et exécuter le programme sur le robot et observer son comportement. **Chaque membre du groupe** devrait tester la connexion du robot avec son ordinateur et exécuter le programme pour valider qu'il a du code fonctionnel.
 
-[Intructions pour la construction et code de démarrage - suivre une ligne](https://pybricks.com/ev3-micropython/examples/robot_educator_line.html)
+<a href="https://pybricks.com/ev3-micropython/examples/robot_educator_line.html" target="_blank">Intructions pour la construction et code de démarrage - suivre une ligne</a>
 
 ## 🤸‍♀️ Analyse du mouvement
 

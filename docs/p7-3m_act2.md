@@ -14,7 +14,7 @@
 1. Remplacer le code dans le fichier `main.py` du projet `avoidance` avec le code sur la page du tutoriel.
 1. Exécuter le programme sur le robot et observer son comportement. Créer des barrières au besoin. **Chaque membre du groupe** devrait tester la connexion du robot avec son ordinateur et exécuter le programme pour valider qu'il a du code fonctionnel.
 
-[Intructions pour la construction et code de démarrage - éviter les obstacles](https://pybricks.com/ev3-micropython/examples/robot_educator_ultrasonic.html)
+<a href="https://pybricks.com/ev3-micropython/examples/robot_educator_ultrasonic.html" target="_blank">Intructions pour la construction et code de démarrage - éviter les obstacles</a>
 
 ## 🤸‍♀️ Analyse du mouvement
 
