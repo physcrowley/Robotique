@@ -73,6 +73,7 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 
     """
     ```
+
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
@@ -91,7 +92,17 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 ### Pratique
 
 1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller ce code :
+    >_Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
+
     ```python
+    """
+    Fichier : calculations.py
+    Date : 11 mai 2024
+    Auteur : David Crowley
+    Description : Ce programme explore l'utilisation de calculs en Python
+    """
+
+    # Assigner des valeurs à des variables
     x = 5
     y = 3
     print('Valeurs de x et y:', x, y)
@@ -109,10 +120,11 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     biggest = max(x, y) # garder le résultat d'une fonction dans une variable
     print('Max', biggest)
     ```
-2. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
+
+1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
-3. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
-4. Changez les valeurs de `x` et `y` pour des nombres de votre choix. Lancez le programme pour voir les changements.
+1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
+1. Changez les valeurs de `x` et `y` pour des nombres de votre choix. Lancez le programme pour voir les changements.
 
 ## Comparaisons logiques avec Python
 
@@ -128,6 +140,12 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py)_
     
     ```python
+    """
+    Fichier : comparisons.py
+    Date : 11 mai 2024
+    Auteur : David Crowley
+    Description : Ce programme explore l'utilisation de comparaisons en Python
+    """
     # Assigner des valeurs à des variables
     x = 5
     y = 3
