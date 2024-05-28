@@ -9,6 +9,8 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 - [Notes : Programmer avec ev3-micropython](#notes--programmer-avec-ev3-micropython)
   - [Informations dans un programme](#informations-dans-un-programme)
     - [Pratique](#pratique)
+      - [Préparer votre environnement de travail](#préparer-votre-environnement-de-travail)
+      - [Code de démonstration](#code-de-démonstration)
   - [Calculs](#calculs)
     - [Pratique](#pratique-1)
   - [Comparaisons logiques avec Python](#comparaisons-logiques-avec-python)
@@ -41,39 +43,42 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 
 ### Pratique
 
-> Travaillez dans VS Code pour ces exercices. Vous devrez avoir installé Python, pybricks et les extensions associées comme décrit dans [les notes précédentes](./p1-3m_act3.md#vérification-automatisée-du-code-python-et-son-module-pybricks)
+#### Préparer votre environnement de travail
 
-1. Créer un sous-dossier nommé `pratique` dans votre dossier "Documents".
-1. Ouvrez ce dossier dans VS Code via "File" > "Open Folder".
+1. Travaillez dans VS Code pour ces exercices. Vous devrez avoir installé Python, pybricks et les extensions associées comme décrit dans [les notes précédentes](./p1-3m_act3.md#vérification-automatisée-du-code-python-et-son-module-pybricks)
+2. Créer un sous-dossier nommé `pratique` dans votre dossier "Documents".
+3. Ouvrez ce dossier dans VS Code via "File" > "Open Folder".
+
+#### Code de démonstration
+
+```python
+# le commentaire suivant est un format typique d'en-tête de programme
+"""
+Fichier : data.py
+Date : 11 mai 2024
+Auteur : David Crowley
+Description : Ce programme explore l'utilisation de variables en Python
+"""
+
+# Assigner des valeurs à des variables
+nom = 'Alice'
+age = 16
+taille = 1.45 # en mètres
+
+# Afficher les valeurs des variables
+print('Nom:', nom)
+print('Age:', age)
+print('Taille:', taille)
+
+"""
+Réponses aux questions :
+
+"""
+```
+
 1. Dans VS Code, créez un nouveau fichier Python nommé `data.py` dans ce dossier utilisant le bouton "New File" à côté du nom du dossier.
-1. Ajoutez le code suivant dans le fichier `data.py`. 
-    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [data.py](./code/python/data.py)_
-
-    ```python
-    # le commentaire suivant est un format typique d'en-tête de programme
-    """
-    Fichier : data.py
-    Date : 11 mai 2024
-    Auteur : David Crowley
-    Description : Ce programme explore l'utilisation de variables en Python
-    """
-
-    # Assigner des valeurs à des variables
-    nom = 'Alice'
-    age = 16
-    taille = 1.45 # en mètres
-
-    # Afficher les valeurs des variables
-    print('Nom:', nom)
-    print('Age:', age)
-    print('Taille:', taille)
-
-    """
-    Réponses aux questions :
-
-    """
-    ```
-
+1. Ajoutez le code ci-dessus dans le fichier `data.py`. 
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [data.py](./code/python/data.py)
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
