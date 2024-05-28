@@ -94,7 +94,6 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
     > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
 
     ```python
-    # Assigner des valeurs à des variables
     x = 5
     y = 3
     print('Valeurs de x et y:', x, y)
