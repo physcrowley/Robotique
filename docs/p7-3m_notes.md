@@ -91,7 +91,7 @@ Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiq
 ### Pratique
 
 1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller ce code :
-    > _Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
+    >_Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py)_
 
     ```python
     x = 5
