@@ -20,9 +20,16 @@ Plusieurs programmes que nous avons vus jusqu'à présent utilisent la fonction 
 
 Imagine un robot qui fait 3 tours à gauche et ensuite 3 tours à droite infiniment, sauf si une de ses moustaches est enfoncée. À ce moment, il devrait arrêter de bouger.
 
-Présumant qu'on implémente le code pour ce comportement comme une machine à états finis, le diagramme d'états est plus complexe que l'exemple dans l'introduction aux FSM : il inclut une boucle (entre les états LEFT et RIGHT) et des embranchements (quand le capteur est enfoncé).
+> _Voir <a href="https://www.cs2n.org/u/mp/badge_pages/1746" target="_blank">le tutoriel sur le capteur de moustache</a> pour ajouter les moustaches à votre robot._
+
+Présumant qu'on implémente le code pour ce comportement comme une machine à états finis, le diagramme d'états est plus simple que celui pour le code précédent :
 
 ![diagramme d'états multi-tâche](./images/p7/fsm_multi.drawio.png)
+
+Ici :
+
+- l'état `DANCE` s'occupe d'alterner la direction de pivotement entre gauche et droite à chaque trois secondes, comme si on clignote une DEL.
+- la transition de `DANCE` à `STOP` est déclenchée par l'enfoncement d'une moustache (une lecture de capteur).
 
 ## Solution avec `delay()`
 
@@ -36,8 +43,6 @@ Avec ce que nous avons vus jusqu'à présent, incluant la bibliothèque personne
 DÉFINIR LES CONNEXIONS MATÉRIELLES
 */
 
-const int millisForOneTurn = 2100; // à calibrer; avec turnLeft() et turnRight()
-
 const int rightWhisker = 7;
 const int pressed = LOW; // ou 0
 
@@ -47,43 +52,71 @@ DÉFINIR LES ÉTATS DU ROBOT
 
 enum class States {
   SETUP,
-  LEFT,
-  RIGHT,
+  DANCE,
   STOP
 };
 
 States currentState = States::SETUP;
 
+/*
+DÉCLARATIONS AVANCÉES DES FONCTIONS
+*/
+
+void dance();
+
+/*
+DÉFINITION DES FONCTIONS DU PROGRAMME
+*/
+
+// initialiser le matériel et les connexions
 void setup() {
   setRobotDrivePins(10, 11);
   pinMode(rightWhisker, INPUT);
-  currentState = States::LEFT;
 }
 
+// dans une MEF (FSM), sert à vérifier en perpétuité l'état de la machine
 void loop() {
-  /* LIRE LES CAPTEURS */
-  if (digitalRead(rightWhisker) == pressed) {
-    currentState = States::STOP;
-  }
-
-  /* GÉRER L'ÉTAT */
   switch (currentState) {
-  case States::LEFT:
-    turnLeft();
-    delay(3 * millisForOneTurn);   // fait 3 tours à gauche
-    currentState = States::RIGHT;  // change l'état
+  case States::SETUP:
+    currentState = States::DANCE; // transition faite directement
     break;
-  case States::RIGHT:
-    turnRight();
-    delay(3 * millisForOneTurn);  // fait 3 tours à droite
-    currentState = States::LEFT;  // change l'état
+  case States::DANCE:
+    dance(); // appel la fonction pour le code de cet état
     break;
   case States::STOP:
-    stop();                       // état final (pas de transition)
-    break;
+    stop();
+    break; // état final : aucune transition
+  }
+}
+
+// Le code pour l'état States::DANCE
+void dance() {
+  static const int millisForOneTurn = 2100; // à calibrer; avec turnLeft() et turnRight()
+
+  turnLeft();
+  delay(3 * millisForOneTurn);   // attendre 3 tours à gauche
+  turnRight();
+  delay(3 * millisForOneTurn);  // attendre 3 tours à droite
+
+  if (digitalRead(rightWhisker) == pressed) {
+    currentState = States::STOP; // transition faite dans la fonction de l'état
   }
 }
 ```
+
+### Quelques notes sur ce code
+
+Dans ce code, on voit la définition d'une **fonction** pour définir les instructions pour l'état `DANCE`. Voici quelques éléments à noter en lien avec cette décision :
+
+- sortir toutes ces instructions de la structure `switch-case` de `loop()` le rend plus facile à lire.
+- parce que la variable `millisForOneTurn` est seulement utilisée dans la fonction `dance()`, on l'a bougé de sa déclaration globale au début du fichier à une déclaration locale dans la fonction `dance()`. Cela rend la fonction plus facile à gérer et plus portable parce que la constante qu'elle utilise est déclarée à l'intérieur de son bloc de code. 
+  > On y ajoute le mot-clé `static` pour que la variable soit initialisée une seule fois et conservée entre les appels de la fonction.
+
+Vous pouvez également noter que les **transitions** de la machine à états finis sont déclarées à différents endroits dans le code :
+
+- la transition de l'état `SETUP` à l'état `DANCE` est faite directement dans la structure `switch-case` de `loop()` parce que c'est la seule instruction pour cet état.
+- la transition de l'état `DANCE` à l'état `STOP` est faite dans la fonction `dance()` parce que c'est là que la condition pour la transition est vérifiée.
+- finalement, l'état `STOP` n'a pas de transition parce que c'est l'état final du robot.
 
 ### Analyse
 
@@ -97,6 +130,7 @@ void loop() {
    - À quel moment est-ce que le robot semble réagir à l'enfoncement de la moustache?
    - Est-ce que le robot s'arrête avant de finir les 3 rotations à gauche ou à droite?
    - Si la moustache n'est pas enfoncée au moment de la transition entre les directions, est-ce que le contact influence le programme?
+1. Si vous bouger la condition qui vérifie l'état de la moustache avant les instructions pour les mouvements, est-ce que le robot réagit différemment?
 
 ## Introduction à `millis()`
 
@@ -227,66 +261,72 @@ DÉFINIR LES ÉTATS DU ROBOT
 
 enum class States {
   SETUP,
-  LEFT,
-  RIGHT,
+  DANCE,
   STOP
 };
 
 States currentState = States::SETUP;
 
 /*
-DÉCLARATIONS AVANCÉES
+DÉCLARATIONS AVANCÉES DES FONCTIONS
 */
 
-void spin(States direction);
+void dance();
 
+/*
+DÉFINITION DES FONCTIONS DU PROGRAMME
+*/
+
+// initialiser le matériel et les connexions
 void setup() {
   setRobotDrivePins(10, 11);
   pinMode(rightWhisker, INPUT);
-  turnLeft(); // initialise le mouvement
-  currentState = States::LEFT;
+  turnLeft(); // initialiser le mouvement
 }
 
+// dans une MEF (FSM), sert à vérifier en perpétuité l'état de la machine
 void loop() {
-  /* LIRE LES CAPTEURS */
-  if (digitalRead(rightWhisker) == pressed) {
-    currentState = States::STOP;
-  }
-
-  /* GÉRER L'ÉTAT */
   switch (currentState) {
-  case States::LEFT:
-    spin(currentState);
-    currentState = States::RIGHT;
+  case States::SETUP:
+    currentState = States::DANCE; // transition faite directement
     break;
-  case States::RIGHT:
-    spin(currentState);
-    currentState = States::LEFT;
+  case States::DANCE:
+    dance(); // appel la fonction pour le code de cet état
     break;
   case States::STOP:
     stop();
-    break;
+    break; // état final : aucune transition
   }
 }
 
-// change la direction de rotation à un délai fixe avec millis()
-void spin(States direction) {
-  static const int waitTime = 3 * 2100; // à calibrer avec turnLeft() et turnRight()
-  static unsigned long referenceTime = millis();
+// Le code pour l'état States::DANCE
+void dance() {
+  static const int millisForOneTurn = 2100; // à calibrer; avec turnLeft() et turnRight()
+  static byte toLeft = 1; // direction de rotation
 
-  if (millis() - referenceTime >= waitTime) {
-    if (direction == States::LEFT) {
+  static unsigned long referenceTime = millis(); // temps de référence
+  
+  // vérifie s'il faut changer la direction
+  if (millis() - referenceTime >= 3 * millisForOneTurn) {
+    if (toLeft) {
       turnLeft();
     } else {
       turnRight();
     }
+    toLeft = !toLeft; // change la direction
     referenceTime = millis(); // mettre à jour le temps de référence
+  }
+
+  // vérifie s'il faut changer l'état
+  if (digitalRead(rightWhisker) == pressed) {
+    currentState = States::STOP;
   }
 }
 ```
+### Quelques notes sur ce code
 
-- La fonction `spin(States direction)` est utiliser pour `turnLeft()` et `turnRight()` et utilise l'état de la machine à états fini passé en argument pour choisir la bonne instruction de mouvment. Sinon, cette fonction est équivalente à la fonction `doTask()` de l'exemple précédent.
-- Parce que notre fonction pour gérer les délais attend avant de donner une nouvelle instruction, il faut donner une première instruction de mouvement dans `setup()` pour initialiser le mouvement. Sinon il faudrait attendre le premier délai avant de voir le robot bouger.
+- Parce que la fonction `dance()` attend avant de donner une nouvelle instruction de mouvement, il faut donner une première instruction de mouvement dans `setup()` afin qu'il se mette en mouvement immédiatement. Sinon il faudrait attendre le premier délai de `3 * millisForOneTurn` avant de voir le robot bouger.
+- Parce que le délai est géré dans un bloc `if` et non dans une séquence d'instructions incluant `delay()`, il faut un autre mécanisme pour alterner la direction de rotation : on a ajouté une variable `toLeft` qui est `static` pour être conservée entre les appels de la fonction `dance()`. Sa valeur s'inverse (entre 1 et 0) à chaque fois que le délai est atteint.
 
 ### Analyse
 
