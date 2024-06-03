@@ -96,7 +96,7 @@ Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platform
    1. s'il est faux?
    1. s'il est vrai?
 1. Que veut dire l'opérateur `&&`? 
-1. Les deux autres opérateurs logiques sont `||` et `!`, mais ils ne sont pas utilisés dans ce programme. Que veulent-ils dire?
+1. Les deux autres opérateurs logiques sont `||` et `!`, mais ils ne sont pas utilisés dans ce programme. Que veulent-ils dire? Faire une recherche pour trouver la réponse.
 
 #### Modifications au code
 
@@ -108,14 +108,19 @@ Code de démarrage : VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platform
 
 Code de démarrage :
 
-- PhototransistorsV2 -> ...
-- LightLevelPitchV2 ->
+- PhototransistorsV2 et LightLevelPitchV2 -> [light-pio.zip](./code/platformio/light-pio.zip)
 
 > Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 
 #### Questions d'analyse
 
+1. Quelle est la différence entre les valeurs produites par un capteur _numérique_ comme un bouton (ou une moustache) et un capteur _analogique_ comme un phototransistor?
+2. Quelle différence y a-t-il entre les numéros de broches analogiques et de broches numériques dans la bibliothèque `Arduino.h` (dans votre programme Arduino)?
+3. Est-ce que les valeurs du phototransistor sont plus élevées quand il y a plus de lumière ou quand il y a moins de lumière?
+
 #### Modifications au code
+
+1. Appliquez vos connaissances de la technique `millis()` pour créer un bip répétitif de 0.3s (comme un clignotement sonore) si la valeur lumineuse est plus haute qu'une certaine valeur, p. ex. 200. Ajuster la valeur limite selon ce que vous observez dans votre environnement.
 
 ### Application : balayeuse nocturne
 
