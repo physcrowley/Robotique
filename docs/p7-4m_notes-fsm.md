@@ -51,6 +51,16 @@ Il pourrait aussi y avoir des **embranchements** dans le diagramme d'états. Par
 
 Si vous ajoutez l'extension _Draw.io Integration_ à VS Code, vous pouvez produire des diagrammes comme celui ci-dessus directement dans VS Code. Simplement créer un nouveau fichier avec l'extension de fichier `.drawio.png` et l'ouvrir en choisissant Draw.io comme éditeur. Vous aurez accès à la même interface que sur le site web [app.diagrams.net](https://app.diagrams.net/) mais sans avoir à quitter votre environnement de travail ni à télécharger le fichier pour l'inclure dans votre projet.
 
+## 🛠️ Pratique - mise en place
+
+> Préparer votre projet maintenant pour le reste des exercices qui suivent à la fin des notes.
+
+1. Créez un nouveau projet PlatformIO nommé `FSM`.
+2. Configurez votre projet en lui ajoutant les bibliothèques nécessaires :
+   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : `lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
+   2. Copier le dossier `RobotDrive` de vos bibliothèques personnelles dans le dossier `lib` du projet.
+3. Copiez le diagramme d'états plus haut dans le dossier `/src` de votre projet en faisant un clic-droit et en choisissant `Enregistrez l'image sous...` pour le télécharger. C'est un fichier de type `.drawio.png` que vous pouvez ouvrir et modifier avec l'extension _Draw.io Integration_ de VS Code.
+
 ## Énumération des états
 
 Le code pour déclarer nos états en C++ ressemblerait, en version la plus simple à ceci :
@@ -98,16 +108,7 @@ int currentState = SETUP; // même type que les états (int)
 
 ## Structure de contrôle switch-case
 
-La fin de la fonction `setup()` est la condition pour la transition vers le prochain état, alors on inclut une mise à jour de l'état à la toute fin de cette fonction. Selon le diagramme d'états, on passe à l'état TURN_LEFT après l'état SETUP :
-
-```cpp
-void setup() {
-  // code pour l'état SETUP
-  currentState = States::TURN_LEFT;
-}
-```
-
-Ensuite, dans la fonction `loop()`, on fait une cascade conditionnelle pour savoir quel code exécuter en fonction de l'état courant du robot.
+Avec une machine à états finis (MEF ou _FSM_ en anglais), la fonction `loop()` d'un sketch Arduino sert uniquement à vérifier en continue une cascade conditionnelle pour savoir quel code exécuter en fonction de l'état courant du robot.
 
 ### Utiliser `if-else if`
 
@@ -115,7 +116,9 @@ Avec `if-else if`, cela ressemblerait à ceci :
 
 ```cpp
 void loop() {
-  if (currentState == States::TURN_LEFT) {
+  if (currentState == States::SETUP) {
+    currentState = States::TURN_LEFT; // transition immédiate
+  } else if (currentState == States::TURN_LEFT) {
     // code pour l'état TURN_LEFT
   } else if (currentState == States::TURN_RIGHT) {
     // code pour l'état TURN_RIGHT
@@ -126,6 +129,8 @@ void loop() {
 ```
 
 On peut voir qu'à chaque fois que la boucle se répète, on vérifie l'état actuel du robot afin de choisir le code approprié à exécuter. Si l'état ne change pas, on exécute le même code à chaque itération de la boucle. Il faut alors inclure un mécanisme pour activer la condition de transition vers le prochain état dans le code pour chaque état.
+
+La première transition, de l'état SETUP à l'état TURN_LEFT, est immédiate car la condition est simplement la fin de la fonction `setup()`. Ainsi, la première fois que la fonction `loop()` est appelée, on passe directement à l'état TURN_LEFT.
 
 Cette structure `if-else if` est tout à fait acceptable, mais on se répète beaucoup : la condition est toujours `currentState == ÉTAT`. En plus, ces conditions sont un peu masquées par la structure du code, soit derrière `} else if ()` et on peut avoir de la difficulté à trouver un cas spécifique.
 
@@ -138,6 +143,9 @@ Avec `switch-case`, la même logique ressemblerait à ceci :
 ```cpp
 void loop() {
   switch (currentState) {
+    case States::SETUP:
+      currentState = States::TURN_LEFT; // transition immédiate
+      break;
     case States::TURN_LEFT:
       // code pour l'état TURN_LEFT
       break;
@@ -182,11 +190,13 @@ Intégrant les nouveautées pour la FSM et le code que nous avons utilisé pour 
 /*
 DÉFINIR LES CONNEXIONS MATÉRIELLES
 */
+
 const int millisForOneTurn = 2100; // à calibrer; avec turnLeft() et turnRight()
 
 /*
 DÉFINIR LES ÉTATS DU ROBOT
 */
+
 enum class States {
   SETUP,
   TURN_LEFT,
@@ -196,26 +206,29 @@ enum class States {
 
 States currentState = States::SETUP;
 
+// initialiser le matériel et les connexions
 void setup() {
   setRobotDrivePins(10, 11);
-  currentState = States::TURN_LEFT;
 }
 
+// dans une MEF (FSM), sert à vérifier en perpétuité l'état de la machine
 void loop() {
   switch (currentState) {
-    case States::TURN_LEFT:
-      turnLeft();
-      delay(3*millisForOneTurn);
-      currentState = States::TURN_RIGHT;
-      break;
-    case States::TURN_RIGHT:
-      turnRight();
-      delay(3*millisForOneTurn);
-      currentState = States::STOP;
-      break;
-    case States::STOP:
-      stop();
-      break;
+  case States::SETUP:
+    currentState = States::TURN_LEFT;
+  case States::TURN_LEFT:
+    turnLeft();
+    delay(3 * millisForOneTurn);
+    currentState = States::TURN_RIGHT;
+    break;
+  case States::TURN_RIGHT:
+    turnRight();
+    delay(3 * millisForOneTurn);
+    currentState = States::STOP;
+    break;
+  case States::STOP:
+    stop();
+    break;
   }
 }
 ```
@@ -224,23 +237,18 @@ Vous voyez sans doute que la FSM n'était pas nécessaire ici : on aurait pu sim
 
 En général, la condition de transition est plus complexe que cela. Et certains états doivent gérer plusieurs actions en simultané. C'est là que la FSM devient très utile pour organiser le code. On verra un exemple dans la leçon sur la multi-tâche.
 
-## Pratique
+## 🛠️ Pratique - suite
 
-1. Créez un nouveau projet PlatformIO nommé `FSM`.
-1. Configurez votre projet en lui ajoutant les bibliothèques nécessaires :
-   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : `lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
-   1. Copier le dossier `RobotDrive` de vos bibliothèques personnelles dans le dossier `lib` du projet.
 1. Copiez le code ci-dessus dans le fichier `/src/main.cpp` et compilez-le pour vérifier qu'il n'y a pas d'erreurs de transcription.
-1. Téléversez le code vers votre base robotique à entraînement différentiel et observez le comportement du robot.
-1. Calibrez la constante `millisForOneTurn` pour que le robot fasse exactement 3 tours à gauche et 3 tours à droite.
-1. Copiez le diagramme d'états plus haut dans le dossier `/src` de votre projet en faisant un clic-droit et en choisissant `Enregistrez l'image sous...` pour le télécharger. C'est un fichier de type `.drawio.png` que vous pouvez ouvrir et modifier avec l'extension _Draw.io Integration_ de VS Code.
-1. Définissez un nouvel état de votre choix.
+2. Téléversez le code vers votre base robotique à entraînement différentiel et observez le comportement du robot.
+3. Calibrez la constante `millisForOneTurn` pour que le robot fasse exactement 3 tours à gauche et 3 tours à droite.
+4. Définissez un nouvel état de votre choix.
    1. Ajoutez cet état dans l'énumération.
-   1. Modifiez le diagramme d'états pour inclure votre nouvel état. Vous devrez avoir :
+   2. Modifiez le diagramme d'états pour inclure votre nouvel état. Vous devrez avoir :
       - une transition vers cet état
       - une transition de cet état vers un autre état
-   1. Ajoutez un cas pour cet état dans la structure `switch-case`.
-   1. Modifiez le code pour le faire correspondre au diagramme d'états modifié :
+   3. Ajoutez un cas pour cet état dans la structure `switch-case`.
+   4. Modifiez le code pour le faire correspondre au diagramme d'états modifié :
       - changez la transition de l'état précédent vers cet état
       - ajoutez le code actif pour cet état
       - ajoutez une transition de cet état vers le prochain état

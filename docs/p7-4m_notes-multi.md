@@ -16,6 +16,15 @@ Plusieurs programmes que nous avons vus jusqu'à présent utilisent la fonction 
 
 **variable locale** : variable déclarée à l'intérieur d'une fonction et qui n'est accessible que dans cette fonction. Elle est détruite à la fin de la fonction sauf si elle est déclarée `static`.
 
+## 🛠️ Pratique - mise en place
+
+> Préparer votre projet maintenant pour le reste des exercices qui suivent à la fin des notes.
+
+1. Créer un nouveau projet PlatformIO nommé `multi-tasking`.
+2. Configurez votre projet en lui ajoutant les bibliothèques nécessaires :
+   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : `lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
+   2. Copier le dossier `RobotDrive` de vos bibliothèques personnelles dans le dossier `lib` du projet.
+
 ## Exemple - robot qui dance en tournant avec moustaches comme signal d'arrêt
 
 Imagine un robot qui fait 3 tours à gauche et ensuite 3 tours à droite infiniment, sauf si une de ses moustaches est enfoncée. À ce moment, il devrait arrêter de bouger.
@@ -118,12 +127,8 @@ Vous pouvez également noter que les **transitions** de la machine à états fin
 - la transition de l'état `DANCE` à l'état `STOP` est faite dans la fonction `dance()` parce que c'est là que la condition pour la transition est vérifiée.
 - finalement, l'état `STOP` n'a pas de transition parce que c'est l'état final du robot.
 
-### Analyse
+## 🛠️ Pratique - analyse de la solution avec `delay()`
 
-1. Créer un nouveau projet PlatformIO nommé `multi-tasking`.
-1. Configurez votre projet en lui ajoutant les bibliothèques nécessaires :
-   1. Ajoutez la ligne suivante à son fichier `platformio.ini` : `lib_deps = arduino-libraries/Servo@^1.2.1` afin d'ajouter la bibliothèque externe `Servo` à votre projet.
-   1. Copier le dossier `RobotDrive` de vos bibliothèques personnelles dans le dossier `lib` du projet.
 1. Copiez le code ci-dessus dans le fichier `/src/main.cpp` et compilez-le pour vérifier qu'il n'y a pas d'erreurs de transcription.
 1. Téléversez le code vers votre base robotique à entraînement différentiel et observez le comportement du robot.
 1. Est-ce que vous pouvez fiablement arrêter le robot en enfonçant une moustache?
@@ -207,7 +212,7 @@ void doTask() {
     - conservées entre les appels de la fonction (contrairement à des variables locales normales qui sont détruites à la fin de la fonction)
 - Pour ajouter des tâches supplémentaires, il suffit de copier-coller la fonction `doTask()` sans même changer les noms des varaibles internes à la fonction, soit les **variables locales**. Parce que ces variables sont seulement accessibles dans la fonction où elles sont déclarées, des variables avec le même nom dans différentes fonctions ne seront pas confondues.
 
-#### Tester rapidement cette implémentation plus robuste
+#### 🛠️ Pratique - tester rapidement l'implémentation avec `millis()`
 
 1. Créez un nouveau projet PlatformIO nommé `millis-test`.
 1. Copiez le code ci-dessous dans le fichier `/src/main.cpp` et le transférez vers une carte Arduino (comme celle dans votre robot).
@@ -328,7 +333,7 @@ void dance() {
 - Parce que la fonction `dance()` attend avant de donner une nouvelle instruction de mouvement, il faut donner une première instruction de mouvement dans `setup()` afin qu'il se mette en mouvement immédiatement. Sinon il faudrait attendre le premier délai de `3 * millisForOneTurn` avant de voir le robot bouger.
 - Parce que le délai est géré dans un bloc `if` et non dans une séquence d'instructions incluant `delay()`, il faut un autre mécanisme pour alterner la direction de rotation : on a ajouté une variable `toLeft` qui est `static` pour être conservée entre les appels de la fonction `dance()`. Sa valeur s'inverse (entre 1 et 0) à chaque fois que le délai est atteint.
 
-### Analyse
+## 🛠️ Pratique - analyse de la solution avec `millis()`
 
 1. Remplacer le code dans `/src/main.cpp` du projet `multi-tasking` que nous avons initialisé avec une solution utilisant `delay()` par le code ci-dessus.
 1. Compilez le code pour vérifier qu'il n'y a pas d'erreurs de transcription.
