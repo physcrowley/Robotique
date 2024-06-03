@@ -127,7 +127,7 @@ Vous pouvez également noter que les **transitions** de la machine à états fin
 - la transition de l'état `DANCE` à l'état `STOP` est faite dans la fonction `dance()` parce que c'est là que la condition pour la transition est vérifiée.
 - finalement, l'état `STOP` n'a pas de transition parce que c'est l'état final du robot.
 
-## 🛠️ Pratique - analyse de la solution avec `delay()`
+## 🛠️ Pratique - analyser la solution avec `delay()`
 
 1. Copiez le code ci-dessus dans le fichier `/src/main.cpp` et compilez-le pour vérifier qu'il n'y a pas d'erreurs de transcription.
 1. Téléversez le code vers votre base robotique à entraînement différentiel et observez le comportement du robot.
@@ -330,10 +330,11 @@ void dance() {
 ```
 ### Quelques notes sur ce code
 
+- Rappelez-vous que la fonction `loop()` est appelée en continu, donc la fonction `dance()` est appelée en continu aussi. C'est pourquoi on peut utiliser `millis()` pour gérer les délais : on passe une fois à travers le code et quelques instants plus tard, on passe à nouveau à travers le code, et ce, infiniment.
 - Parce que la fonction `dance()` attend avant de donner une nouvelle instruction de mouvement, il faut donner une première instruction de mouvement dans `setup()` afin qu'il se mette en mouvement immédiatement. Sinon il faudrait attendre le premier délai de `3 * millisForOneTurn` avant de voir le robot bouger.
 - Parce que le délai est géré dans un bloc `if` et non dans une séquence d'instructions incluant `delay()`, il faut un autre mécanisme pour alterner la direction de rotation : on a ajouté une variable `toLeft` qui est `static` pour être conservée entre les appels de la fonction `dance()`. Sa valeur s'inverse (entre 1 et 0) à chaque fois que le délai est atteint.
 
-## 🛠️ Pratique - analyse de la solution avec `millis()`
+## 🛠️ Pratique - analyser la solution avec `millis()`
 
 1. Remplacer le code dans `/src/main.cpp` du projet `multi-tasking` que nous avons initialisé avec une solution utilisant `delay()` par le code ci-dessus.
 1. Compilez le code pour vérifier qu'il n'y a pas d'erreurs de transcription.
