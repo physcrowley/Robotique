@@ -135,23 +135,29 @@ Code de démarrage : NightimeVacuumV2 -> [night-vacuum-pio.zip](./code/platformi
    1. Reculer pendant 1s (combien de cm)?
    2. Tourner pendant 800ms (combien de degrés)?
    3. Tourner pendant 400ms (combien de degrés)?
-3. Ajustez les durées, au besoin, pour obtenir des distances ou angles plus appropriés.
-6. Ce code utilise la fonction `delay()` pour gérer le temps des mouvements. Dans le contexte de ce programme, est-ce que c'est une option raisonnable, ou serait-il important de remplacer ça avec des équivalents en `millis()`? Notamment, c'est quoi le pire cas possible ici avec `delay()`? Est-ce que c'est un problème considérant l'objectif du programme : un robot qui est actif uniquement quand il fait sombre?
+3. Ce code utilise la fonction `delay()` pour gérer le temps des mouvements. Dans le contexte de ce programme, est-ce que c'est une option raisonnable, ou serait-il important de remplacer ça avec des équivalents en `millis()`? Est-ce que le robot passe toujours son temps dans une branche de code qui utilise `delay()`? C'est quoi le pire cas possible ici avec `delay()` en terme de blocage du code? Est-ce que c'est un problème considérant l'objectif du programme : un robot qui est actif uniquement quand il fait sombre?
 
 #### Modifications au code
 
-1. Produire un ton différent (sans un délai spécifique) pour chaque type de contact avec un obstacle (droite, gauche, avant).
-2. **DÉFI** : Que ce soit utile ou non dans ce contexte, la pratique avec la technique en vaut le coût : produire une machine à états finis pour ce programme. Produire le diagramme d'états avec les états suivants (quelles sont les transitions?) :
+1. Ajustez les durées, au besoin, pour obtenir des distances ou angles plus appropriés.
+2. Produire un ton différent (sans un délai spécifique) pour chaque type de contact avec un obstacle (droite, gauche, avant).
+3. Que ce soit utile ou non dans ce contexte (comme vous l'aviez considérer au dernier numéro des questions d'analyse), voici quand même une version de ce programme écrit comme une machine à états finis (MEF/FSM) dans le but de vous fournir une autre variante en exemple : [night-vacuum-fsm.zip](./code/platformio/night-vacuum-fsm-pio.zip). La machine a été conçue avec les états suivants :
+   - `SETUP` : initialisation,
    - `IDLE` : immobile,
    - `ADVANCE` : avancer,
    - `AVOID_RIGHT` : reculer et tourner à gauche,
    - `AVOID_LEFT` : reculer et tourner à droite,
    - `AVOID_FRONT` : reculer et tourner plus de 90 degrés (p. ex. 120)
-3. Implémenter la machine à états finis : déclarer la `enum class` et créer le cascade conditionnel dans `loop()`.
-4. Écrire des fonctions appropriées pour chaque état, et les appeler dans le cascade conditionnel. Ces fonctions devraient utiliser `millis()` pour gérer le temps des mouvements et inclure des conditions pour changer d'état. 
-   1. Notamment toutes les fonctions devraient vérifier la valeur du capteur lumineux, donc ce serait bien de créer une fonction pour cette vérification et l'appeler dans la fonction pour chaque état.
-   2. Il y a deux mouvements pour chaque état d'évitement d'obstacle, alors la condition avec les `millis()` ne sera pas juste un `if-else` mais plutôt un	`if-else if-else`, utilisant le premier délai dans le premier `if` et le deuxième délai dans le deuxième `if`. Le `else` sera la condition de transition.
-   3. Le temps de démarrage des évitements d'obstacle est déclenché dans l'état `ADVANCE`, alors une variable globale pour le temps qui est initialisée dans cet état et utilisée dans les autres états serait utile.
+
+   1. Lisez le code et identifiez les transitions entre les états. Les écrire sous forme d'un tableau avec les colonnes `état actuel`, `condition de transition`, `état suivant` est une bonne façon d'organiser ces informations. 
+      > Dans le code, on reconnaît une transition quand on assigne un nouvel état à la variable `currentState`.
+   2. Est-ce qu'il y a un état final dans ce cas? Pourquoi ou pourquoi pas?
+   3. Avec l'extension draw.io dans VS Code, produire le diagramme d'états pour cette machine à états finis. Vous pouvez l'enregistrez dans le dossier `/src` de votre projet.
+   4. Pour chaque état d'évitement d'obstacle il y a deux mouvements à faire, chacun avec leurs propres délais, alors la condition avec les `millis()` n'est pas juste un `if-else` mais plutôt un	`if-else if-else`, utilisant le premier délai dans le premier `if` et le deuxième délai dans le deuxième `if`. Lisez comment les conditions pour chaque `if` sont structurées et expliquez comment ils fonctionnent.
+   5. Regardez comment le temps est géré dans le code pour l'utilisation de `millis()`. Le temps de référence, stocké dans la variable `start`, est une donnée globale utilisée et manipulée dans les fonctions de plusieurs états. Ceci est différent des exemples de clignotement et de dance qu'on a vus précédemment où le délai était indépendant du reste du programme et utilisé exclusivement dans le code pour la lumière ou les roues. Lisez le code pour répondre à ces questions :
+      1. Dans quel état est-ce qu'on réinitialise le temps de référence?
+      2. Dans quels états est-ce qu'on utilise le temps de référence pour calculer le temps écoulé?
+      3. Au lieu de modifier le temps de référence dans leur bloc `else`, ces états font quoi?
 
 
 ### Application : balayeuse-compteur
