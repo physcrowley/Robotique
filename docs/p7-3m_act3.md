@@ -19,14 +19,13 @@
       1. Placez le capteur directement au-dessus de la bande _noire_ de la piste et notez la valeur de lumière réfléchie.
       1. Placez le capteur directement au-dessus d'une zone _blanche_ de la piste et notez la valeur de lumière réfléchie.
    * _OPTION B : Avec un programme_
-      1. Téléchargez le programme [calibrate_refl.py](./code/pybricks/calibrate_refl.py) et le placer dans le dossier de votre projet `line`.
-      1. Téléverser le programme sur le robot puis naviguer avec le "File Browser" pour lancer le programme `~/line/calibrate_refl.py`.
-      1. La lumière clignote et l'écran affiche "noir...". Placez le capteur directement au-dessus de la bande _noire_ de la piste et appuyez sur le bouton central pour enregistrer la valeur.
-      1. La lumière clignote et l'écran affiche "blanc...". Placez le capteur directement au-dessus d'une zone _blanche_ de la piste et appuyez sur le bouton central pour enregistrer la valeur.
-      1. Notez les valeurs de lumière réfléchie pour le noir et le blanc affichées sur l'écran du robot.
-1. Remplacer le code dans le fichier `main.py` du projet `line` avec le code sur la page du tutoriel.
-1. Ajustez les valeurs des variables `BLACK` et `WHITE` dans le programme pour correspondre aux valeurs mesurées lors du calibrage.
-1. Placez le robot sur la piste d'essai et exécuter le programme sur le robot et observer son comportement. **Chaque membre du groupe** devrait tester la connexion du robot avec son ordinateur et exécuter le programme pour valider qu'il a du code fonctionnel.
+      1. Téléchargez le programme [cal_refl.py](./code/pybricks/cal_refl.py) et le placer dans le dossier de votre projet `line`.
+      2. Téléverser le programme sur le robot puis naviguer avec le "File Browser" pour lancer le programme `~/line/cal_refl.py`.
+      3. Déplacer le robot manuellement sur la piste blanc/noir afin de capter les valeurs maximales et minimales de lumière réfléchie. Peser un bouton de la face centrale pour arrêter les mesures et afficher en plus grand ces deux valeurs.
+      5. Notez les valeurs de lumière réfléchie pour le noir (min) et le blanc (max) affichées sur l'écran du robot. Pesez un bouton de la face centrale pour quitter le programme.
+2. Remplacer le code dans le fichier `main.py` du projet `line` avec le code sur la page du tutoriel.
+3. Ajustez les valeurs des variables `BLACK` et `WHITE` dans le programme pour correspondre aux valeurs mesurées lors du calibrage.
+4. Placez le robot sur la piste d'essai, exécuter le programme `main.py` et observer son comportement. **Chaque membre du groupe** devrait tester la connexion du robot avec son ordinateur et exécuter le programme pour valider qu'il a du code fonctionnel.
 
 <a href="https://pybricks.com/ev3-micropython/examples/robot_educator_line.html" target="_blank">Intructions pour la construction et code de démarrage - suivre une ligne</a>
 
