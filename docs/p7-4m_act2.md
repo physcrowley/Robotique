@@ -126,13 +126,33 @@ Code de démarrage :
 
 > _[Instructions générales](#instructions)_
 
-Code de démarrage : NightimeVacuumV2 -> ...
-
-> Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
+Code de démarrage : NightimeVacuumV2 -> [night-vacuum-pio.zip](./code/platformio/night-vacuum-pio.zip)
 
 #### Questions d'analyse
 
+1. Pourquoi est-ce que le type `bool` est approprié pour les variables `leftState` et `rightState` (lignes 68 et 69)? Quelles valeurs peuvent être gardées dans un booléen? Quelles valeurs sont données par la fonction `digitalRead()`?
+2. Mesurez les mouvements produits par chaque série d'instructions :
+   1. Reculer pendant 1s (combien de cm)?
+   2. Tourner pendant 800ms (combien de degrés)?
+   3. Tourner pendant 400ms (combien de degrés)?
+3. Ajustez les durées, au besoin, pour obtenir des distances ou angles plus appropriés.
+6. Ce code utilise la fonction `delay()` pour gérer le temps des mouvements. Dans le contexte de ce programme, est-ce que c'est une option raisonnable, ou serait-il important de remplacer ça avec des équivalents en `millis()`? Notamment, c'est quoi le pire cas possible ici avec `delay()`? Est-ce que c'est un problème considérant l'objectif du programme : un robot qui est actif uniquement quand il fait sombre?
+
 #### Modifications au code
+
+1. Produire un ton différent (sans un délai spécifique) pour chaque type de contact avec un obstacle (droite, gauche, avant).
+2. **DÉFI** : Que ce soit utile ou non dans ce contexte, la pratique avec la technique en vaut le coût : produire une machine à états finis pour ce programme. Produire le diagramme d'états avec les états suivants (quelles sont les transitions?) :
+   - `IDLE` : immobile,
+   - `ADVANCE` : avancer,
+   - `AVOID_RIGHT` : reculer et tourner à gauche,
+   - `AVOID_LEFT` : reculer et tourner à droite,
+   - `AVOID_FRONT` : reculer et tourner plus de 90 degrés (p. ex. 120)
+3. Implémenter la machine à états finis : déclarer la `enum class` et créer le cascade conditionnel dans `loop()`.
+4. Écrire des fonctions appropriées pour chaque état, et les appeler dans le cascade conditionnel. Ces fonctions devraient utiliser `millis()` pour gérer le temps des mouvements et inclure des conditions pour changer d'état. 
+   1. Notamment toutes les fonctions devraient vérifier la valeur du capteur lumineux, donc ce serait bien de créer une fonction pour cette vérification et l'appeler dans la fonction pour chaque état.
+   2. Il y a deux mouvements pour chaque état d'évitement d'obstacle, alors la condition avec les `millis()` ne sera pas juste un `if-else` mais plutôt un	`if-else if-else`, utilisant le premier délai dans le premier `if` et le deuxième délai dans le deuxième `if`. Le `else` sera la condition de transition.
+   3. Le temps de démarrage des évitements d'obstacle est déclenché dans l'état `ADVANCE`, alors une variable globale pour le temps qui est initialisée dans cet état et utilisée dans les autres états serait utile.
+
 
 ### Application : balayeuse-compteur
 
