@@ -4,12 +4,12 @@
 
 #### Ressources universelles pour les projets et les tutoriels
 
-- [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
-- [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
-- [Grille d'évaluation pour les projets d'ingénierie](https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view)
+- <a href="https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view" target="_blank">Traduction de pages web vers le français</a>
+- <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Gabarit : Journal du processus de design et d'ingénierie</a>
+- <a href="https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view" target="_blank">Grille d'évaluation pour les projets d'ingénierie</a>
 - Documentation :
-  - [Pybricks EV3 Micropython](https://pybricks.com/ev3-micropython/)
-  - [Arduino](https://docs.arduino.cc/built-in-examples/)
+  - <a href="https://pybricks.com/ev3-micropython/" target="_blank">Pybricks EV3 Micropython</a>
+  - <a href="https://docs.arduino.cc/built-in-examples/" target="_blank">Arduino</a>
 
 ## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
@@ -30,11 +30,11 @@
 <blockquote>
 Plus d'informations et de tutoriels sur :
 <ul>
-<li><a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/">le site Zeste du Savoir</a> (tutoriels en ligne avec une liste de lecture sur Youtube)</li>
-<li><a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/">le cours d'Arduino pour l'école sur Développez.com</a> (tutoriels en ligne)</li>
-<li><a href="https://docs.arduino.cc/built-in-examples/ ">le site d'Arduino</a> (tutoriels en ligne en anglais)</li>
-<li><a href="https://www.elegoo.com/pages/download">le site d'Elegoo > STEM Kits (Robotics, Arduino)</a> (téléchargement ZIP incluant des bibliothèques de code pour les différents composants)</li> 
-<li><a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html">le manuel pour la trousse de démarrage d'UCTronics</a> (manuel en ligne)</li>
+<li><a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/" target="_blank">le site Zeste du Savoir</a> (tutoriels en ligne avec une liste de lecture sur Youtube)</li>
+<li><a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/" target="_blank">le cours d'Arduino pour l'école sur Développez.com</a> (tutoriels en ligne)</li>
+<li><a href="https://docs.arduino.cc/built-in-examples/ " target="_blank">le site d'Arduino</a> (tutoriels en ligne en anglais)</li>
+<li><a href="https://www.elegoo.com/pages/download" target="_blank">le site d'Elegoo > STEM Kits (Robotics, Arduino)</a> (téléchargement ZIP incluant des bibliothèques de code pour les différents composants)</li> 
+<li><a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html" target="_blank">le manuel pour la trousse de démarrage d'UCTronics</a> (manuel en ligne)</li>
 </ul>
 </blockquote>
 

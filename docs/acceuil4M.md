@@ -3,16 +3,14 @@
 # 4M - Cours de robotique
 
 #### Ressources universelles pour les projets et les tutoriels
-
-- [Traduction de pages web vers le français](https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view)
-- [Gabarit : Journal du processus de design et d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view)
-- [Grille d'évaluation pour les projets d'ingénierie](https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view)
+- <a href="https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view" target="_blank">Traduction de pages web vers le français</a>
+- <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Gabarit : Journal du processus de design et d'ingénierie</a>
+- <a href="https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view" target="_blank">Grille d'évaluation pour les projets d'ingénierie</a>
 - Documentation :
-  - [Arduino](https://docs.arduino.cc/built-in-examples/)
-  - [PlatformIO](https://docs.platformio.org/en/latest/ide/vscode.html)
-  - [XOD IDE](https://xod.io/docs/)
-  - [Pixy2](https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:start)
-  - [Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino)
+  - <a href="https://docs.arduino.cc/built-in-examples/" target="_blank">Arduino</a>
+  - <a href="https://docs.platformio.org/en/latest/ide/vscode.html" target="_blank">PlatformIO</a>
+  - <a href="https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:start" target="_blank">Pixy2</a>
+  - <a href="https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino" target="_blank">Parallax</a>
 
 ## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
 
@@ -34,11 +32,11 @@
 <blockquote>
 Plus d'informations et de tutoriels sur :
 <ul>
-<li><a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/">le site Zeste du Savoir</a> (tutoriels en ligne avec une liste de lecture sur Youtube)</li>
-<li><a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/">le cours d'Arduino pour l'école sur Développez.com</a> (tutoriels en ligne)</li>
-<li><a href="https://docs.arduino.cc/built-in-examples/ ">le site d'Arduino</a> (tutoriels en ligne en anglais)</li>
-<li><a href="https://www.elegoo.com/pages/download">le site d'Elegoo > STEM Kits (Robotics, Arduino)</a> (téléchargement ZIP incluant des bibliothèques de code pour les différents composants)</li> 
-<li><a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html">le manuel pour la trousse de démarrage d'UCTronics</a> (manuel en ligne)</li>
+<li><a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/" target="_blank">le site Zeste du Savoir</a> (tutoriels en ligne avec une liste de lecture sur Youtube)</li>
+<li><a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/" target="_blank">le cours d'Arduino pour l'école sur Développez.com</a> (tutoriels en ligne)</li>
+<li><a href="https://docs.arduino.cc/built-in-examples/" target="_blank">le site d'Arduino</a> (tutoriels en ligne en anglais)</li>
+<li><a href="https://www.elegoo.com/pages/download" target="_blank">le site d'Elegoo > STEM Kits (Robotics, Arduino)</a> (téléchargement ZIP incluant des bibliothèques de code pour les différents composants)</li> 
+<li><a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html" target="_blank">le manuel pour la trousse de démarrage d'UCTronics</a> (manuel en ligne)</li>
 </ul>
 </blockquote>
 
@@ -76,9 +74,9 @@ Plus d'informations et de tutoriels sur :
 - Activité 3 : utiliser la caméra Pixy2 pour se stationner
 
 
-> Plus de projets et de tutoriels sur le [site de Parallax](https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino) : navigation infrarouge, navigation par ultrasons, etc.
+> Plus de projets et de tutoriels sur le <a href="https://learn.parallax.com/tutorials/robot/shield-bot/robotics-board-education-shield-arduino" target="_blank">site de Parallax</a> : navigation infrarouge, navigation par ultrasons, etc.
 
-> Plus de projets avec la caméra Pixy2 : utiliser les exemples disponibles quand la bibliothèque `pixy2` est installée pour votre projet; voir la documentation pour le [mode de suivi de ligne](https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:line_tracking) ou pour [l'opération d'une tourelle universelle](http://docs.pixycam.com/wiki/doku.php?id=wiki:v2:pan_tilt_demo).
+> Plus de projets avec la caméra Pixy2 : utiliser les exemples disponibles quand la bibliothèque `pixy2` est installée pour votre projet; voir la documentation pour le <a href="https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:line_tracking" target="_blank">mode de suivi de ligne</a> ou pour <a href="http://docs.pixycam.com/wiki/doku.php?id=wiki:v2:pan_tilt_demo" target="_blank">l'opération d'une tourelle universelle</a>.
 
 ## Projet 8 : Projet cumulatif
 
