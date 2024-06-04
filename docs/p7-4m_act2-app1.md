@@ -31,8 +31,11 @@ NightimeVacuumV2 -> [night-vacuum-pio.zip](./code/platformio/night-vacuum-pio.zi
       > Dans le code, on reconnaît une transition quand on assigne un nouvel état à la variable `currentState`.
 
    2. Est-ce qu'il y a un état final dans ce cas? Pourquoi ou pourquoi pas?
+
    3. Avec l'extension draw.io dans VS Code, produire le diagramme d'états pour cette machine à états finis. Vous pouvez l'enregistrez dans le dossier `/src` de votre projet.
+   
    4. Pour chaque état d'évitement d'obstacle il y a deux mouvements à faire, chacun avec leurs propres délais, alors la condition avec les `millis()` n'est pas juste un `if-else` mais plutôt un	`if-else if-else`, utilisant le premier délai dans le premier `if` et le deuxième délai dans le deuxième `if`. Lisez comment les conditions pour chaque `if` sont structurées et expliquez comment ils fonctionnent.
+   
    5. Regardez comment le temps est géré dans le code pour l'utilisation de `millis()`. Le temps de référence, stocké dans la variable `start`, est une donnée globale utilisée et manipulée dans les fonctions de plusieurs états. Ceci est différent des exemples de clignotement et de dance qu'on a vus précédemment où le délai était indépendant du reste du programme et utilisé exclusivement dans le code pour la lumière ou les roues. Lisez le code pour répondre à ces questions :
       1. Dans quel état est-ce qu'on réinitialise le temps de référence?
       2. Dans quels états est-ce qu'on utilise le temps de référence pour calculer le temps écoulé?

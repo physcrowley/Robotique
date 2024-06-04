@@ -53,7 +53,6 @@ D'ordre général, vous consulterez deux sites en parallèle :
 ### Code adapté, questions d'analyse et modifications additionnelles pour chaque section du tutoriel
 
 - [Haut-parleur (piézo-électrique)](./p7-4m_act2-piezo.md)
-
 - [Capteurs tactiles (moustaches)](./p7-4m_act2-moustache.md)
 - [Pseudocode (virer aux obstacles)](./p7-4m_act2-pseudocode.md)
 - [Capteur lumineux (phototransistor)](./p7-4m_act2-photo.md)
