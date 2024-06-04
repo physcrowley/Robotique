@@ -48,7 +48,7 @@ D'ordre général, vous consulterez deux sites en parallèle :
 
 <a href="https://www.cs2n.org/u/mp/badge_pages/158" target="_blank">ACCÉDER AUX TUTORIELS CS2N POUR LES CAPTEURS ICI</a>
 
-> _Page d'accueil de l'ensemble de ces tutoriels : <a href="(https://www.cs2n.org/u/track_progress?id=290)" target="_blank">CS2N - Bases logicielles avec Arduino</a>_
+> _Page d'accueil de l'ensemble de ces tutoriels : <a href="https://www.cs2n.org/u/track_progress?id=290" target="_blank">CS2N - Bases logicielles avec Arduino</a>_
 
 ### Code adapté, questions d'analyse et modifications additionnelles pour chaque section du tutoriel
 
