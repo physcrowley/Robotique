@@ -24,7 +24,7 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
 
 <a href="https://www.cs2n.org/u/mp/badge_pages/195" target="_blank">Tutoriel - mouvement de base</a>
 
-> _Page d'accueil de l'ensemble de ces tutoriels : <a href="(https://www.cs2n.org/u/track_progress?id=290)" target="_blank">CS2N - Bases logicielles avec Arduino</a>, pratique notamment pour une référence vers la vérification initiale du matériel_
+> _Page d'accueil de l'ensemble de ces tutoriels : <a href="https://www.cs2n.org/u/track_progress?id=290" target="_blank">CS2N - Bases logicielles avec Arduino</a>, pratique notamment pour une référence vers la vérification initiale du matériel_
 
 ## Analyses
 
