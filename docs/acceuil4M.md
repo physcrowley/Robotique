@@ -80,4 +80,4 @@ Plus d'informations et de tutoriels sur :
 
 ## Projet 8 : Projet cumulatif
 
-- [Description du projet final](./p8-4m.md)
+Il y a un projet cumulatif pour ce cours. Voir les détails dans Google Classroom de votre groupe.
