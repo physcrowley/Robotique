@@ -1,6 +1,6 @@
-[Accueil](./index.md) > [3M](./acceuil4M.md#projet-5--systèmes-mécaniques)
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-5--systèmes-mécaniques)
 
-# Projet 5, activité 2 : Concours de biceps robotique
+# Projet 5, activité 2 : Pince robotique
 
 ## Objectif
 

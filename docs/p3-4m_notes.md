@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [3M](./acceuil4M.md#projet-3--structures-mécaniques)
+[Accueil](./index.md) > [4M](./acceuil4M.md#projet-3--structures-mécaniques)
 
 # Notes : cames et mécanismes à barres
 
