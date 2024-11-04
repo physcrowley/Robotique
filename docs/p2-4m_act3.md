@@ -30,15 +30,15 @@ Consultez la vidéo d'introduction suivante :
 
 Connectez le servomoteur à la carte Arduino Uno selon le schéma suivant :
 
-![Schéma de connexion pour un servomoteur](./images/p2/schematic-act3_servo.png)
+![Schéma de connexion pour un servomoteur](./assets/images/p2/schematic-act3_servo.png)
 
 Testez un servomoteur à la fois en utilisant les mêmes branchements. Commencez par le servomoteur 9g.
 
 #### Instructions
 
 1. Ouvrir l'exemple servo-test dans votre environnement de développement Arduino.
-   - Version Arduino IDE : [servo-test.ino](./code/arduinoide/servo-test.ino)
-   - Version PlatformIO : [servo-test-pio.zip](./code/platformio/servo-test-pio.zip)
+   - Version Arduino IDE : [servo-test.ino](./assets/code/arduinoide/servo-test.ino)
+   - Version PlatformIO : [servo-test-pio.zip](./assets/code/platformio/servo-test-pio.zip)
 1. Masquer tout le code actif dans `setup()` (après la connexion du servomoteur) et dans `loop()` derrière un commentaire (sélectionner le code et appuyer sur `Ctrl` + `é` pour commenter/décommenter). 
 1. Ajouter une seule commande `stopMotor()` dans `setup()`. Quand la position du bras s'immobilise, attachez le bras au servomoteur afin qu'il soit parallèle au corps du servomoteur.
 1. Démasquer le code original et ajustez les valeurs pour les signaux `LEFT` et `RIGHT` pour que le bras de servomoteur soit à 90°, 0° (limite de rotation anithoraire) et 180° (limite de rotation horaire) respectivement.

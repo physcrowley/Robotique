@@ -4,7 +4,7 @@
 
 ## Code adapté
 
-VacuumPseudocodingStart -> [vacuum-pio.zip](./code/platformio/vacuum-pio.zip)
+VacuumPseudocodingStart -> [vacuum-pio.zip](./assets/code/platformio/vacuum-pio.zip)
 
 > Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 

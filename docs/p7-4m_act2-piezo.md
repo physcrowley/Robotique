@@ -4,7 +4,7 @@
 
 ## Code adapté
 
-PiezospeakerDemoV2 -> [piezo-pio.zip](./code/platformio/piezo-pio.zip)
+PiezospeakerDemoV2 -> [piezo-pio.zip](./assets/code/platformio/piezo-pio.zip)
 
 > Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N. Vous pourrez alors ignorez certaines explications sur des éléments de code qui ont été retirés, comme les macros `#define`.
 

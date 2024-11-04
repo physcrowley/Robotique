@@ -33,7 +33,7 @@ Imagine un robot qui fait 3 tours à gauche et ensuite 3 tours à droite infinim
 
 Présumant qu'on implémente le code pour ce comportement comme une machine à états finis, le diagramme d'états est plus simple que celui pour le code précédent :
 
-![diagramme d'états multi-tâche](./images/p7/fsm_multi.drawio.png)
+![diagramme d'états multi-tâche](./assets/images/p7/fsm_multi.drawio.png)
 
 Ici :
 

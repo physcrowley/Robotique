@@ -21,20 +21,20 @@
 
 ## Schéma
 
-![schéma](./images/p2/schematic-act4.png)
+![schéma](./assets/images/p2/schematic-act4.png)
 
 ## Image
 
-![distance 1](./images/p2/distance1.jpg)
+![distance 1](./assets/images/p2/distance1.jpg)
 
-![distance 2](./images/p2/distance2.jpg)
+![distance 2](./assets/images/p2/distance2.jpg)
 
 ## Instructions
 
 - Monter le circuit comme illustré dans le schéma et dans les images ci-dessus.
 - Ouvrir l'exemple `distance-leds` dans votre environnement de développement Arduino.
-  - Version Arduino IDE : [distance-leds.ino](./code/arduinoide/distance-leds.ino)
-  - Version PlatformIO : [distance-leds-pio.zip](./code/platformio/distance-leds-pio.zip)
+  - Version Arduino IDE : [distance-leds.ino](./assets/code/arduinoide/distance-leds.ino)
+  - Version PlatformIO : [distance-leds-pio.zip](./assets/code/platformio/distance-leds-pio.zip)
 - Vérifier et téléverser le code sur l'Arduino. Le code de démarrage ne contrôle qu'une seule DEL.
 - Compléter le code selon le commentaire `TODO` dans le fichier `distance-leds.ino`. Notamment, ajouter les instructions pour allumer les autres DELs en fonction de la distance mesurée par le capteur de distance à ultrasons. 
     - La première DEL à s'allumer (verte) le fait quand la distance est moins que 50cm.

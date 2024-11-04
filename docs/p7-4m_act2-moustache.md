@@ -4,7 +4,7 @@
 
 ## Code adapté
 
-WhiskerSetupV2 -> [whisker-pio.zip](./code/platformio/whisker-pio.zip)
+WhiskerSetupV2 -> [whisker-pio.zip](./assets/code/platformio/whisker-pio.zip)
 
 > Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 

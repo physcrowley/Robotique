@@ -27,17 +27,17 @@ Visionner la vidéo suivante :
 ### Tester le matériel et le contrôle de base
 
 1. Connectez les servomoteurs et les potentiomètres à la carte Arduino selon le schéma suivant :
-   ![circuit_tourelle](./images/p5/circuit_tourelle.png)
+   ![circuit_tourelle](./assets/images/p5/circuit_tourelle.png)
 1. Tester vos servomoteurs et potentiomètres individuellement. Téléchargez le code ci-dessous et créer les projets PlatformIO correspondants (voir les [notes sur comment importer un projet PlatformIO](./p2-3m_act2-pio.md#utiliser-du-code-de-démarrage)) :
    > Vous avez probablement déjà une version du projet servo-test. Vous pouvez la réutiliser pour tester les servomoteurs.
-   - Test pour un servomoteur : [servo-test-pio.zip](./code/platformio/servo-test-pio.zip)
-   - Test pour un potentiomètre [pot-test-pio.zip](./code/platformio/pot-test-pio.zip)
+   - Test pour un servomoteur : [servo-test-pio.zip](./assets/code/platformio/servo-test-pio.zip)
+   - Test pour un potentiomètre [pot-test-pio.zip](./assets/code/platformio/pot-test-pio.zip)
 1. Notez les valeurs de calibrage que vous avez obtenues pour chaque pièce. Vous aurez besoin de ces valeurs pour le code final de la tourelle.
 
 ### Assembler la tourelle
 
 Par exemple :
-![tourelle](./images/p5/tourelle.jpg)
+![tourelle](./assets/images/p5/tourelle.jpg)
 
 1. Fixez le 1e servomoteur à une base en carton afin que **son axe soit vertical**. Le bras tournera sur le plan horizontal, nous donnant le mouvement panoramique (le _pan_ dans _pan-tilt_).
 1. Ajouter un bras de servomoteur à l'axe de rotation du 1e servomoteur.
@@ -50,7 +50,7 @@ Par exemple :
 ### Tester l'intégration matérielle et logicielle
 
 1. Téléchargez le code de démarrage suivant et créez le projet PlatformIO correspondant :
-   - [tourelle-pio.zip](./code/platformio/tourelle-pio.zip)
+   - [tourelle-pio.zip](./assets/code/platformio/tourelle-pio.zip)
 1. Vérifiez et téléversez le code sur votre carte Arduino. Le code de démarrage inclut l'initialisation pour tous les composants (dans `setup`) mais seulement le code pour le servomoteur du bas (dans `loop`).
 1. Testez votre montage en tournant le potentiomètre pour le servo du bas ("lower").
 

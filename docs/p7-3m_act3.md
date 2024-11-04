@@ -19,7 +19,7 @@
       1. Placez le capteur directement au-dessus de la bande _noire_ de la piste et notez la valeur de lumière réfléchie.
       1. Placez le capteur directement au-dessus d'une zone _blanche_ de la piste et notez la valeur de lumière réfléchie.
    * _OPTION B : Avec un programme_
-      1. Téléchargez le programme [cal_refl.py](./code/pybricks/cal_refl.py) et le placer dans le dossier de votre projet `line`.
+      1. Téléchargez le programme [cal_refl.py](./assets/code/pybricks/cal_refl.py) et le placer dans le dossier de votre projet `line`.
       2. Téléverser le programme sur le robot puis naviguer avec le "File Browser" pour lancer le programme `~/line/cal_refl.py`.
       3. Déplacer le robot manuellement sur la piste blanc/noir afin de capter les valeurs maximales et minimales de lumière réfléchie. Peser un bouton de la face centrale pour arrêter les mesures et afficher en plus grand ces deux valeurs.
       5. Notez les valeurs de lumière réfléchie pour le noir (min) et le blanc (max) affichées sur l'écran du robot. Pesez un bouton de la face centrale pour quitter le programme.
@@ -53,7 +53,7 @@ Ce programme est un exemple d'un **contrôleur proportionnel**. Le contrôle pro
 
 Contrairement aux mouvements précédents, où on donnait une instruction de déplacement ou de rotation directement aux moteurs, dans ce programme, l'instruction aux moteurs est calculée selon l'écart de la mesure avec la valeur cible. Dans le premier cas, on parle d'un **contrôle ouvert** et dans le deuxième cas, on parle d'un **contrôle fermé** puisque la rétroaction des mesures forme une boucle.
 
-![contrôle ouvert et contrôle fermé](./images/p7/open_v_closed.drawio.png)
+![contrôle ouvert et contrôle fermé](./assets/images/p7/open_v_closed.drawio.png)
 
 Dans ce cas-ci, la valeur cible est un mélange 50-50 de blanc et de noir, soit la valeur quand le capteur de lumière réfléchie est directement au dessus du bord de la ligne noir.
 

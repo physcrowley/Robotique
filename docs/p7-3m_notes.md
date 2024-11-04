@@ -78,7 +78,7 @@ Réponses aux questions :
 
 1. Dans VS Code, créez un nouveau fichier Python nommé `data.py` dans ce dossier utilisant le bouton "New File" à côté du nom du dossier.
 1. Ajoutez le code ci-dessus dans le fichier `data.py`. 
-    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [data.py](./code/python/data.py)
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [data.py](./assets/code/python/data.py)
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
@@ -124,7 +124,7 @@ print('Max', biggest)
 ```
 
 1. Créez un nouveau fichier Python nommé `calculations.py` dans le dossier `pratique` et y coller le code ci-dessus.
-    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./code/python/calculations.py).
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [calculations.py](./assets/code/python/calculations.py).
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
     > Vous pouvez aussi activer l'enregistrement automatique dans VS Code en cliquant sur "File" > "Auto Save".
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.
@@ -177,7 +177,7 @@ print('o est dans le mot:', 'o' in word)
 ```
 
 1. Créer un nouveau fichier Python nommé `comparisons.py` dans le dossier `pratique` et y coller le code ci-dessus.
-    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./code/python/comparisons.py).
+    > Si le copier-coller semble vous donner des erreurs d'indentation, vous pouvez télécharger une copie du code ici : [comparisons.py](./assets/code/python/comparisons.py).
 
 1. Enregistrez le fichier en cliquant sur "File" > "Save" ou en utilisant le raccourci clavier `Ctrl` + `S`.
 1. Exécutez le programme en cliquant sur le bouton "Run" en haut à droite de l'éditeur de texte. Vous verrez le résultat dans le terminal de VS Code.

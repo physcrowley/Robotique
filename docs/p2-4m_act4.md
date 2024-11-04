@@ -22,8 +22,8 @@
 
 Ouvrir le code de démarrage dans votre environnement de développement Arduino.
 
-- Version Arduino IDE : [distance-servo.ino](./code/arduinoide/distance-servo.ino)
-- Version PlatformIO : [distance-servo-pio.zip](./code/platformio/distance-servo-pio.zip)
+- Version Arduino IDE : [distance-servo.ino](./assets/code/arduinoide/distance-servo.ino)
+- Version PlatformIO : [distance-servo-pio.zip](./assets/code/platformio/distance-servo-pio.zip)
 
 Le code devrait fonctionner correctement à l'état initial pour fournir des lectures de distance valides.
 
@@ -37,7 +37,7 @@ Constatez les éléments suivants :
 
 Compléter un schéma des connections électriques pour le projet. Utiliser le gabarit suivant :
 
-- [Gabarit pour le schéma](./images/p2/distance-servo.cddx)
+- [Gabarit pour le schéma](./assets/images/p2/distance-servo.cddx)
 
 1. Télécharger le gabarit (format `.cddx`).
 1. Ouvrir le site [Circuit Diagram](https://www.circuit-diagram.org/).

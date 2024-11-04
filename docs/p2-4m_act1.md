@@ -38,8 +38,8 @@ Cliquez sur le lien approprié pour votre environnement afin d'apprendre ses fon
 ### Instructions
 
 1. Téléchargez le projet `Clignoter` avec le lien approprié ci-dessous et l'enregistrer dans le répertoire de projet par défaut de votre environnement de développement :
-    * Arduini IDE : [blink.ino](./code/arduinoide/blink.ino) > dans `~/Documents/Arduino`
-    * PlatformIO : [blink-pio.zip](./code/platformio/blink-pio.zip) > enregistrer > **extraire le dossier** `blink-pio` dans `~/Documents/PlatformIO/Projects` 
+    * Arduini IDE : [blink.ino](./assets/code/arduinoide/blink.ino) > dans `~/Documents/Arduino`
+    * PlatformIO : [blink-pio.zip](./assets/code/platformio/blink-pio.zip) > enregistrer > **extraire le dossier** `blink-pio` dans `~/Documents/PlatformIO/Projects` 
 1. Ouvrez votre environnement de développement
 1. Ouvrez le projet `Clignoter` selon la démarche approprié pour votre environnement.
 1. Compilez le projet pour vérifier qu'il n'y a pas d'erreurs.

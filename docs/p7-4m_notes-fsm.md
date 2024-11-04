@@ -30,7 +30,7 @@ C'est un exemple très simple qu'on peut programmer (_avec raison_) sans une mac
 
 Voici le diagramme d'états pour ce robot :
 
-![diagramme d'états pour l'exemple simple](./images/p7/fsm_simple.drawio.png)
+![diagramme d'états pour l'exemple simple](./assets/images/p7/fsm_simple.drawio.png)
 
 - Tout programme commence à l'état SETUP, ce qui représente tout ce qui se passe avant et dans la fonction setup().
 - La condition de transition vers l'état TURN_LEFT est simplement la fin de l'état SETUP.

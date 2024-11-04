@@ -19,7 +19,7 @@ Pour prévenir les bris et les blessures potentielles, nous utiliserons un logic
 1. Extraire le dossier zip ci-dessous dans votre dossier Documents
 1. Dans VS Code, dans le menu `File`, sélectionner `Open Folder` et ouvrir le dossier que vous venez d'extraire.
 
-[safe_motor.zip](./code/pybricks/safe_motor.zip)
+[safe_motor.zip](./assets/code/pybricks/safe_motor.zip)
 
 ## Instructions
 

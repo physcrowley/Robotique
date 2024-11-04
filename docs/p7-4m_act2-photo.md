@@ -4,7 +4,7 @@
 
 ## Code adapté
 
-- PhototransistorsV2 et LightLevelPitchV2 -> [light-pio.zip](./code/platformio/light-pio.zip)
+- PhototransistorsV2 et LightLevelPitchV2 -> [light-pio.zip](./assets/code/platformio/light-pio.zip)
 
 > Lire les commentaires d'en-tête dans `main.cpp` pour comprendre les modifications dans notre version par rapport à la version sur le site de CS2N.
 

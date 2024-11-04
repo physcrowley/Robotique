@@ -11,12 +11,12 @@
 
 Nom | Diagramme | Image 
 --- | --- | ---
-1 Carte Arduino Uno | ![uno](./images/p2/diag-uno.png) | ![Arduino](./images/p2/arduino-uno.jpg)
-1 Câble USB |  | ![USB](./images/p2/usb-a-b.jpg)
-1 Bouton-poussoir | ![button](./images/p2/diag-button.png) | ![bouton](./images/p2/push-button.jpg)
-1 DEL | ![del](./images/p2/diag-led.png) | ![DEL](./images/p2/led.jpg)
-1 Résistance de 220 ohms (code couleur : rouge, rouge, marron/brun, or) | ![résistance](./images/p2/diag-resistor.png) | ![résistance](./images/p2/220ohm.drawio.png)
-1 Plaque d'essai |  | ![plaque](./images/p2/breadboard.jpg)
+1 Carte Arduino Uno | ![uno](./assets/images/p2/diag-uno.png) | ![Arduino](./assets/images/p2/arduino-uno.jpg)
+1 Câble USB |  | ![USB](./assets/images/p2/usb-a-b.jpg)
+1 Bouton-poussoir | ![button](./assets/images/p2/diag-button.png) | ![bouton](./assets/images/p2/push-button.jpg)
+1 DEL | ![del](./assets/images/p2/diag-led.png) | ![DEL](./assets/images/p2/led.jpg)
+1 Résistance de 220 ohms (code couleur : rouge, rouge, marron/brun, or) | ![résistance](./assets/images/p2/diag-resistor.png) | ![résistance](./assets/images/p2/220ohm.drawio.png)
+1 Plaque d'essai |  | ![plaque](./assets/images/p2/breadboard.jpg)
 
 ## Concepts pertinents
 
@@ -30,11 +30,11 @@ La DEL devrait être éteinte. Quand vous appuyer sur le bouton-poussoir, la DEL
 
 ### Schéma du circuit
 
-![schéma](./images/p2/schematic-act2.png)
+![schéma](./assets/images/p2/schematic-act2.png)
 
 ### Image du circuit
 
-![image](./images/p2/picture.drawio.png)
+![image](./assets/images/p2/picture.drawio.png)
 
 ### Soumettre votre travail
 

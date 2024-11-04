@@ -8,7 +8,7 @@ Les **cames** sont des formes spéciales qui convertissent un mouvement de rotat
 
 En concevant la forme de la came on peut physiquement programmer un mouvement complexe, comme soulever un pont, la garder en position haute pendant un temps fixe et la baisser lentement. Les cames sont utilisées dans les machines-outils, les moteurs à combustion interne, les machines textiles, etc.
 
-![cames](./images/p3/cames.jpg)
+![cames](./assets/images/p3/cames.jpg)
 
 Voici une courte vidéo montrant quelques formes possibls pour les cames :
 

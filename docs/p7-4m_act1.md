@@ -16,9 +16,9 @@ L'entrâinement différentiel est une méthode de contrôle de mouvement qui uti
 1. Construire une base robotique Arduino ShieldBot avec des roues motrices et une roue folle selon les instructions sur le tutoriel (lien ci-dessous).
 1. Suivre les tests et les observations mentionées dans le tutoriel pour vérifier que les moteurs sont bien connectés et fonctionnent correctement.
    > Remplacer le code de démarrage fourni dans les tutoriels par le code équivalent suivant. Le code ci-dessous est structuré pour un projet PlatformIO et inclut certains ajouts et modifications pour rendre votre code plus compréhensible et réutilisable. Télécharger et extraire le dossier .zip dans votre dossier `~/Documents/PlatformIO/Projects` et les ouvrir avec l'extension _PlatformIO_ dans VS Code.
-   - TestMotors.ino -> [test-drive-motors.zip](./code/platformio/test-drive-motors-pio.zip)
-   - TestDriveMotors.ino -> [test-drive-differential.zip](./code/platformio/test-drive-differential-pio.zip)
-   - ForwardMovement.ino -> [forward-movement.zip](./code/platformio/forward-movement-pio.zip)
+   - TestMotors.ino -> [test-drive-motors.zip](./assets/code/platformio/test-drive-motors-pio.zip)
+   - TestDriveMotors.ino -> [test-drive-differential.zip](./assets/code/platformio/test-drive-differential-pio.zip)
+   - ForwardMovement.ino -> [forward-movement.zip](./assets/code/platformio/forward-movement-pio.zip)
         > Cette version crée des **fonctions** pour les mouvements de base. Vous êtes encouragé à programmer les autres mouvements décrits dans le tutoriel- reculer, tourner à gauche et tourner à droite - en créant vos propres fonctions suivant ces modèles.
 1. Ajuster votre code selon les instructions dans le tutoriel.
 

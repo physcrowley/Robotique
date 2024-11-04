@@ -25,7 +25,7 @@ Il y a deux types de clavettes LEGO :
 - ceux avec friction et
 - ceux sans friction.
 
-![connecteurs](./images/p3/connecteurs.drawio.png)
+![connecteurs](./assets/images/p3/connecteurs.drawio.png)
 
 Faites donc attention de choisir le bon type de connecteur pour votre application.
 
@@ -45,7 +45,7 @@ Le joint pivotant est le joint mobile le plus simple. Il relie deux pièces auto
 
 | Joint pivotant libre                                          | Joint pivotant actionné                                             |
 | ------------------------------------------------------------- | ------------------------------------------------------------------- |
-| ![joint pivotant libre](./images/p3/joint_pivotant_libre.png) | ![joint pivotant actionné](./images/p3/joint_pivotant_actionne.png) |
+| ![joint pivotant libre](./assets/images/p3/joint_pivotant_libre.png) | ![joint pivotant actionné](./assets/images/p3/joint_pivotant_actionne.png) |
 | membres liés par un connecteur **sans friction**              | membres liés par arbre cruciforme                                   |
 
 ### Joints rigides
@@ -56,13 +56,13 @@ On utilise des connecteurs **avec friction** pour tous les joints rigides.
 
 Dans le cas d'un _cadre rigide_, c'est la géométrie du cadre qui empêche le mouvement entre les pièces.
 
-![cadre rigide](./images/p3/cadre_rigide.png)
+![cadre rigide](./assets/images/p3/cadre_rigide.png)
 
 > _Notez l'utilisation de triangles pour stabiliser le cadre. Avec LEGO, on ne peut pas former un triangle sur le même plan, alors les trois membres du triangle se trouvent sur des plans différents. Il faut souvent faire preuve de créativité pour aligner les pièces pour obtenir ce que vous voulez. (Voir aussi [la section ci-dessous sur l'alignement](#alignement))._
 
 Dans le cas d'un joint rigide qui _prolonge un fléau_, la friction des connecteurs n'est pas suffisant. On se sert alors d'au moins deux connecteurs pour prévenir le mouvement.
 
-![joint rigide](./images/p3/joint_rigide_fleau.png)
+![joint rigide](./assets/images/p3/joint_rigide_fleau.png)
 
 #### Alignement
 
@@ -70,17 +70,17 @@ Il faut faire attention à l'alignement des fléaux pour s'assurer d'obtenir la 
 
 Voici quelques exemples :
 
-![fléau centré](./images/p3/align_fleau-centre.png)
+![fléau centré](./assets/images/p3/align_fleau-centre.png)
 
 > _Ici on utilise deux fléaux sur le côté afin que le fléau utile soit centré. La version du haut (avec les connecteurs bleux) est un joint rigide tandis que celle du bas (avec le connecteur beige) est un joint mobile. Un connecteur spécialisé est utilisé pour stabiliser l'autre extrémité des fléaux de côté._
 
-![alignement impossible](./images/p3/cadre_align-impossible.png)
+![alignement impossible](./assets/images/p3/cadre_align-impossible.png)
 
 > _Ici, on tente de créer un cadre avec juste 3 membres, mais c'est un design impossible car on ne peut jamais aligner les trous pour le dernier joint un par dessus l'autre. Des stratégies pour ça incluent : utiliser un membre séparateur (comme dans le cadre rigide plus haut), se servir de connecteurs spécialisés ou d'utiliser un fléau qui inclut déjà un angle._
 
 Connecteur spécial | Fléau avec angle
 --- | ---
-![connecteur spécial](./images/p3/align_connecteur-special.png) | ![fléau angulaire](./images/p3/align_fleau-angle.png)
+![connecteur spécial](./assets/images/p3/align_connecteur-special.png) | ![fléau angulaire](./assets/images/p3/align_fleau-angle.png)
 
 ## Cadres
 
@@ -90,17 +90,17 @@ Les cadres rigides forment une base de support pour les parties mobiles du robot
 
 L'astuce principal pour les corps rigides avec les trousses EV3 est d'utiliser les cadres déjà fournis comme base, incluant la brique EV3 elle-même. Ces cadres sont déjà rigides et peuvent être utilisés pour construire des structures plus grandes.
 
-![cadres préfabriqués](./images/p3/cadre_prefab.png)
+![cadres préfabriqués](./assets/images/p3/cadre_prefab.png)
 
 Pour étendre un cadre, c'est important de s'assurer que la structure ne peut pas se déformer. Par exemple, un cadre rectangulaire peut être déformé en un parallélogramme si les diagonales ne sont pas fixées.
 
 > _Notez que la friction fournie par les connecteurs aux joints n'est pas suffisant pour empêcher un cadre mal formé de se déformer._
 
-![cadre déformé](./images/p3/cadre_deformable.png)
+![cadre déformé](./assets/images/p3/cadre_deformable.png)
 
 Pour éviter ça, on peut ajouter des diagonales ou des renforts. Les pièces anglulaires sont des bons choix pour ça. Il y a aussi un paquet de connecteurs spéciaux pour les cadres, incluant des connecteurs en H et en L. Certaines pièces sont aussi conçues pour joindre des arbres cruciformes pour former des cadres au lieu de joindre des fléaux.
 
-![pièces angulaires](./images/p3/cadre_pieces.png)
+![pièces angulaires](./assets/images/p3/cadre_pieces.png)
 
 ### Cadres mobiles (mécanismes à barres)
 

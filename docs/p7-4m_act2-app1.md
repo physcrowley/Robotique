@@ -4,7 +4,7 @@
 
 ## Code adapté
 
-NightimeVacuumV2 -> [night-vacuum-pio.zip](./code/platformio/night-vacuum-pio.zip)
+NightimeVacuumV2 -> [night-vacuum-pio.zip](./assets/code/platformio/night-vacuum-pio.zip)
 
 ## Questions d'analyse
 
@@ -23,7 +23,7 @@ NightimeVacuumV2 -> [night-vacuum-pio.zip](./code/platformio/night-vacuum-pio.zi
 
 ### Avec une nouvelle version du code
 
-Que ce soit utile ou non dans ce contexte (comme vous l'aviez considérer au dernier numéro des questions d'analyse), voici quand même une version de ce programme écrit comme une machine à états finis (MEF/FSM) dans le but de vous fournir une autre variante en exemple : [night-vacuum-fsm.zip](./code/platformio/night-vacuum-fsm-pio.zip). La machine a été conçue avec les états suivants :
+Que ce soit utile ou non dans ce contexte (comme vous l'aviez considérer au dernier numéro des questions d'analyse), voici quand même une version de ce programme écrit comme une machine à états finis (MEF/FSM) dans le but de vous fournir une autre variante en exemple : [night-vacuum-fsm.zip](./assets/code/platformio/night-vacuum-fsm-pio.zip). La machine a été conçue avec les états suivants :
 
 - `SETUP` : initialisation,
 - `IDLE` : immobile,

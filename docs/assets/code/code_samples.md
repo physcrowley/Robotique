@@ -1,4 +1,4 @@
-[Accueil](../index.md)
+[Accueil](../../index.md)
 
 # Exemples de code à télécharger
 
@@ -40,7 +40,7 @@ Les exemples sont en format `.ino` pour Arduino IDE et en format `.zip` pour Pla
 
 4M : boutons-poussoirs et temps de réponse
 
-> Voir les liens dans l'activité [boutons-poussoirs et temps de réponse](../p2-4m_act2.md)
+> Voir les liens dans l'activité [boutons-poussoirs et temps de réponse](../../p2-4m_act2.md)
 
 #### Activité 3
 
@@ -59,7 +59,7 @@ Version 4M : contrôle de différents types de moteurs
 
 - Arduino IDE :
   - [servo-test.ino](./arduinoide/servo-test.ino) - pour tester un servomoteur
-  - [Voir l'activité](../p2-4m_act3.md) pour le code pour les moteurs CC et les moteurs pas-à-pas
+  - [Voir l'activité](../../p2-4m_act3.md) pour le code pour les moteurs CC et les moteurs pas-à-pas
 
 #### Activité 4
 
