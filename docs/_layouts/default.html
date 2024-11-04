@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'fr-CA' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% seo %}
+    <link
+      rel="stylesheet"
+      href="{{ site.url | append: '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
+    {% include head-custom.html %}
+  </head>
+  <body class="markdown-body">
+    <input type="checkbox" id="open" class="toggle" />
+    <label for="open" class="hamburger">&#9776;</label>
+    <nav class="navigation">
+      <label for="open" class="leftarrow">&xlArr;</label>
+      <h3>{{ site.title_full }}</h3>
+      <div class="nav-items">
+        {% for item in site.data.navigation %}
+        <p><a href="{{ item.url | relative_url }}">{{ item.title }}</a></p>
+          {% for subitem in item.subitems %}
+          <p id="nav-subitem"><a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a></p>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </nav>
+    <div class="container-lg px-3 my-5">
+      {% if site.title and site.title != page.title %}
+      <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
+      {% endif %} {{ content }}
+
+      <footer>
+        <p>
+          &#169; 2023-2024 David Crowley |
+          <a
+            href="{{ page.url | absolute_url | prepend: 'https://docs.google.com/forms/d/e/1FAIpQLScvxlefmHv2BrsBkX8TWOKPPSqJpxTISNCC5OeiQBnsaB-1VQ/viewform?usp=pp_url&entry.1499387985=' }}"
+            target="_blank"
+            >Formulaire de rétroaction (commentaires, suggestions, problèmes)</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+      integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>
