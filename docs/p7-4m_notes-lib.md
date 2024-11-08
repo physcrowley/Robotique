@@ -8,6 +8,36 @@
 
 On peut créer du code qui est utile dans plusieurs projets. Au lieu de le copier-coller à chaque fois, on peut le mettre dans une bibliothèque. Cela nous permet de réutiliser le code plus facilement et de le partager avec d'autres personnes. Ça garde aussi le code unique du nouveau projet plus propre en gardant le code commun dans d'autres fichiers.
 
+<details><summary>Définitions</summary>
+
+<div markdown='1'>
+
+**header file** (fichier d'en-tête) 
+: un fichier avec l'extension `.h` qui contient les **déclarations** des fonctions. C'est ce fichier qui est importé avec la directive `#include` dans d'autres fichiers et permet à ce code de savoir ce qui est disponible dans la bibliothèque.
+
+**source file** (fichier source) 
+: un fichier avec l'extension `.cpp` qui **définit** les fonctions qui sont déclarées dans le fichier d'en-tête de la bibliothèque. Le fichier principal du programme, souvent `main.cpp`, est aussi un fichier source.
+
+**`lib`** 
+: sous-dossier du projet PlatformIO où on place les bibliothèques personnalisées, soit des dossiers contenant des fichiers .h et .cpp.
+
+**déclaration** 
+: la signature d'une fonction sans sons corps. Une signature inclut :
+
+- le type de retour,
+- le nom et
+- les paramètres entre parenthèses `()`, et
+- elles se terminent avec `;` _(pas un corps `{}`)_
+
+Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se trouver dans un fichier source si les fonctions sont définies après leur première utilisation (p. ex. on utilise une fonction dans `loop()` mais on le définit après `loop()` -> ça prend une déclaration avant `loop()`).
+
+**définition** : le code qui implémente une fonction, incluant sa signature et le corps de la fonction. Le corps est la paire de `{}` avec toutes les instructions qu'on écrit entre ces accolades.
+
+</div>
+
+</details>
+
+
 ### Objectifs d'apprentissage
 
 Vous devrez être capable de :
@@ -20,24 +50,6 @@ Vous devrez être capable de :
 
 - Je suis capable de créer des bibliothèques personnelles pour le code que j'utilise dans plusieurs projets afin de me sauver du temps et rendre le code du projet plus facile à lire.
 
-### Vocabulaire
-
-**header file** (fichier d'en-tête) : un fichier avec l'extension `.h` qui contient les **déclarations** des fonctions. C'est ce fichier qui est importé avec la directive `#include` dans d'autres fichiers et permet à ce code de savoir ce qui est disponible dans la bibliothèque.
-
-**source file** (fichier source) : un fichier avec l'extension `.cpp` qui **définit** les fonctions qui sont déclarées dans le fichier d'en-tête de la bibliothèque. Le fichier principal du programme, souvent `main.cpp`, est aussi un fichier source.
-
-**`lib`** : sous-dossier du projet PlatformIO où on place les bibliothèques personnalisées, soit des dossiers contenant des fichiers .h et .cpp.
-
-**déclaration** : la signature d'une fonction sans sons corps. Une signature inclut :
-
-- le type de retour,
-- le nom et
-- les paramètres entre parenthèses `()`, et
-- elles se terminent avec `;` _(pas un corps `{}`)_
-
-Des déclarations se trouvent dans un fichier d'en-tête mais peuvent aussi se trouver dans un fichier source si les fonctions sont définies après leur première utilisation (p. ex. on utilise une fonction dans `loop()` mais on le définit après `loop()` -> ça prend une déclaration avant `loop()`).
-
-**définition** : le code qui implémente une fonction, incluant sa signature et le corps de la fonction. Le corps est la paire de `{}` avec toutes les instructions qu'on écrit entre ces accolades.
 
 ## Créer une bibliothèque
 

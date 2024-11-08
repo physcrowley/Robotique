@@ -16,15 +16,21 @@ La **machine à états finis** est utile pour choisir une tâche ou une action p
 
 <div markdown='1'>
 
-**Machine à états finis** (_FSM_) : un système qui, à un moment donné, peut être dans un seul état parmi un nombre défini d'états. Chaque état est associé à un ensemble d'actions et de transitions vers d'autres états.
+**Machine à états finis** (_FSM_) 
+: un système qui, à un moment donné, peut être dans un seul état parmi un nombre défini d'états. Chaque état est associé à un ensemble d'actions et de transitions vers d'autres états.
 
-**Diagramme d'états** : une représentation graphique d'une machine à états finis. Chaque état est représenté par un ovale et chaque transition par une flèche. On peut annoter les flèches avec la condition de transition. Ainsi, le diagramme d'états remplace à très haut niveau le pseudocode pour décrire le comportement du robot.
+**Diagramme d'états** 
+: une représentation graphique d'une machine à états finis. Chaque état est représenté par un ovale et chaque transition par une flèche. On peut annoter les flèches avec la condition de transition. Ainsi, le diagramme d'états remplace à très haut niveau le pseudocode pour décrire le comportement du robot.
 
-**Énumération (`enum`)** : un type de données qui permet de définir un ensemble de constantes numériques. C'est utile pour définir les différents états de la machine à états finis parce qu'on peut les nommer de façon descriptive au lieu de se rappeler du chiffre associé.
+**Énumération (`enum`)** :
+ un type de données qui permet de définir un ensemble de constantes numériques. C'est utile pour définir les différents états de la machine à états finis parce qu'on peut les nommer de façon descriptive au lieu de se rappeler du chiffre associé.
 
-**Switch-case** : une structure de contrôle qui permet de comparer une variable à une liste de valeurs possibles. C'est une façon plus lisible qu'une structure `if-else if` pour gérer ce type de cas. Dans les FSM, la valeur à comparer est l'état et chaque valeur possible est un état défini dans l'énumération.
+**Switch-case** 
+: une structure de contrôle qui permet de comparer une variable à une liste de valeurs possibles. C'est une façon plus lisible qu'une structure `if-else if` pour gérer ce type de cas. Dans les FSM, la valeur à comparer est l'état et chaque valeur possible est un état défini dans l'énumération.
 
 </div>
+
+</details>
 
 ## Exemple - robot qui pivote à gauche et à droite puis s'arrête
 
