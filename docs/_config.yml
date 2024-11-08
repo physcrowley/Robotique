@@ -5,4 +5,16 @@ description: Cours de 11e et de 12e années en robotique
 url: "https://physcrowley.github.io"
 baseurl: "/Robotique"
 
+lang: fr-CA
+
+compress_html:
+  ignore:
+    envs: all
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 livereload: true
