@@ -8,6 +8,10 @@ Plusieurs programmes que nous avons vus jusqu'à présent utilisent la fonction 
 
 ## En bref
 
+<details><summary>Définitions</summary>
+
+<div markdown='1'>
+
 **bloquer** : arrêter l'exécution du programme pour un certain temps, notamment avec `delay()`
 
 **multi-tâche** : gérer plusieurs tâches en même temps. Avec certain matériel, c'est possible de lancer plusieurs fils d'exécution en parallèle (comme Scratch), mais il y a un seul fil d'exécution possible avec Arduino. Pour faire de la multi-tâche avec Arduino, on doit gérer les tâches en séquence tout en vérifier si c'est le moment de lancer une instruction spécifique.
@@ -15,6 +19,8 @@ Plusieurs programmes que nous avons vus jusqu'à présent utilisent la fonction 
 **millis()** : fonction qui retourne le nombre de millisecondes écoulées depuis le démarrage du programme. On peut l'utiliser pour gérer les intervalles de temps sans bloquer le programme.
 
 **variable locale** : variable déclarée à l'intérieur d'une fonction et qui n'est accessible que dans cette fonction. Elle est détruite à la fin de la fonction sauf si elle est déclarée `static`.
+
+</div>
 
 ## 🛠️ Pratique - mise en place
 
