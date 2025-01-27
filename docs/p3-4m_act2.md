@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md#projet-3--structures-mécaniques)
+[Accueil](./index.md) > [4M](./accueil4M.md#projet-3--structures-mécaniques)
 
 # Projet 3, Activité 2 : robot trépied ou quadrupède sauteur
 

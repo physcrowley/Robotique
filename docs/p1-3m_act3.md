@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [3M](./acceuil3M.md#projet-1--inventaire-installation-et-tests-du-matériel-et-des-logiciels)
+[Accueil](./index.md) > [3M](./accueil3M.md#projet-1--inventaire-installation-et-tests-du-matériel-et-des-logiciels)
 
 # Projet 1, Activité 3 : Installation logicielle et tests de connexion avec la brique EV3
 

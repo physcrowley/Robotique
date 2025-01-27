@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md#projet-5--systèmes-mécaniques)
+[Accueil](./index.md) > [4M](./accueil4M.md#projet-5--systèmes-mécaniques)
 
 # Projet 5, activité 2 : Pince robotique
 

@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [3M](./acceuil3M.md#projet-3--structures-mécaniques)
+[Accueil](./index.md) > [3M](./accueil3M.md#projet-3--structures-mécaniques)
 
 # Notes : Structures mécaniques avec LEGO
 

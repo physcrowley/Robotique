@@ -1,4 +1,4 @@
-[Accueil](./index.md) > [4M](./acceuil4M.md#projet-7--mouvement-avec-mission) > [Activité 2 : Capteurs](./p7-4m_act2.md)
+[Accueil](./index.md) > [4M](./accueil4M.md#projet-7--mouvement-avec-mission) > [Activité 2 : Capteurs](./p7-4m_act2.md)
 
 # Activité 2 : Phototransistor (capteur lumineux)
 
