@@ -94,16 +94,24 @@ Plus d'informations et de tutoriels sur :
 
 <details><summary>Projet 4 : Recherche sur l'apprentissage machine</summary>
 
+<div markdown='1'>
+
 - 📚 Notes : histoire de l'apprentissage machine
 - Activité 1 : recherche sur les domaines d'avenir en apprentissage machine
+
+</div>
 
 </details>
 
 <details><summary>Projet 5 : Systèmes mécaniques</summary>
 
+<div markdown='1'>
+
 - [Activité 1 : tourelle universelle](./p5-4m_act1.md)
 - [📚 Notes : degres de liberté](./p5-4m_notes.md)
 - [Activité 2 : bras robotique avec pince](./p5-4m_act2.md)
+
+</div>
 
 </details>
 
