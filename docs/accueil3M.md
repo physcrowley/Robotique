@@ -2,20 +2,45 @@
 
 # 3M - Cours d'introduction à la robotique
 
-#### Ressources universelles pour les projets et les tutoriels
-
-- <a href="https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view" target="_blank">Traduction de pages web vers le français</a>
-- <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Gabarit : Journal du processus de design et d'ingénierie</a>
-- <a href="https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view" target="_blank">Grille d'évaluation pour les projets d'ingénierie</a>
-- Documentation :
-  - <a href="https://pybricks.com/ev3-micropython/" target="_blank">Pybricks EV3 Micropython</a>
-  - <a href="https://docs.arduino.cc/built-in-examples/" target="_blank">Arduino</a>
 
 <div class='tile-box'>
 
 <div markdown='1'>
 
-## Projet 1 : Inventaire, installation et tests du matériel et des logiciels
+### Ressources
+
+<details><summary>Documents</summary>
+
+<div markdown='1'>
+
+- <a href="https://docs.google.com/document/d/1y17romWgOPcvhSh9MgJROtPkUOQNkaMrkGqBu2A_q9w/view" target="_blank">Traduction de pages web vers le français</a>
+- <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Gabarit : Journal du processus de design et d'ingénierie</a>
+- <a href="https://docs.google.com/spreadsheets/d/1iY3OSkaLLjLcSvK5xwhQi8q6bvDzHqnTcUQaFn-dW34/view" target="_blank">Grille d'évaluation pour les projets d'ingénierie</a>
+
+</div>
+
+</details>
+
+<details><summary>Documentation des langages de programmation</summary>
+
+<div markdown='1'>
+
+- <a href="https://pybricks.com/ev3-micropython/" target="_blank">Pybricks EV3 Micropython</a>
+- <a href="https://docs.arduino.cc/built-in-examples/" target="_blank">Arduino</a>
+
+</div>
+
+</details>
+
+</div>
+
+<div markdown='1'>
+
+### Unités
+
+<details><summary>Projet 1 : Inventaire, installation et tests du matériel et des logiciels</summary>
+
+<div markdown='1'>
 
 - Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
 - [Activité 2 : inventaire et tests pour la trousse LEGO EV3](./p1-3m_act2.md)
@@ -24,9 +49,11 @@
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 2 : Circuits électroniques et programmation
+<details><summary>Projet 2 : Circuits électroniques et programmation</summary>
+
+<div markdown='1'>
 
 - [Activité 1 : circuits de base - source d'énergie, interrupteur, DEL, résistance](./p2-3m_act1.md)
 - [📚 Notes : composants de base en électronique](p2-3m_notes_composants.md)
@@ -49,9 +76,11 @@ Plus d'informations et de tutoriels sur :
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 3 : Structures mécaniques
+<details><summary>Projet 3 : Structures mécaniques</summary>
+
+<div markdown='1'>
 
 - Activité 1 : concours de tours spaghetti + guimauves
 - [📚 Notes : charpentes, joints, montures](./p3-3m_notes.md)
@@ -59,18 +88,22 @@ Plus d'informations et de tutoriels sur :
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 4 : Recherche sur les domaines d'avenir en robotique
+<details><summary>Projet 4 : Recherche sur les domaines d'avenir en robotique</summary>
+
+<div markdown='1'>
 
 - 📚 Notes : histoire de la robotique
 - Activité 1 : recherche sur les domaines d'avenir en robotique
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 5 : Systèmes mécaniques
+<details><summary>Projet 5 : Systèmes mécaniques</summary>
+
+<div markdown='1'>
 
 - [Activité 1 : faire tourner un fléau le plus rapidement possible](./p5-3m_act1.md)
 - [📚 Notes : avantage mécanique - leviers, poulies et engrenages](./p5-3m_notes.md)
@@ -78,18 +111,22 @@ Plus d'informations et de tutoriels sur :
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 6 : Conception 3D
+<details><summary>Projet 6 : Conception 3D</summary>
+
+<div markdown='1'>
 
 - Activité 1 : introduction à OnShape - un domino
 - Activité 2 : défi de conception paramétrique
 
 </div>
 
-<div markdown='1'>
+</details>
 
-## Projet 7 : Mouvement avec mission
+<details><summary>Projet 7 : Mouvement avec mission</summary>
+
+<div markdown='1'>
 
 - [📚 Notes : programmer l'EV3 avec Python](./p7-3m_notes.md)
 - [Activité 1 : robot de base (entraînement différentiel)](./p7-3m_act1.md)
@@ -100,11 +137,17 @@ Plus d'informations et de tutoriels sur :
 
 </div>
 
+</details>
+
+<details><summary>Projet 8 : Projet cumulatif</summary>
+
 <div markdown='1'>
 
-## Projet 8 : Projet cumulatif
-
 Il y a un projet cumulatif pour ce cours. Voir les détails dans Google Classroom de votre groupe.
+
+</div>
+
+</details>
 
 </div>
 
