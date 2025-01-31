@@ -24,4 +24,4 @@
 1. Compléter et signer les listes de vérification pour l'inventaire et les tests.
 1. Soumettre le document complété dans la tâche appropriée sur Google Classroom.
 
-[Tests LEGO EV3](https://docs.google.com/document/d/1eIcnLBZqC8S0AyJGCANc0l69sZaQaqZBZaJMfbFgG3Q/view)
+<a href="[link](https://docs.google.com/document/d/1eIcnLBZqC8S0AyJGCANc0l69sZaQaqZBZaJMfbFgG3Q/view)" target="_blank">Tests LEGO EV3</a>
