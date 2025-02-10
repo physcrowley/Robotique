@@ -6,23 +6,23 @@ La plupart de ces notes s'appliquent au langage Python en général et peuvent �
 
 Seulement les notes sur les objets de la bibliothèque `pybricks` sont spécifiques à la programmation de l'EV3.
 
-- [Notes : Programmer avec ev3-micropython](#notes--programmer-avec-ev3-micropython)
-  - [Informations dans un programme](#informations-dans-un-programme)
-    - [Pratique](#pratique)
-      - [Préparer votre environnement de travail](#préparer-votre-environnement-de-travail)
-      - [Code de démonstration](#code-de-démonstration)
-  - [Calculs](#calculs)
-    - [Pratique](#pratique-1)
-  - [Comparaisons logiques avec Python](#comparaisons-logiques-avec-python)
-    - [Pratique](#pratique-2)
-  - [Sélection](#sélection)
-    - [Pratique](#pratique-3)
-  - [Répétition](#répétition)
-    - [Pratique](#pratique-4)
-  - [Bibliothèque `pybricks`](#bibliothèque-pybricks)
-    - [Pratique](#pratique-5)
-  - [Fonctions](#fonctions)
-    - [Pratique](#pratique-6)
+- <a href="#notes--programmer-avec-ev3-micropython" target="_blank">Notes : Programmer avec ev3-micropython</a>
+  - <a href="#informations-dans-un-programme" target="_blank">Informations dans un programme</a>
+    - <a href="#pratique" target="_blank">Pratique</a>
+      - <a href="#préparer-votre-environnement-de-travail" target="_blank">Préparer votre environnement de travail</a>
+      - <a href="#code-de-démonstration" target="_blank">Code de démonstration</a>
+  - <a href="#calculs" target="_blank">Calculs</a>
+    - <a href="#pratique-1" target="_blank">Pratique</a>
+  - <a href="#comparaisons-logiques-avec-python" target="_blank">Comparaisons logiques avec Python</a>
+    - <a href="#pratique-2" target="_blank">Pratique</a>
+  - <a href="#sélection" target="_blank">Sélection</a>
+    - <a href="#pratique-3" target="_blank">Pratique</a>
+  - <a href="#répétition" target="_blank">Répétition</a>
+    - <a href="#pratique-4" target="_blank">Pratique</a>
+  - <a href="#bibliothèque-pybricks" target="_blank">Bibliothèque `pybricks`</a>
+    - <a href="#pratique-5" target="_blank">Pratique</a>
+  - <a href="#fonctions" target="_blank">Fonctions</a>
+    - <a href="#pratique-6" target="_blank">Pratique</a>
 
 
 ## Informations dans un programme
@@ -264,4 +264,4 @@ Comme avec les variables, dans Python il faut déclarer une fonction avant de l'
 
 ### Pratique
 
-Si vous êtes intéressé à apprendre plus sur la déclaration de fonctions en Python, vous pouvez consulter [ce tutoriel les site w3schools](https://www.w3schools.com/python/python_functions.asp).
+Si vous êtes intéressé à apprendre plus sur la déclaration de fonctions en Python, vous pouvez consulter <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">ce tutoriel les site w3schools</a>.

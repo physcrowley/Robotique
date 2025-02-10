@@ -24,7 +24,7 @@ Analyser une construction plus complexe en termes de ses degrés de liberté et 
 
 ## Instructions
 
-1. Suivre les instructions sur le site [EV3 Micropython](https://pybricks.com/ev3-micropython/examples/robot_arm.html) pour construire un bras robotique avec pince. Le code pybricks à télécharger se trouve également sur le site.
+1. Suivre les instructions sur le site <a href="https://pybricks.com/ev3-micropython/examples/robot_arm.html" target="_blank">EV3 Micropython</a> pour construire un bras robotique avec pince. Le code pybricks à télécharger se trouve également sur le site.
 1. Vérifier la connexion de votre brique avec l'ordinateur en suivant les instructions de l'[Activité 3 du Projet 1](./p1-3m_act3.md).
 1. Créer un document pour répondre aux questions de recherche. Pour chaque question, utilisez une photo de votre montage comme référence, idéalement avec des annotations pour identifier les différentes parties.
 

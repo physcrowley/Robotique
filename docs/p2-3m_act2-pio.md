@@ -42,4 +42,4 @@ Si vous voulez utliser des fichiers `.ino` dans un projet PlatformIO, voici les 
 * À la page d'accueil de PlatformIO, cliquez sur le bouton _New Project_ et choisissez un nom de projet et la carte Arduino Uno. 
 * Copiez le code dans le fichier original `.ino` et le coller dans le fichier `./src/main.cpp` du nouveau projet PlatformIO. Ce code devrait entièrement remplacer le contenu de `main.cpp`.
 * Ajouter l'instruction `#include <Arduino.h>` comme première ligne dans le fichier.
-* Si nécessaire, [ajoutez les bibliothèques requis](#ajouter-des-bibliothèques-avec-platformio).
+* Si nécessaire, <a href="#ajouter-des-bibliothèques-avec-platformio" target="_blank">ajoutez les bibliothèques requis</a>.

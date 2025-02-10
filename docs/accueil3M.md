@@ -44,7 +44,7 @@
 
 - Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
 - [Activité 2 : inventaire et tests pour la trousse LEGO EV3](./p1-3m_act2.md)
-- [📚 Notes : définitions de base en robotique](https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view)
+<a href="https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view" target="_blank">📚 Notes : définitions de base en robotique</a>
 - [Activité 3 : installation logicielle et tests de connexion avec la brique EV3](./p1-3m_act3.md)
 
 </div>
@@ -56,7 +56,7 @@
 <div markdown='1'>
 
 - [Activité 1 : circuits de base - source d'énergie, interrupteur, DEL, résistance](./p2-3m_act1.md)
-- [📚 Notes : composants de base en électronique](p2-3m_notes_composants.md)
+- <a href="p2-3m_notes_composants.md" target="_blank">📚 Notes : composants de base en électronique</a>
 - [Activité 2 : tutoriel de démarrage avec Arduino](./p2-3m_act2.md)
 - [Activité 3 : microcontrôleur Arduino - pourquoi? comment?](./p2-3m_act3.md)
 - [📚 Notes : programmation Arduino de base](./p2-3m_notes_programmes.md)

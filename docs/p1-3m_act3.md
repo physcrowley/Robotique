@@ -12,7 +12,7 @@
 Cette image est un système d'exploitation alternative pour la brique EV3. Elle vous permet de progammer la brique avec des langages de programmation modernes comme Python.
 
 1. Obtenir une carte microSD de l'enseignant.
-1. Suivre [ces instructions pour tester l'image de la carte](https://docs.google.com/document/d/12S0q2qnkA0hj6m2gmTn4qhQcznP-quQ0ol4m0WgKlv4/view).
+1. Suivre <a href="https://docs.google.com/document/d/12S0q2qnkA0hj6m2gmTn4qhQcznP-quQ0ol4m0WgKlv4/view" target="_blank">ces instructions pour tester l'image de la carte</a>.
 
 ## Préparer et tester l'environnement de développement
 
@@ -20,7 +20,7 @@ Cette image est un système d'exploitation alternative pour la brique EV3. Elle 
 
 Ce logiciel est votre éditeur de code. Avec les extensions suggérées, il devient un environnement de développement intégré (IDE) pour la programmation de la brique EV3.
 
-1. Installer **VS Code** sur votre ordinateur. Vous pouvez obtenir l'installateur à partir de [https://code.visualstudio.com/](https://code.visualstudio.com/).
+1. Installer **VS Code** sur votre ordinateur. Vous pouvez obtenir l'installateur à partir de <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>.
 1. Ajouter l'extension _LEGO MINDSTORMS EV3_ de LEGO Education à votre installation de VS Code. Vous pouvez la trouver dans l'onglet Extensions de VS Code. Cette extension ajoute également _EV3 Device Browser_ à votre ordinateur, ce qui vous permet de vous connecter à la brique EV3.
 1. Ajouter l'extension _Python_ à votre installation de VS Code. Vous pouvez la trouver dans l'onglet Extensions de VS Code. C'est elle qui analyse votre code pour des erreurs.
 
@@ -28,7 +28,7 @@ Ce logiciel est votre éditeur de code. Avec les extensions suggérées, il devi
 
 VS Code essaiera de signaler les erreurs dans vos programmes avec l'extension Python. Pour bien faire ce travail, il a besoin de connaître les fonctions et les classes disponibles dans le module _pybricks_, soit les objets que vous utilisez pour programmer la brique EV3 en Python.
 
-1. Installer **Python** sur votre compte (sans droits d'administrateur). Vous pouvez obtenir l'installateur à partir de [https://www.python.org/](https://www.python.org/).
+1. Installer **Python** sur votre compte (sans droits d'administrateur). Vous pouvez obtenir l'installateur à partir de <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>.
    > Assurez vous de **décocher** la case _Use admin rights during installation_ parce que vous n'avez pas cette autorisation.
    > Assurez-vous de **cocher** la case _Add Python to PATH_ lors de l'installation. Cela permet à VS Code de trouver Python.
 1. Ajouter la documentation _pybricks (version 2.0.0)_ à votre installation de Python.
@@ -40,7 +40,7 @@ VS Code essaiera de signaler les erreurs dans vos programmes avec l'extension Py
 
 ### Connexion avec la brique EV3
 
-1. Suivre les étapes de dépannage de connexion dans le document [Dépannage de connexion avec la brique EV3](https://docs.google.com/document/d/1LnTJR6cIUQQlo0-1DnkuxlnX-Cyz_5t5xbr6X3uP4eE/view) afin d'établir une connexion entre la brique EV3 et votre ordinateur.
+1. Suivre les étapes de dépannage de connexion dans le document <a href="https://docs.google.com/document/d/1LnTJR6cIUQQlo0-1DnkuxlnX-Cyz_5t5xbr6X3uP4eE/view" target="_blank">Dépannage de connexion avec la brique EV3</a> afin d'établir une connexion entre la brique EV3 et votre ordinateur.
 
 ### Test - créer un projet dans VS Code et le lancer sur la brique EV3
 

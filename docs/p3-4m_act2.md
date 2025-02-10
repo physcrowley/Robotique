@@ -18,5 +18,5 @@ Les jambes devraient appliquer les concepts des cames ou de mécanismes à barre
 
 ## Livrables
 
-1. Compléter le [Journal d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view) pour cette activité. Un gabarit est disponible sur Google Classroom dans les _Informations générales_.
+1. Compléter le <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Journal d'ingénierie</a> pour cette activité. Un gabarit est disponible sur Google Classroom dans les _Informations générales_.
 1. Soumettre le Journal d'ingénierie dans la tâche appropriée sur Google Classroom.

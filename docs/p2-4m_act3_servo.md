@@ -6,4 +6,4 @@ Voir la vidéo suivante pour un projet utilisant XOD pour spécifier le code qui
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iH9_xtulyws?si=t-pDHEEyJRlfl8Et" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Vous pouvez télécharger le logiciel XOD IDE à partir de [https://xod.io/](https://xod.io/). Lors de l'installation, choisir l'option "Install for me only" pour éviter les problèmes de droits d'administrateur.
+Vous pouvez télécharger le logiciel XOD IDE à partir de <a href="https://xod.io/" target="_blank">https://xod.io/</a>. Lors de l'installation, choisir l'option "Install for me only" pour éviter les problèmes de droits d'administrateur.

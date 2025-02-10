@@ -12,7 +12,7 @@
 - Relative Number of Actuators and DOF
 - Holonomic and Non-Holonomic Motion
 
-[Lien vers la première section](https://link.springer.com/chapter/10.1007/978-3-319-62533-1_5#Sec14)
+<a href="https://link.springer.com/chapter/10.1007/978-3-319-62533-1_5#Sec14" target="_blank">Lien vers la première section</a>
 
 ## Vidéo
 

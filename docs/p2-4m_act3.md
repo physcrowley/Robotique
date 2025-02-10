@@ -55,11 +55,11 @@ Testez un servomoteur à la fois en utilisant les mêmes branchements. Commencez
 
 🚧 Suivre ces instructions :
 
-[tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=38#manual)
+<a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=38#manual" target="_blank">tiré du manuel pour notre trousse de pièces</a>
 
-[détails sur la puce L9110H](https://cdn-shop.adafruit.com/product-files/4489/4489_datasheet-l9110.pdf)
+<a href="https://cdn-shop.adafruit.com/product-files/4489/4489_datasheet-l9110.pdf" target="_blank">détails sur la puce L9110H</a>
 
-Obtenir le code ici : [Activité 13 sur la page GitHub d'UCTronics](https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_13_Controlling_DC_motor/Lesson_13_Controlling_DC_motor.ino)
+Obtenir le code ici : <a href="https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_13_Controlling_DC_motor/Lesson_13_Controlling_DC_motor.ino" target="_blank">Activité 13 sur la page GitHub d'UCTronics</a>
 
 #### Matériel
 
@@ -75,9 +75,9 @@ Obtenir le code ici : [Activité 13 sur la page GitHub d'UCTronics](https://gith
 
 🚧 Suivre ces instructions :
 
-[tiré du manuel pour notre trousse de pièces](https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=40#manual)
+<a href="https://www.manualslib.com/manual/1810234/Uctronics-Ultimate-Starter-Kit-For-Arduino.html?page=40#manual" target="_blank">tiré du manuel pour notre trousse de pièces</a>
 
-Obtenir le code ici : [Activité 14 sur la page GitHub d'UCTronics](https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_14_Controlling_Stepper_Motor/Lesson_14_Controlling_Stepper_Motor.ino)
+Obtenir le code ici : <a href="https://github.com/UCTRONICS/uctronics_arduino_kits/blob/master/Code/Lesson_14_Controlling_Stepper_Motor/Lesson_14_Controlling_Stepper_Motor.ino" target="_blank">Activité 14 sur la page GitHub d'UCTronics</a>
 
 #### Matériel
 

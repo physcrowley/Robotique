@@ -5,7 +5,7 @@
 ## 🚧 Version temporaire :
 
 ### Base
-1. Suivre les instructions sur [le site d'Arduino](https://docs.arduino.cc/built-in-examples/digital/Debounce/). Le terme **debounce** se traduit à **antirebond** en français et signifie "délai suffisant pour des lectures distinctes".
+1. Suivre les instructions sur <a href="https://docs.arduino.cc/built-in-examples/digital/Debounce/" target="_blank">le site d'Arduino</a>. Le terme **debounce** se traduit à **antirebond** en français et signifie "délai suffisant pour des lectures distinctes".
 
 ### Ajustements
 1. Ajuster le délai dans le code pour trouver un délai qui fonctionne bien pour votre bouton-poussoir, c'est-

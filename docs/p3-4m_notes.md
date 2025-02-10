@@ -29,9 +29,9 @@ Voici une courte vidéo montrant la variété des mouvements possibles avec un m
 
 Selon le mouvement des membres joints au cadre on a ces trois types de mécanismes à barres :
 
-- **double manivelle** - convertir un type de rotation en un autre type de rotation : [animation de la manivelle double](https://www.geogebra.org/m/yck9u4az)
-- **manivelle-oscillateur** - convertir une rotation en mouvement quasi-linéaire, comme des jambes de marcheur : [animation de la manivelle-oscillateur](https://www.geogebra.org/m/avan2x7e)
-- **double oscillateur** - bouger deux membres d'un cadre de manière synchrone, comme des bras robotique : [animation de l'oscillateur double](https://www.geogebra.org/m/csat6fte)
+- **double manivelle** - convertir un type de rotation en un autre type de rotation : <a href="https://www.geogebra.org/m/yck9u4az" target="_blank">animation de la manivelle double</a>
+- **manivelle-oscillateur** - convertir une rotation en mouvement quasi-linéaire, comme des jambes de marcheur : <a href="https://www.geogebra.org/m/avan2x7e" target="_blank">animation de la manivelle-oscillateur</a>
+- **double oscillateur** - bouger deux membres d'un cadre de manière synchrone, comme des bras robotique : <a href="https://www.geogebra.org/m/csat6fte" target="_blank">animation de l'oscillateur double</a>
 
 Une géométrie commune est un **parallélogramme** qui, selon le rapport de longueur des barres fixés au cadre et de la bielle, peut donner les trois types de mouvement ci-dessus. Cette géométrie est utilisée quand on veut que la bielle reste toujours parallèle au cadre, ce qui est pratique dans les applications suivantes :
 
@@ -39,4 +39,4 @@ Une géométrie commune est un **parallélogramme** qui, selon le rapport de lon
 - bras robotique
 - mécanisme de direction
 
-Un problème commun avec le parallélogramme est la **position bistable** où tous les membres sont alignés et où le mouvement est indéterminé : les manivelles peuvent devenir oscillateurs et vice-versa. Vous pouvez le voir [dans cette animation](https://www.geogebra.org/m/quu8rsds). Pour éviter ce problème on peut ajouter un ressort, un arrêt fixe ou un autre mécanisme pour forcer le mécanisme à rester dans une position stable.
+Un problème commun avec le parallélogramme est la **position bistable** où tous les membres sont alignés et où le mouvement est indéterminé : les manivelles peuvent devenir oscillateurs et vice-versa. Vous pouvez le voir <a href="https://www.geogebra.org/m/quu8rsds" target="_blank">dans cette animation</a>. Pour éviter ce problème on peut ajouter un ressort, un arrêt fixe ou un autre mécanisme pour forcer le mécanisme à rester dans une position stable.

@@ -8,13 +8,13 @@ Comme initiation au sujet, nous utiliserons les pièces de votre trousse LEGO EV
 
 Ces notes couvrent les sujets suivants :
 
-- [Connecteurs](#connecteurs)
-- [Joints](#joints)
-  - [Joints mobiles](#joints-mobiles)
-  - [Joints rigides](#joints-rigides)
-- [Cadres](#cadres)
-  - [Cadres rigides](#cadres-fixes)
-  - [Cadres mobiles (mécanismes à barres)](#cadres-mobiles)
+- <a href="#connecteurs" target="_blank">Connecteurs</a>
+- <a href="#joints" target="_blank">Joints</a>
+  - <a href="#joints-mobiles" target="_blank">Joints mobiles</a>
+  - <a href="#joints-rigides" target="_blank">Joints rigides</a>
+- <a href="#cadres" target="_blank">Cadres</a>
+  - <a href="#cadres-fixes" target="_blank">Cadres rigides</a>
+  - <a href="#cadres-mobiles" target="_blank">Cadres mobiles (mécanismes à barres)</a>
 
 ## Connecteurs
 
@@ -58,7 +58,7 @@ Dans le cas d'un _cadre rigide_, c'est la géométrie du cadre qui empêche le m
 
 ![cadre rigide](./assets/images/p3/cadre_rigide.png)
 
-> _Notez l'utilisation de triangles pour stabiliser le cadre. Avec LEGO, on ne peut pas former un triangle sur le même plan, alors les trois membres du triangle se trouvent sur des plans différents. Il faut souvent faire preuve de créativité pour aligner les pièces pour obtenir ce que vous voulez. (Voir aussi [la section ci-dessous sur l'alignement](#alignement))._
+> _Notez l'utilisation de triangles pour stabiliser le cadre. Avec LEGO, on ne peut pas former un triangle sur le même plan, alors les trois membres du triangle se trouvent sur des plans différents. Il faut souvent faire preuve de créativité pour aligner les pièces pour obtenir ce que vous voulez. (Voir aussi <a href="#alignement" target="_blank">la section ci-dessous sur l'alignement</a>)._
 
 Dans le cas d'un joint rigide qui _prolonge un fléau_, la friction des connecteurs n'est pas suffisant. On se sert alors d'au moins deux connecteurs pour prévenir le mouvement.
 

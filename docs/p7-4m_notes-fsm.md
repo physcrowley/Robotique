@@ -61,7 +61,7 @@ Il pourrait aussi y avoir des **embranchements** dans le diagramme d'états. Par
 
 ### L'extension _Draw.io Integration_ de Henning Dieterichs
 
-Si vous ajoutez l'extension _Draw.io Integration_ à VS Code, vous pouvez produire des diagrammes comme celui ci-dessus directement dans VS Code. Simplement créer un nouveau fichier avec l'extension de fichier `.drawio.png` et l'ouvrir en choisissant Draw.io comme éditeur. Vous aurez accès à la même interface que sur le site web [app.diagrams.net](https://app.diagrams.net/) mais sans avoir à quitter votre environnement de travail ni à télécharger le fichier pour l'inclure dans votre projet.
+Si vous ajoutez l'extension _Draw.io Integration_ à VS Code, vous pouvez produire des diagrammes comme celui ci-dessus directement dans VS Code. Simplement créer un nouveau fichier avec l'extension de fichier `.drawio.png` et l'ouvrir en choisissant Draw.io comme éditeur. Vous aurez accès à la même interface que sur le site web <a href="https://app.diagrams.net/" target="_blank">app.diagrams.net</a> mais sans avoir à quitter votre environnement de travail ni à télécharger le fichier pour l'inclure dans votre projet.
 
 ## 🛠️ Pratique - mise en place
 

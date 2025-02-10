@@ -23,7 +23,7 @@ Pour prévenir les bris et les blessures potentielles, nous utiliserons un logic
 
 ## Instructions
 
-1. Créez-vous une copie du [Journal d'ingénierie](https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view) pour ce projet.
+1. Créez-vous une copie du <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">Journal d'ingénierie</a> pour ce projet.
 1. Complétez les sections _Spécifications_ et _Idées de projet_. Montrez votre travail à l'enseignant pour valider votre compréhension de la tâche.
 1. Connectez votre brique EV3 avec l'EV3 Device Browser dans VS Code et transférez le projet à la brique.
 1. Une fois qu'il est sur la brique, vous pouvez le lancer à partir de la brique sans l'ordinateur. Naviguez dans le menu "File Browser" de la brique, ouvrir le dossier "safe_motor" et cliquez sur `main.py` pour lancer le programme.

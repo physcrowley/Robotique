@@ -3,7 +3,7 @@
 # Projet 3, Activité 1 : Boxeur mécanique
 
 Voir les instructions et les notes ici :
-* [Lego coup de poing](https://docs.google.com/document/d/1tRsc8raOPrn8xK7tl9ilAQHpPxTxR49WoMaNcgZdYGI/view)
+* <a href="https://docs.google.com/document/d/1tRsc8raOPrn8xK7tl9ilAQHpPxTxR49WoMaNcgZdYGI/view" target="_blank">Lego coup de poing</a>
 
 Construisez votre propre version d'un boxeur mécanique en suivant les diagrammes. Vous aurez besoin du matériel suivant :
 * fléaux LEGO

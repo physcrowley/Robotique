@@ -46,5 +46,5 @@ Voici une vidéo qui présente les différents types d'engrenages :
 
 Ces deux listes de lectures montrent plusieurs expériences ludiques et éducatives en lien avec la mécanique :
 
-- [Avantage de mouvement](https://www.youtube.com/watch?v=zJ3TABb1MRY&list=PLjs42dxcRiGNCF-Mjh9NXZjFEOtkf2ZVn)
-- [Avantage mécanique](https://www.youtube.com/watch?v=Ra2enBbzwWQ&list=PLjs42dxcRiGMh56wQSB7J5DfLpdsvuHOy)
+- <a href="https://www.youtube.com/watch?v=zJ3TABb1MRY&list=PLjs42dxcRiGNCF-Mjh9NXZjFEOtkf2ZVn" target="_blank">Avantage de mouvement</a>
+- <a href="https://www.youtube.com/watch?v=Ra2enBbzwWQ&list=PLjs42dxcRiGMh56wQSB7J5DfLpdsvuHOy" target="_blank">Avantage mécanique</a>

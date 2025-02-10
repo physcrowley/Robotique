@@ -29,4 +29,4 @@ Si vous voulez utiliser le code source `.cpp` d'un projet PlatformIO dans un pro
 * Créez une copie du fichier `main.cpp` (ou `nom-du-projet.cpp`) et renommez-la `nom-du-projet.ino`.
 * Déplacer le fichier `.ino` dans le dossier du projet Arduino IDE, généralement `~/Documents/Arduino` où `~` est le répertoire personnel de l'utilisateur.
 * Ouvrez le fichier `.ino` dans Arduino IDE et accepter la proposition de corriger la structure du projet.
-* Si nécessaire, [ajoutez les bibliothèques requis](#ajouter-des-bibliothèques-avec-arduino-ide).
+* Si nécessaire, <a href="#ajouter-des-bibliothèques-avec-arduino-ide" target="_blank">ajoutez les bibliothèques requis</a>.

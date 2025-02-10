@@ -45,7 +45,7 @@
 
 - Activité diagnostic : construction libre avec LEGO EV3 -> créer quelque chose qui bouge (joints, roues, etc.)
 - [Activité 2 : inventaire, installation et tests pour la trousse Arduino ShieldBot de Parallax](./p1-4m_act2.md)
-- [📚 Notes : définitions de base en robotique](https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view)
+- <a href="https://docs.google.com/document/d/1kr3UCqRWHvq4YeXPHUDKIzhNah-CdPPylHcNMfpNCUc/view" target="_blank">📚 Notes : définitions de base en robotique</a>
 
 </div>
 

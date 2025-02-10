@@ -1,15 +1,15 @@
-[Accueil](../../index.md)
+<a href="../../index.md" target="_blank">Accueil</a>
 
 # Exemples de code à télécharger
 
 Cette page vous permet de télécharger des exemples de code pour les projets de robotique et d'ingénierie décrits dans les cours TER3M et TER4M.
 
-- Exemples pour [EV3 (pybricks)](#ev3-pybricks)
-- Exemples pour [Arduino](#arduino)
+- Exemples pour <a href="#ev3-pybricks" target="_blank">EV3 (pybricks)</a>
+- Exemples pour <a href="#arduino" target="_blank">Arduino</a>
 
 ## EV3 (pybricks)
 
-_[🔗 Sauter à Arduino](#arduino)_
+_<a href="#arduino" target="_blank">🔗 Sauter à Arduino</a>_
 
 Les exemples sont en format `.py` et devraient remplacer le fichier `main.py` dans le dossier de votre projet EV3 Pybricks.
 
@@ -23,14 +23,14 @@ Les exemples sont en format `.py` et devraient remplacer le fichier `main.py` da
 
 ## Arduino
 
-_[🔗 Sauter à EV3 (pybricks)](#ev3-pybricks)_
+_<a href="#ev3-pybricks" target="_blank">🔗 Sauter à EV3 (pybricks)</a>_
 
 Sections
 
-- [Projet 2 : Circuits électroniques et programmation](#projet-2)
-- [Projet 5 : Systèmes mécaniques](#projet-5)
-- [Projet 6 : Mouvement avec mission](#projet-6)
-- [Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N](#lié-au-cours-software-foundations-with-arduino-shieldbot-de-cs2n)
+- <a href="#projet-2" target="_blank">Projet 2 : Circuits électroniques et programmation</a>
+- <a href="#projet-5" target="_blank">Projet 5 : Systèmes mécaniques</a>
+- <a href="#projet-6" target="_blank">Projet 6 : Mouvement avec mission</a>
+- <a href="#lié-au-cours-software-foundations-with-arduino-shieldbot-de-cs2n" target="_blank">Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N</a>
 
 Les exemples sont en format `.ino` pour Arduino IDE et en format `.zip` pour PlatformIO (VSCode).
 
@@ -40,7 +40,7 @@ Les exemples sont en format `.ino` pour Arduino IDE et en format `.zip` pour Pla
 
 4M : boutons-poussoirs et temps de réponse
 
-> Voir les liens dans l'activité [boutons-poussoirs et temps de réponse](../../p2-4m_act2.md)
+> Voir les liens dans l'activité <a href="../../p2-4m_act2.md" target="_blank">boutons-poussoirs et temps de réponse</a>
 
 #### Activité 3
 
@@ -59,7 +59,7 @@ Version 4M : contrôle de différents types de moteurs
 
 - Arduino IDE :
   - [servo-test.ino](./arduinoide/servo-test.ino) - pour tester un servomoteur
-  - [Voir l'activité](../../p2-4m_act3.md) pour le code pour les moteurs CC et les moteurs pas-à-pas
+  - <a href="../../p2-4m_act3.md" target="_blank">Voir l'activité</a> pour le code pour les moteurs CC et les moteurs pas-à-pas
 
 #### Activité 4
 
@@ -98,13 +98,13 @@ Version 4M : bras robotique avec pince
 
 ### Lié au cours _Software Foundations with Arduino (Shieldbot)_ de CS2N
 
-_Source : [Software Foundations with Arduino (Shieldbot) de CS2N](https://www.cs2n.org/u/track_progress?id=290)_
+_Source : <a href="https://www.cs2n.org/u/track_progress?id=290" target="_blank">Software Foundations with Arduino (Shieldbot) de CS2N</a>_
 
 #### Exemple de Machine à états finis
 
-Cet exemple est pour la caméra Pixy2, des moustaches tactiles et un haut-parleur piezoélectrique, comme pour [le défi proposé dans _Camera Programming with Arduino (Shieldbot)_](https://www.cs2n.org/u/mp/badge_pages/233). 
+Cet exemple est pour la caméra Pixy2, des moustaches tactiles et un haut-parleur piezoélectrique, comme pour <a href="https://www.cs2n.org/u/mp/badge_pages/233" target="_blank">le défi proposé dans _Camera Programming with Arduino (Shieldbot)_</a>. 
 
-Le code implémente le diagramme d'états dans les [notes de cours de M. Crowley](https://docs.google.com/document/d/1LxZwPFYOOgUi6hL9_VkzVpgnHcKnO2U3EskbVziUh4s/view) en modularisant les instructions de trois façons différentes.
+Le code implémente le diagramme d'états dans les <a href="https://docs.google.com/document/d/1LxZwPFYOOgUi6hL9_VkzVpgnHcKnO2U3EskbVziUh4s/view" target="_blank">notes de cours de M. Crowley</a> en modularisant les instructions de trois façons différentes.
 
 - [PixyFSM.ino](./arduinoide/PixyFSM.ino) - code de base, purement procédural
 - [PixyFSM_functions.ino](./arduinoide/PixyFSM_functions.ino)- code découpé en fonctions

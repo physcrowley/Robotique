@@ -7,23 +7,23 @@ Travailler avec un microcontrolleur veut dire remplacer de la logique électroni
 Pour d'autres microcontrolleurs, le langage de programmation peut être différent. Par exemple, pour la brique EV3 (un microordinateur), le langage de programmation est une version simplifiée de Python.
 
 Sauter directement à la section qui vous intéresse :
-- [Démarrage](#démarrage)
-  - [Commentaires dans le code C++](#commentaires-dans-le-code-c)
-  - [Structure d'un programme Arduino](#structure-dun-programme-arduino)
-  - [Ajouter des bibliothèques de code](#ajouter-des-bibliothèques-de-code)
-  - [Constantes et variables](#constantes-et-variables)
-    - [Syntaxe](#syntaxe)
-    - [Types de données](#types-de-données)
-  - [La fonction setup()](#la-fonction-setup)
-    - [Définir le mode d'utilisation des broches](#définir-le-mode-dutilisation-des-broches)
-    - [Démarrer la communication série](#démarrer-la-communication-série)
-    - [Afficher des messages dans le moniteur série](#afficher-des-messages-dans-le-moniteur-série)
-  - [La fonction loop()](#la-fonction-loop)
-    - [Lire ou écrire une valeur sur une broche](#lire-ou-écrire-une-valeur-sur-une-broche)
-- [Structures de contrôle](#structures-de-contrôle)
-  - [Conditions](#conditions)
-  - [La sélection](#la-sélection)
-  - [La répétition](#la-répétition)
+- <a href="#démarrage" target="_blank">Démarrage</a>
+  - <a href="#commentaires-dans-le-code-c" target="_blank">Commentaires dans le code C++</a>
+  - <a href="#structure-dun-programme-arduino" target="_blank">Structure d'un programme Arduino</a>
+  - <a href="#ajouter-des-bibliothèques-de-code" target="_blank">Ajouter des bibliothèques de code</a>
+  - <a href="#constantes-et-variables" target="_blank">Constantes et variables</a>
+    - <a href="#syntaxe" target="_blank">Syntaxe</a>
+    - <a href="#types-de-données" target="_blank">Types de données</a>
+  - <a href="#la-fonction-setup" target="_blank">La fonction setup()</a>
+    - <a href="#définir-le-mode-dutilisation-des-broches" target="_blank">Définir le mode d'utilisation des broches</a>
+    - <a href="#démarrer-la-communication-série" target="_blank">Démarrer la communication série</a>
+    - <a href="#afficher-des-messages-dans-le-moniteur-série" target="_blank">Afficher des messages dans le moniteur série</a>
+  - <a href="#la-fonction-loop" target="_blank">La fonction loop()</a>
+    - <a href="#lire-ou-écrire-une-valeur-sur-une-broche" target="_blank">Lire ou écrire une valeur sur une broche</a>
+- <a href="#structures-de-contrôle" target="_blank">Structures de contrôle</a>
+  - <a href="#conditions" target="_blank">Conditions</a>
+  - <a href="#la-sélection" target="_blank">La sélection</a>
+  - <a href="#la-répétition" target="_blank">La répétition</a>
 
 ## Démarrage
 
@@ -299,7 +299,7 @@ La répétition nous permet d'écrire du code qui s'exécute plusieurs fois. On 
 ## Ressources additionnelles
 
 Une explication de comment le programme Arduino fonctionne se trouve sur ce site. Dans ce tutoriel, le DEL est connecté à la broche 12 :
-1. [Explication des bases avec un exemple sans DEL](https://nboulaire.developpez.com/tutoriels/Arduino/cours-debuter-programmation-arduino/#LIII-A)
-1. [Explication de l'exemple pour clignoter un DEL sur la broche 12](https://nboulaire.developpez.com/tutoriels/Arduino/cours-debuter-programmation-arduino/#LIII-D-4)
+1. <a href="https://nboulaire.developpez.com/tutoriels/Arduino/cours-debuter-programmation-arduino/#LIII-A" target="_blank">Explication des bases avec un exemple sans DEL</a>
+1. <a href="https://nboulaire.developpez.com/tutoriels/Arduino/cours-debuter-programmation-arduino/#LIII-D-4" target="_blank">Explication de l'exemple pour clignoter un DEL sur la broche 12</a>
 
-> Si vous cherchez une explication alternative, vous pouvez consulter ce site pour une explication du code pour clignoter un DEL. Dans ce tutoriel, le DEL est connecté à la carte Arduino sur la broche 2 : [Zeste du Savoir](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/743_gestion-des-entrees-sorties/3420_notre-premier-programme/#allumer-notre-led)
+> Si vous cherchez une explication alternative, vous pouvez consulter ce site pour une explication du code pour clignoter un DEL. Dans ce tutoriel, le DEL est connecté à la carte Arduino sur la broche 2 : <a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/743_gestion-des-entrees-sorties/3420_notre-premier-programme/#allumer-notre-led" target="_blank">Zeste du Savoir</a>

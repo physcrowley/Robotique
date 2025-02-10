@@ -40,7 +40,7 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 - [Gabarit pour le schéma](./assets/images/p2/distance-servo.cddx)
 
 1. Télécharger le gabarit (format `.cddx`).
-1. Ouvrir le site [Circuit Diagram](https://www.circuit-diagram.org/).
+1. Ouvrir le site <a href="https://www.circuit-diagram.org/" target="_blank">Circuit Diagram</a>.
 1. Ouvrir le gabarit téléchargé via le menu `Open` > `Import`.
 1. Sélectionner l'outil `Wire` pour ajouter des fils entre les composants et les broches appropriées sur la carte Arduino.
    > Utiliser les déclarations dans le code pour identifier les broches à utiliser dans le circuit.
@@ -54,7 +54,7 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 1. Tester le montage de base :
    1. Tester le code de démarrage pour vérifier que la distance s'affiche correctement dans le moniteur série.
    1. Calibrez le servomoteur pour qu'il tourne de 0 à 180 degrés.
-      > [Utilisez les instructions et le code de l'activité 3](p2-4m_act3.md) pour cette étape. Si vous travaillez dans **Arduino IDE**, simplement ouvrir le projet dans une fenêtre séparée. Si vous travaillez dans **PlatformIO**, vous pouvez copier le code du dossier `src` de l'activité 3 dans le dossier `tests` de ce projet et lancer le test au lieu de lancer le projet.
+      > <a href="p2-4m_act3.md" target="_blank">Utilisez les instructions et le code de l'activité 3</a> pour cette étape. Si vous travaillez dans **Arduino IDE**, simplement ouvrir le projet dans une fenêtre séparée. Si vous travaillez dans **PlatformIO**, vous pouvez copier le code du dossier `src` de l'activité 3 dans le dossier `tests` de ce projet et lancer le test au lieu de lancer le projet.
 1. Compléter le code - les tâches décrites dans les `TODO`- pour que le servomoteur tourne en fonction de la distance mesurée.
    > Indices : vous devrez faire une recherche dans la documentation ou dans des tutoriels pour découvrir comment la fonction `map()` fonctionne. Vous devrez aussi ajouter un bras au servomoteur afin de visualiser correctement sa position. Ce bras deviendra l'indicateur de distance.
 1. Construire un cadran pour l'indicateur de distance.
@@ -64,7 +64,7 @@ Compléter un schéma des connections électriques pour le projet. Utiliser le g
 
 Enrichissement fortement suggérée :
 
-- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). [Voir l'activité 2](p2-4m_act2.md) pour des idées sur comment ajouter un bouton-poussoir à un projet. Comme avec les tests du servomoteur, tester le bouton-poussoir indépendamment du projet principal pour vous assurer qu'il fonctionne correctement avant de l'ajouter au projet principal.
+- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). <a href="p2-4m_act2.md" target="_blank">Voir l'activité 2</a> pour des idées sur comment ajouter un bouton-poussoir à un projet. Comme avec les tests du servomoteur, tester le bouton-poussoir indépendamment du projet principal pour vous assurer qu'il fonctionne correctement avant de l'ajouter au projet principal.
 - Si l'indication de distance est désactivé, l'indicateur devrait indiquer l'état éteint (p. ex. à 0 degré pour le servomoteur). Sinon, l'indicateur devrait indiquer la distance mesurée sur le cadran (p. ex. entre 30 degrés et 180 degrés).
   - Ajoutez une nouvelle constante pour l'angle de repos (état éteint) de l'indicateur.
   - Changez la valeur pour le signal pour la distance minimal pour donner une séparation avec la position de repos.

@@ -12,15 +12,15 @@ Ces notes sont directement applicables si :
 
 Ces notes couvrent les sujets suivants en guise d'introduction à l'électronique :
 
-- [les circuits électriques de base](#circuits-électriques-de-base)
-- [les composants électroniques de base](#composants-électroniques-de-base)
-- [l'Arduino Uno, un microcontrôleur populaire](#arduino-uno)
+- <a href="#circuits-électriques-de-base" target="_blank">les circuits électriques de base</a>
+- <a href="#composants-électroniques-de-base" target="_blank">les composants électroniques de base</a>
+- <a href="#arduino-uno" target="_blank">l'Arduino Uno, un microcontrôleur populaire</a>
 
 > Avec la trousse de robotique LEGO EV3 Mindstorms, la plupart de ce que nous verrons dans cette unité est masqué afin de simplifier l'expérience de l'utilisateur. Par contre, ces notes vous aideront à comprendre ce qui se passe sous le capot et peuvent vous aider à résoudre des problèmes plus complexes.
 
 ## Circuits électriques de base
 
-Circuits | [Composants](#composants-électroniques-de-base) | [Arduino Uno](#arduino-uno)
+Circuits | <a href="#composants-électroniques-de-base" target="_blank">Composants</a> | <a href="#arduino-uno" target="_blank">Arduino Uno</a>
 
 ![circuit](./assets/images/p2/circuit.drawio.png)
 
@@ -50,13 +50,13 @@ Pour connaître le courant qui sera sollicité par la source d'énergie, vous po
 
 ## Composants électroniques de base
 
-[Circuits](#circuits-électriques-de-base) | Composants | [Arduino Uno](#arduino-uno)
+<a href="#circuits-électriques-de-base" target="_blank">Circuits</a> | Composants | <a href="#arduino-uno" target="_blank">Arduino Uno</a>
 
-- [Plaque d'essai](#plaque-d'essai)
-- [DEL](#del)
-- [Résistance](#résistance)
-- [Bouton-poussoir](#bouton-poussoir)
-- [Potentiomètre linéaire](#potentiomètre-linéaire)
+- <a href="#plaque-d'essai" target="_blank">Plaque d'essai</a>
+- <a href="#del" target="_blank">DEL</a>
+- <a href="#résistance" target="_blank">Résistance</a>
+- <a href="#bouton-poussoir" target="_blank">Bouton-poussoir</a>
+- <a href="#potentiomètre-linéaire" target="_blank">Potentiomètre linéaire</a>
 
 #### Plaque d'essai
 
@@ -84,15 +84,15 @@ Les résistances consomment de l'énergie électrique et sont généralement uti
 
 Notamment, les DEL ne peuvent pas survivre à des tensions trop élevées et la carte Arduino ne peut pas survivre à des courants trop élevés. Chaque composant a des intervalles de tension et de courant à respecter et on peut trouver ces informations dans les spécifications techniques du composant.
 
-Par exemple, voici [les spécifications pour un affichage DEL 7 segments](https://docs.rs-online.com/b51e/0900766b801bf827.pdf).
+Par exemple, voici <a href="https://docs.rs-online.com/b51e/0900766b801bf827.pdf" target="_blank">les spécifications pour un affichage DEL 7 segments</a>.
 
 La valeur d'une résistance est indiquée par un code de bandes de couleurs. Le tableau suivant, en couleurs plus naturelles, peut vous aider à identifier la couleur de chaque bande sur une résistances :
 
 ![résistance](./assets/images/p2/resistance-table.png)
 
-_source : [FabLabUTC](https://fablabutc.fr/wp-content/uploads/2021/01/Tutoriel_Electronique-Generale-3.pdf)_
+_source : <a href="https://fablabutc.fr/wp-content/uploads/2021/01/Tutoriel_Electronique-Generale-3.pdf" target="_blank">FabLabUTC</a>_
 
-Le [calculateur de résistances sur le site de DigiKey](https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band), un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes.
+Le <a href="https://www.digikey.ca/fr/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band" target="_blank">calculateur de résistances sur le site de DigiKey</a>, un fournisseur important de composants électroniques en Amérique du Nord, peut faire le calcul de la résistance si vous connaissez les couleurs. Il y a un onglet pour les résistances de 4 bandes et un autre pour les résistances de 5 bandes.
 
 P. ex. pour une résistance de 220 ohms à 4 bandes les couleurs sont rouge, rouge, brun/marron _et or (±5%)_; mais avec 5 bandes les couleurs sont rouge, rouge, noir, noir _et rouge (±2%)_.
 
@@ -110,30 +110,30 @@ Un potentiomètre est un composant qui permet de régler une tension. Il est sou
 
 ![potentiomètre](./assets/images/p2/potentiometer.drawio.png)
 
-> _source : [arduino.developpez.com](https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/?page=projet-10-le-potentiometre)_
+> _source : <a href="https://arduino.developpez.com/tutoriels/arduino-a-l-ecole/?page=projet-10-le-potentiometre" target="_blank">arduino.developpez.com</a>_
 
 ## Arduino Uno
 
-[Circuits](#circuits-électriques-de-base) | [Composants](#composants-électroniques-de-base) | Arduino Uno
+<a href="#circuits-électriques-de-base" target="_blank">Circuits</a> | <a href="#composants-électroniques-de-base" target="_blank">Composants</a> | Arduino Uno
 
 L'Arduino Uno est un microcontrôleur populaire pour les projets d'électronique. Il est basé sur un microcontrôleur ATmega328P de la compagnie Microchip. Il est programmable en C++ et est compatible avec plusieurs capteurs et actionneurs. Il y a aussi plusieurs environnement de développement intégrés (IDE) pour programmer l'Arduino, dont l'IDE Arduino - le plus populaire pour les novices - et Visual Studio Code avec l'extension PlatformIO qui fonctionne également avec d'autres microcontrôleurs dont l'ESP32.
 
-- [Comprendre les composants sur la carte](#comprendre-les-composants-sur-la-carte)
-- [Alimentation](#alimentation)
-- [Communication série](#communication-série)
-- [Broches numériques](#broches-numériques)
-- [Broches analogiques](#broches-analogiques)
-- [Broches numériques à modulation de largeur d'impulsion (PWM)](<#broches-numériques-à-modulation-de-largeur-d'impulsion-(PWM)>)
+- <a href="#comprendre-les-composants-sur-la-carte" target="_blank">Comprendre les composants sur la carte</a>
+- <a href="#alimentation" target="_blank">Alimentation</a>
+- <a href="#communication-série" target="_blank">Communication série</a>
+- <a href="#broches-numériques" target="_blank">Broches numériques</a>
+- <a href="#broches-analogiques" target="_blank">Broches analogiques</a>
+- <a href="<#broches-numériques-à-modulation-de-largeur-d'impulsion-(PWM" target="_blank">Broches numériques à modulation de largeur d'impulsion (PWM)</a>>)
 
 ### Comprendre les composants sur la carte
 
-Ce site présente une bonne introduction à la carte Arduino : [Zeste du Savoir - Présentation d'Arduino](https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/742_decouverte-de-larduino/3414_presentation-darduino/).
+Ce site présente une bonne introduction à la carte Arduino : <a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/742_decouverte-de-larduino/3414_presentation-darduino/" target="_blank">Zeste du Savoir - Présentation d'Arduino</a>.
 
 Il y a aussi cette courte vidéo de présentation de la carte :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hAkWL495-qk?si=CzZ0y9tJYW2ryCf_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> Le simulateur utilisé dans la vidéo se trouve ici : [TinkerCAD](https://www.tinkercad.com). Voici un modèle de base que vous pouvez modifier en ligne : [Arduino - clignoter un DEL](https://www.tinkercad.com/things/72zvNBYzOAw-arduino-basic)
+> Le simulateur utilisé dans la vidéo se trouve ici : <a href="https://www.tinkercad.com" target="_blank">TinkerCAD</a>. Voici un modèle de base que vous pouvez modifier en ligne : <a href="https://www.tinkercad.com/things/72zvNBYzOAw-arduino-basic" target="_blank">Arduino - clignoter un DEL</a>
 
 Les sections suivantes résument les caractéristiques de chaque partie de la carte Arduino Uno.
 
