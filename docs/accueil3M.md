@@ -56,7 +56,7 @@
 <div markdown='1'>
 
 - [Activité 1 : circuits de base - source d'énergie, interrupteur, DEL, résistance](./p2-3m_act1.md)
-- <a href="p2-3m_notes_composants.md" target="_blank">📚 Notes : composants de base en électronique</a>
+- [📚 Notes : composants de base en électronique](./p2-3m_notes_composants.md)
 - [Activité 2 : tutoriel de démarrage avec Arduino](./p2-3m_act2.md)
 - [Activité 3 : microcontrôleur Arduino - pourquoi? comment?](./p2-3m_act3.md)
 - [📚 Notes : programmation Arduino de base](./p2-3m_notes_programmes.md)
