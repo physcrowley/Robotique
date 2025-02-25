@@ -18,7 +18,7 @@
 
 ### Matériel pour les fonctionnalités additionnelles
 
-Vous pouvez aussi ajouter les composants suivants  selon les fonctionnalités additionnels que vous ajoutées à votre projet : DEL bleu (et résistance), bouton poussoir, capteur ultrason HR-S04.
+Vous pouvez aussi ajouter les composants suivants selon les fonctionnalités additionnelles que vous ajoutées à votre projet : DEL bleu (et résistance), bouton poussoir, capteur ultrason HR-S04.
 
 ## Instructions
 

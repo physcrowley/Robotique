@@ -4,9 +4,7 @@
 
 ## Objectif
 
-- Utiliser le capteur de distance HC-SR04 pour contrôler la position d'un servomoteur.
-- Utiliser la fonction `map()` pour convertir l'intervalle de lectures d'un capteur vers un intervalle approprié de sorties pour un servomoteur.
-- Compléter un schéma électrique pour le projet à partir d'un gabarit.
+- Intégrer le contrôle de différents capteurs et moteurs avec un programme Arduino, les bibliothèques appropriées et la fonction `map()`
 
 ## Matériel
 
@@ -18,64 +16,35 @@
 - fils de raccordement
 - carton / papier / ciseaux et ruban adhésif pour construire le cadran pour l'indicateur
 
-## Code de démarrage
+### Matériel pour les fonctionnalités additionnelles
 
-Ouvrir le code de démarrage dans votre environnement de développement Arduino.
-
-- Version Arduino IDE : [distance-servo.ino](./assets/code/arduinoide/distance-servo.ino)
-- Version PlatformIO : [distance-servo-pio.zip](./assets/code/platformio/distance-servo-pio.zip)
-
-Le code devrait fonctionner correctement à l'état initial pour fournir des lectures de distance valides.
-
-Constatez les éléments suivants :
-
-- Le code utilise la bibliothèque `Servo.h` pour contrôler le servomoteur.
-- Les valeurs des broches utilisées pour les différents composants
-- Les commentaires `TODO` pour indiquer où ajouter du code pour compléter le projet.
-
-## Schéma
-
-Compléter un schéma des connections électriques pour le projet. Utiliser le gabarit suivant :
-
-- [Gabarit pour le schéma](./assets/images/p2/distance-servo.cddx)
-
-1. Télécharger le gabarit (format `.cddx`).
-1. Ouvrir le site <a href="https://www.circuit-diagram.org/" target="_blank">Circuit Diagram</a>.
-1. Ouvrir le gabarit téléchargé via le menu `Open` > `Import`.
-1. Sélectionner l'outil `Wire` pour ajouter des fils entre les composants et les broches appropriées sur la carte Arduino.
-   > Utiliser les déclarations dans le code pour identifier les broches à utiliser dans le circuit.
-1. Les connexions pour la masse (`GND`) et le 5V (`Vcc`) sont déjà faites pour le capteur de distance et le servomoteur.
-   > Les fils nommés `rail +` et `rail -` représentent les rails d'alimentation sur la plaque d'essai.
-1. Télécharger le schéma terminé via le menu `Download` > `PNG Image`.
+Vous pouvez aussi ajouter les composants suivants selon les fonctionnalités additionnelles que vous ajoutées à votre projet : DELs et résistances, bouton poussoir.
 
 ## Instructions
 
-1. Monter le circuit selon le schéma complété.
-1. Tester le montage de base :
-   1. Tester le code de démarrage pour vérifier que la distance s'affiche correctement dans le moniteur série.
-   1. Calibrez le servomoteur pour qu'il tourne de 0 à 180 degrés.
-      > [Utilisez les instructions et le code de l'activité 3](p2-4m_act3.md) pour cette étape. Si vous travaillez dans **Arduino IDE**, simplement ouvrir le projet dans une fenêtre séparée. Si vous travaillez dans **PlatformIO**, vous pouvez copier le code du dossier `src` de l'activité 3 dans le dossier `tests` de ce projet et lancer le test au lieu de lancer le projet.
-1. Compléter le code - les tâches décrites dans les `TODO`- pour que le servomoteur tourne en fonction de la distance mesurée.
-   > Indices : vous devrez faire une recherche dans la documentation ou dans des tutoriels pour découvrir comment la fonction `map()` fonctionne. Vous devrez aussi ajouter un bras au servomoteur afin de visualiser correctement sa position. Ce bras deviendra l'indicateur de distance.
-1. Construire un cadran pour l'indicateur de distance.
-   1. Fixer un morceau de carton ou de papier sur la bôitier du servomoteur afin que l'axe du servomoteur passe à travers la feuille (couper un fente ou un trou pour l'arbre). Attacher le bras au servomoteur une fois que la feuille est attachée.
-   1. Créer un cadran sur le carton avec des graduations pour les distances. Commencer avec les distances extrêmes (2 cm et 200 cm) et ajouter des graduations intermédiaires. Retirer le carton du moteur, au besoin, pour bien tracer les graduations et le rattacher par la suite.
-1. Filmer le fonctionnement de l'indicateur de distance en action.
+- Utiliser un servomoteur et un cadran gradué en carton comme indicateur de distance
+- Il devrait avoir une position réservée pour le cas où il n'y a pas de lecture valide (lecture de 0) et une région pour les distances valides (de 5cm à au moins 250cm)
 
-Enrichissement fortement suggérée :
 
-- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance (lectures du capteur et mouvement du servomoteur). [Voir l'activité 2](p2-4m_act2.md) pour des idées sur comment ajouter un bouton-poussoir à un projet. Comme avec les tests du servomoteur, tester le bouton-poussoir indépendamment du projet principal pour vous assurer qu'il fonctionne correctement avant de l'ajouter au projet principal.
-- Si l'indication de distance est désactivé, l'indicateur devrait indiquer l'état éteint (p. ex. à 0 degré pour le servomoteur). Sinon, l'indicateur devrait indiquer la distance mesurée sur le cadran (p. ex. entre 30 degrés et 180 degrés).
-  - Ajoutez une nouvelle constante pour l'angle de repos (état éteint) de l'indicateur.
-  - Changez la valeur pour le signal pour la distance minimal pour donner une séparation avec la position de repos.
-- Créer un nouveau cadran de carton afin de refléter les nouvelles positions du servomoteur:
-  - Le cadran devrait inclure les positions suivantes : Off 2cm ... 200cm
-- Filmer le nouveau fonctionnement de l'indicateur de distance en action.
+Votre processus doit être documenté dans une copie du <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">journal de conception et de fabrication</a>. C'est ce document qui est évalué à la fin du projet.
+
+#### Quelques remarques :
+
+- Les bibliothèques `Servo.h` pour le moteur et `NewPing.h` pour le capteur de distance sont utiles.
+- C'est important de calibrer votre moteur et votre capteur individuellement (trouver leurs valeurs limites) avant de les intégrer dans un plus grand programme. Vous pouvez utiliser des programmes existants pour ça.
+- La fonction `map()` est utile pour convertir les valeurs d'un capteur en valeurs appropriés pour l'actionneur.
+- Si vous ne simulez pas votre solution, vous devrez tout de même monter le circuit dans Tinkercad. Dans tous les cas, le circuit dans Tinkercad est la source de vos diagrammes du projet.
+
+#### Fonctionnalités additionnelles
+
+- Ajouter un bouton-poussoir au projet pour activer ou désactiver l'indicateur de distance. Diviser alors le cadran en trois zones : éteint, aucune lecture (hors de portée) et cadran gradué.
+- Ajouter des indicateurs DEL pour complémenter les états éteint et/ou hors de portée
+
+
+### Schémas des circuits
+
+Utiliser le montage des exercices précedents comme inspiration pour le montage du circuit pour ce projet.
 
 ## À soumettre
 
-Soumettre les documents suivants dans l'activité appropriée sur le Google Classroom :
-
-1. Le schéma complété en format image (p. ex. `.png`).
-1. Une vidéo du projet en action.
-1. Le code complété pour le projet (le fichier `.ino` ou `.cpp`).
+Voir le Classroom pour les détails de soumission.
