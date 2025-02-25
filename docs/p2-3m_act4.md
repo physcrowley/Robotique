@@ -1,67 +1,44 @@
 [Accueil](./index.md) > [3M](./accueil3M.md#projet-2--circuits-électroniques-et-programmation)
 
-# Projet 2 - Activité 4 : Indicateur de distance
+# Projet 2 - Activité 4 : Feux de circulation
 
 ## Objectif
 
-- Se familiariser avec le capteur de distance à ultrasons HC-SR04.
-- Appliquer les concepts de programmation de base (la logique conditionnelle) pour contrôler les indicateur lumineux
+- Utiliser un sketch Arduino, des constantes, des variables, la fonction `millis()` ou `delay()` et des blocs conditionnels pour contrôler des DEL
+- Optionnellement, intégrer un ou plusieurs capteurs pour influencer le comportment des DEL
 
 ## Matériel
 
 - 1 carte Arduino Uno
 - 1 fil USB pour relier la carte à l'ordinateur
-- 1 capteur de distance à ultrasons HC-SR04
-- 2 DEL vertes
-- 2 DEL jaunes
-- 1 DEL rouge
-- 5 résistances de 220 ohms
+- 1 DEL de chaque couleur : rouge, jaune, vert
+- Pour chaque DEL, 1 résistance 220 ohms  
 - 1 plaque d'essai
 - fils de raccordement
 
-## Schéma
+### Matériel pour les fonctionnalités additionnelles
 
-![schéma](./assets/images/p2/schematic-act4.png)
-
-## Image
-
-![distance 1](./assets/images/p2/distance1.jpg)
-
-![distance 2](./assets/images/p2/distance2.jpg)
+Vous pouvez aussi ajouter les composants suivants  selon les fonctionnalités additionnels que vous ajoutées à votre projet : DEL bleu (et résistance), bouton poussoir, capteur ultrason HR-S04.
 
 ## Instructions
 
-- Monter le circuit comme illustré dans le schéma et dans les images ci-dessus.
-- Ouvrir l'exemple `distance-leds` dans votre environnement de développement Arduino.
-  - Version Arduino IDE : [distance-leds.ino](./assets/code/arduinoide/distance-leds.ino)
-  - Version PlatformIO : [distance-leds-pio.zip](./assets/code/platformio/distance-leds-pio.zip)
-- Vérifier et téléverser le code sur l'Arduino. Le code de démarrage ne contrôle qu'une seule DEL.
-- Compléter le code selon le commentaire `TODO` dans le fichier `distance-leds.ino`. Notamment, ajouter les instructions pour allumer les autres DELs en fonction de la distance mesurée par le capteur de distance à ultrasons. 
-    - La première DEL à s'allumer (verte) le fait quand la distance est moins que 50cm.
-    - La deuxième DEL à s'allumer (verte encore) le fait quand la distance est moins que 40cm.
-    - La troisième DEL à s'allumer (jaune) le fait quand la distance est moins que 30cm.
-    - La quatrième DEL à s'allumer (jaune encore) le fait quand la distance est moins que 20cm.
-    - La dernière DEL à s'allumer (rouge) le fait quand la distance est moins que 10cm.
+- Contrôler l'allumage des DEL pour dupliquer la séquence des lumières à un feu de circulation, p. ex. : 10s vert, 2s jaune, 12s rouge.
+- Ajouter au moins une des fonctionnalités dans la liste ci-dessous.
 
-## Projet de conception
+Votre processus doit être documenté dans une copie du <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">journal de conception et de fabrication</a>. C'est ce document qui est évalué à la fin du projet.
 
-Une fois que votre code pour la section précédente fonctionne, valider le tout avec l'enseignant. Si l'enseignant est satisfait que votre code fonctionne, vous pouvez passer au paragraphe suivant. Sinon, corriger les erreurs avant de continuer.
+#### Fonctionnalités additionnelles
 
-Pour le projet final, votre défi est d'utiliser ce que vous avez fait précédemment mais en clignotant le dernier DEL allumé. Par exemple, si la distance est inférieure à 10 cm, tous les DEL sont allumés mais la DEL rouge clignote. Si la distance est plus loin que 150cm, aucune DEL n'est allumée et aucune ne clignote.
+- Imiter l'avertissement pour la traversée piétonnière en faisant clignoter un DEL bleu quand il reste 3s à la lumière rouge.
+- Imiter le bouton de traversée piétonnière avec un bouton poussoir qui allume un DEL bleu pendant 3s avant l'allumage du DEL vert (l'effet du bouton se voit au bon moment dans la séquence des lumières)
+- Imiter la détection de présence d'un véhicule avec un bouton poussoir : si le bouton poussoir n'est pas enfoncé dans les dernières secondes du feu rouge, la lumière reste rouge au lieu de changer selon la séquence prévue.
+- Imiter la détection de présence d'un véhicule avec un capteur de distance : si aucun objet n'est détecté à moins de 20cm dans les dernières secondes du feu rouge, la lumière reste rouge au lieu de changer selon la séquence prévue.
 
-<blockquote>
-<h3>Description de la logique pour une solution potentielle</h3>
-<ul> 
-    <li>Ajouter une variable <code>int lastLed = 0;</code> dans la fonction <code>loop()</code> avant la série de conditions <code>if () {} else {}</code></li>
-    <li>Assurez-vous d'avoir placé toutes les conditions en ordre décroissant de distance (de la plus grande distance à la plus petite distance), sinon les placer dans cet ordre.</li>
-    <li>Dans chaque bloc <code>if</code>, ajoutez une autre instruction après l'instruction pour allumer la DEL, soit : <code>lastLed = ledN;</code> où vous remplacez <code>N</code> avec le numéro de chaque DEL.</li>
-    <li>Une fois que vous avez passé à travers toutes les conditions, la dernière fois que la condition est vrai vous donne la bonne DEL dans la variable <code>lastLed</code>.</li>
-    <li>Vous pourrez alors ajouter les instructions que vous avez déjà vu pour clignoter une DEL à la fin de la fonction <code>loop()</code> en utilisant <code>lastLed</code> comme référence pour la bonne broche.</li>
-</ul>
-</blockquote>
+### Schémas des circuits
+
+Utiliser le montage des exercices précedents comme inspiration pour le montage du circuit pour ce projet.
+
 
 ## Soumettre le travail
 
-Prendre **une vidéo** de votre montage final en action et la soumettre dans la tâche appropriée dans Google Classroom.
-
-Ajoutez également votre **code final** (le fichier `.ino` ou `.cpp`) dans la tâche appropriée dans Google Classroom.
+Voir le Classroom pour les détails de soumission.
