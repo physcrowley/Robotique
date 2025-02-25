@@ -25,6 +25,7 @@ Vous pouvez aussi ajouter les composants suivants selon les fonctionnalités add
 - Utiliser un servomoteur et un cadran gradué en carton comme indicateur de distance
 - Il devrait avoir une position réservée pour le cas où il n'y a pas de lecture valide (lecture de 0) et une région pour les distances valides (de 5cm à au moins 250cm)
 
+![cadran](./assets/images/p2/cadran_base.drawio.png)
 
 Votre processus doit être documenté dans une copie du <a href="https://docs.google.com/document/d/10qXbG6t7gSBiXH1rWh8tamR85JPlqGgy0t4OaY0Sv2M/view" target="_blank">journal de conception et de fabrication</a>. C'est ce document qui est évalué à la fin du projet.
 
