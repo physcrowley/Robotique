@@ -8,13 +8,13 @@ Comme initiation au sujet, nous utiliserons les pièces de votre trousse LEGO EV
 
 Ces notes couvrent les sujets suivants :
 
-- <a href="#connecteurs" target="_blank">Connecteurs</a>
-- <a href="#joints" target="_blank">Joints</a>
-  - <a href="#joints-mobiles" target="_blank">Joints mobiles</a>
-  - <a href="#joints-rigides" target="_blank">Joints rigides</a>
-- <a href="#cadres" target="_blank">Cadres</a>
-  - <a href="#cadres-fixes" target="_blank">Cadres rigides</a>
-  - <a href="#cadres-mobiles" target="_blank">Cadres mobiles (mécanismes à barres)</a>
+- [Connecteurs](#connecteurs)
+- [Joints](#joints)
+  - [Mobiles](#joints-mobiles)
+  - [Rigides](#joints-rigides)
+- [Cadres](#cadres)
+  - [Rigides](#cadres-rigides)
+  - [Mécanismes à barres](#cadres-mobiles-mcanismes--barres)
 
 ## Connecteurs
 
@@ -22,15 +22,15 @@ Les connecteurs, aussi appelés **clavettes**, sont utilisés pour lier deux ou 
 
 Il y a deux types de clavettes LEGO :
 
-- ceux avec friction et
-- ceux sans friction.
+-   ceux avec friction et
+-   ceux sans friction.
 
 ![connecteurs](./assets/images/p3/connecteurs.drawio.png)
 
 Faites donc attention de choisir le bon type de connecteur pour votre application.
 
-- Les connecteurs **avec friction** sont utilisés pour les joints fixes, comme dans les cadres rigides.
-- Les connecteurs **sans friction** sont utilisés pour les joints mobiles, comme dans les articulations.
+-   Les connecteurs **avec friction** sont utilisés pour les joints fixes, comme dans les cadres rigides.
+-   Les connecteurs **sans friction** sont utilisés pour les joints mobiles, comme dans les articulations.
 
 ## Joints
 
@@ -40,13 +40,13 @@ Les joints mobiles relient deux pièces tout en permettant un mouvement entre le
 
 Le joint pivotant est le joint mobile le plus simple. Il relie deux pièces autour d'un axe commun de rotation. Ces joints peuvent être :
 
-- **libres** : les pièces peuvent tourner librement autour du connecteur
-- **actionnés** : l'actionneur est connecté à une autre pièce et contrôle son mouvement, p. ex. l'axe de rotation d'un moteur qui contrôle un bras robotique.
+-   **libres** : les pièces peuvent tourner librement autour du connecteur
+-   **actionnés** : l'actionneur est connecté à une autre pièce et contrôle son mouvement, p. ex. l'axe de rotation d'un moteur qui contrôle un bras robotique.
 
-| Joint pivotant libre                                          | Joint pivotant actionné                                             |
-| ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Joint pivotant libre | Joint pivotant actionné |
+| --- | --- |
 | ![joint pivotant libre](./assets/images/p3/joint_pivotant_libre.png) | ![joint pivotant actionné](./assets/images/p3/joint_pivotant_actionne.png) |
-| membres liés par un connecteur **sans friction**              | membres liés par arbre cruciforme                                   |
+| membres liés par un connecteur **sans friction** | membres liés par arbre cruciforme |
 
 ### Joints rigides
 
@@ -78,9 +78,9 @@ Voici quelques exemples :
 
 > _Ici, on tente de créer un cadre avec juste 3 membres, mais c'est un design impossible car on ne peut jamais aligner les trous pour le dernier joint un par dessus l'autre. Des stratégies pour ça incluent : utiliser un membre séparateur (comme dans le cadre rigide plus haut), se servir de connecteurs spécialisés ou d'utiliser un fléau qui inclut déjà un angle._
 
-Connecteur spécial | Fléau avec angle
---- | ---
-![connecteur spécial](./assets/images/p3/align_connecteur-special.png) | ![fléau angulaire](./assets/images/p3/align_fleau-angle.png)
+| Connecteur spécial | Fléau avec angle |
+| --- | --- |
+| ![connecteur spécial](./assets/images/p3/align_connecteur-special.png) | ![fléau angulaire](./assets/images/p3/align_fleau-angle.png) |
 
 ## Cadres
 
